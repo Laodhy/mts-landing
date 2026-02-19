@@ -2,180 +2,132 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>RGPD — Ma Trousse Scolaire</title>
-
-  <meta name="description" content="Informations RGPD : données traitées, finalités, durée de conservation, sécurité, droits des personnes, et contact." />
-  <link rel="canonical" href="./rgpd.html" />
-  <meta name="robots" content="index,follow" />
-
-  <meta property="og:title" content="RGPD — Ma Trousse Scolaire" />
-  <meta property="og:description" content="Transparence : ce que l’on stocke, pourquoi, et comment." />
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="fr_FR" />
-
-  <link rel="stylesheet" href="./assets/styles.css" />
+  <meta name="description" content="Informations RGPD de Ma Trousse Scolaire : données traitées, finalités, sécurité, conservation, droits des personnes, sous-traitance." />
+  <link rel="canonical" href="https://laodhy.github.io/mts-landing/rgpd.html" />
+  <link rel="icon" href="./assets/logo-mts.png" />
+  <link rel="stylesheet" href="./site.css" />
 </head>
-
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-
   <header class="header">
     <div class="container">
-      <div class="nav">
+      <nav class="nav">
         <a class="brand" href="./index.html">
-          <div class="brand-badge" aria-hidden="true">MTS</div>
-          <div class="brand-text">
-            <strong>Ma Trousse Scolaire</strong>
-            <span>Communication & organisation d’école</span>
-          </div>
+          <img src="./assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
+          <strong>Ma Trousse Scolaire</strong>
         </a>
-
-        <nav class="menu" aria-label="Navigation principale">
-          <a data-page="index.html" href="./index.html">Présentation</a>
-          <a data-page="a-propos.html" href="./a-propos.html">À propos</a>
-          <a data-page="contact.html" href="./contact.html">Contact</a>
-          <a data-page="rgpd.html" href="./rgpd.html">RGPD</a>
-        </nav>
-
-        <a class="cta cta-primary" href="./contact.html">Demander une démo</a>
-      </div>
+        <div class="nav-links">
+          <a href="./presentation.html">Présentation</a>
+          <a href="./a-propos.html">À propos</a>
+          <a href="./rgpd.html">RGPD</a>
+          <a href="./contact.html">Contact</a>
+        </div>
+        <div class="nav-cta">
+          <a class="btn btn-outline" href="./contact.html">Question RGPD</a>
+          <a class="btn btn-primary" href="./contact.html#calendly">Planifier une démo</a>
+        </div>
+      </nav>
     </div>
   </header>
 
-  <main id="contenu">
-    <section class="hero">
+  <main>
+    <section class="page-hero">
       <div class="container">
-        <h1 class="h1">RGPD & protection des données</h1>
-        <p class="lead">
-          Cette page présente les principes appliqués par Ma Trousse Scolaire : transparence, minimisation,
-          contrôle des accès et traçabilité.
-        </p>
+        <h1>RGPD & Données personnelles</h1>
+        <p>Cette page explique simplement quelles données sont traitées dans Ma Trousse Scolaire, pourquoi, et comment elles sont protégées.</p>
+      </div>
+    </section>
 
-        <div class="notice">
-          <strong>Note :</strong> cette page est un modèle “prêt à adapter” (nom du responsable, hébergeur, durées exactes, etc.).
+    <section class="section">
+      <div class="container">
+        <div class="prose">
+          <h2>1) Rôles RGPD</h2>
+          <p>
+            Dans le cadre d’une utilisation en école, l’établissement est généralement <strong>responsable de traitement</strong>
+            (décide des finalités et moyens). Ma Trousse Scolaire agit comme <strong>sous-traitant</strong> au sens du RGPD,
+            pour fournir le service.
+          </p>
+
+          <h2>2) Données traitées</h2>
+          <ul>
+            <li><strong>Comptes utilisateurs</strong> : nom, prénom, email, rôle (direction/secrétariat/enseignant/personnel).</li>
+            <li><strong>Élèves</strong> : identité, classe, groupes, informations utiles au suivi (selon paramétrage de l’école).</li>
+            <li><strong>Vie scolaire</strong> : absences, retards, autorisations de sortie, tickets associés.</li>
+            <li><strong>Organisation</strong> : plannings (cantine/APC/activités), responsabilités, répartition d’urgence.</li>
+            <li><strong>Documents</strong> : documents partagés (ex : PAP/PPRE), selon ce que l’école choisit d’y déposer.</li>
+          </ul>
+
+          <h2>3) Finalités</h2>
+          <ul>
+            <li>Assurer le fonctionnement de la plateforme et la coordination interne.</li>
+            <li>Faciliter le suivi des événements (absences/retards) et le traitement des actions.</li>
+            <li>Mettre à disposition des outils pédagogiques et organisationnels.</li>
+            <li>Sécuriser l’accès par rôles et tracer les actions nécessaires au service.</li>
+          </ul>
+
+          <h2>4) Base légale</h2>
+          <p>
+            Les traitements réalisés via MTS reposent généralement sur :
+            <strong>l’exécution d’un contrat</strong> (fourniture du service) et/ou <strong>l’intérêt légitime</strong> de l’établissement
+            à organiser la vie scolaire. L’école reste décisionnaire des règles internes et des durées de conservation.
+          </p>
+
+          <h2>5) Durées de conservation (principes)</h2>
+          <ul>
+            <li>Données de compte : durée du contrat + suppression/archivage selon demande de l’école.</li>
+            <li>Événements (absences/retards/tickets) : durée paramétrable par l’école (souvent année scolaire + archivage).</li>
+            <li>Documents : conservés tant que l’école les maintient dans l’espace documentaire (suppression sur action).</li>
+          </ul>
+
+          <h2>6) Sécurité</h2>
+          <ul>
+            <li>Contrôle d’accès par rôles (direction / secrétariat / enseignants / personnel).</li>
+            <li>Traçabilité des actions importantes liées au service.</li>
+            <li>Mesures techniques et organisationnelles pour protéger la confidentialité et l’intégrité.</li>
+          </ul>
+
+          <h2>7) Hébergement & sous-traitants</h2>
+          <p>
+            Les informations d’hébergement (fournisseur, localisation) et la liste des sous-traitants éventuels peuvent être
+            communiquées sur demande. L’objectif est de rester transparent sur la chaîne de traitement.
+          </p>
+
+          <h2>8) Vos droits</h2>
+          <p>
+            Les personnes concernées disposent des droits d’accès, de rectification, d’effacement, de limitation,
+            d’opposition et de portabilité lorsque applicable. Pour une demande, contactez-nous :
+            <a href="mailto:troussescolaireapp@gmail.com"><strong>troussescolaireapp@gmail.com</strong></a>.
+          </p>
+
+          <h2>9) Cookies</h2>
+          <p>
+            Cette landing GitHub Pages n’utilise pas de cookies publicitaires. Si des outils de mesure d’audience sont ajoutés,
+            ils seront indiqués ici avec leur finalité et les options de désactivation.
+          </p>
+
+          <hr class="sep">
+
+          <p class="small">
+            Dernière mise à jour : <strong><span id="d"></span></strong>.
+          </p>
         </div>
-
-        <section class="section">
-          <div class="container" style="padding:0">
-            <div class="grid-3">
-              <div class="card card-pad">
-                <h2>Responsable du traitement</h2>
-                <p>
-                  <strong>À compléter :</strong> l’école (ou l’entité) qui décide des finalités et moyens.
-                  <br/>Contact : <strong>CONTACT_EMAIL</strong>
-                </p>
-              </div>
-
-              <div class="card card-pad">
-                <h2>Finalités</h2>
-                <p>
-                  Communication interne, organisation (planning, responsabilités), suivi opérationnel (appel, tickets),
-                  et gestion documentaire interne.
-                </p>
-              </div>
-
-              <div class="card card-pad">
-                <h2>Base légale</h2>
-                <p>
-                  Exécution d’une mission d’intérêt public / obligation légale (selon contexte) ou intérêt légitime,
-                  + contrat de service selon le cas.
-                </p>
-              </div>
-            </div>
-
-            <div class="section-title" style="margin-top:18px">
-              <h2>Données traitées</h2>
-              <p>Seulement ce qui est utile au fonctionnement de l’école.</p>
-            </div>
-
-            <div class="card card-pad">
-              <ul style="margin:0; padding-left:18px; color:var(--muted)">
-                <li><strong>Comptes personnels</strong> : nom, prénom, email, rôle, établissement.</li>
-                <li><strong>Vie scolaire</strong> : absences/retards (et métadonnées nécessaires au suivi).</li>
-                <li><strong>Tickets</strong> : demandes et suivi (ex: garderie, dérogations horaires…)</li>
-                <li><strong>Documents</strong> : fichiers partagés par l’équipe (ex: modèles, comptes-rendus, PPRE/PAP si activé).</li>
-                <li><strong>Traces techniques</strong> : logs de sécurité (accès, erreurs) limités.</li>
-              </ul>
-            </div>
-
-            <div class="section-title" style="margin-top:18px">
-              <h2>Accès & sécurité</h2>
-              <p>Accès par rôle + séparation des écoles.</p>
-            </div>
-
-            <div class="grid-3">
-              <div class="feature">
-                <strong>Accès par rôle</strong>
-                <p>Direction / secrétariat / enseignants : chacun voit ce qui le concerne.</p>
-              </div>
-              <div class="feature">
-                <strong>Minimisation</strong>
-                <p>On ne collecte pas “pour avoir”. On collecte pour rendre le service.</p>
-              </div>
-              <div class="feature">
-                <strong>Traçabilité</strong>
-                <p>Journalisation technique pour la sécurité et l’audit.</p>
-              </div>
-            </div>
-
-            <div class="section-title" style="margin-top:18px">
-              <h2>Durées de conservation</h2>
-              <p>À fixer selon la politique de l’école.</p>
-            </div>
-
-            <div class="card card-pad">
-              <p>
-                Exemple de règle : absences/retards conservés sur l’année scolaire + archivage limité,
-                tickets selon délais de traitement, documents selon politique interne.
-                <br/><strong>À compléter :</strong> durées exactes.
-              </p>
-            </div>
-
-            <div class="section-title" style="margin-top:18px">
-              <h2>Droits des personnes</h2>
-              <p>Accès, rectification, effacement (selon cadre), limitation, opposition…</p>
-            </div>
-
-            <div class="card card-pad">
-              <p>
-                Pour exercer un droit : <strong>CONTACT_EMAIL</strong> (réponse sous 30 jours).
-                La demande peut nécessiter une vérification d’identité.
-              </p>
-            </div>
-
-            <div class="section-title" style="margin-top:18px">
-              <h2>Sous-traitants & hébergement</h2>
-              <p>À compléter selon ton infra (Azure, etc.).</p>
-            </div>
-
-            <div class="card card-pad">
-              <p>
-                <strong>À compléter :</strong> hébergeur, localisation des données, mesures contractuelles,
-                et DPA/clauses nécessaires.
-              </p>
-              <div style="margin-top:12px">
-                <a class="cta cta-secondary" href="./contact.html">Nous poser une question</a>
-              </div>
-            </div>
-
-          </div>
-        </section>
       </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="container">
-      <hr class="hr" />
-      <div class="small">
-        <a href="./index.html">Présentation</a> · <a href="./a-propos.html">À propos</a> · <a href="./contact.html">Contact</a>
+      <div class="footer-grid">
+        <div class="small">© <span id="y"></span> — Ma Trousse Scolaire</div>
+        <div class="small"><a href="./contact.html">Contact</a> · <a href="./a-propos.html">À propos</a></div>
       </div>
-      <div class="small" style="margin-top:8px">© <span id="y"></span> Ma Trousse Scolaire</div>
     </div>
+    <script>
+      document.getElementById("y").textContent = new Date().getFullYear();
+      const now = new Date();
+      document.getElementById("d").textContent = now.toLocaleDateString("fr-FR");
+    </script>
   </footer>
-
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-  <script src="./assets/site.js" defer></script>
 </body>
 </html>

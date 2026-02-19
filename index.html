@@ -2,26 +2,31 @@
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Ma Trousse Scolaire — L’outil de communication et d’organisation pour les équipes d’école</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <!-- SEO -->
-  <meta name="description" content="Ma Trousse Scolaire aide les équipes d’école (direction, secrétariat, enseignants) à mieux communiquer, organiser le quotidien et suivre la vie scolaire — simplement, sans WhatsApp." />
-  <link rel="canonical" href="./" />
+  <title>Ma Trousse Scolaire — La plateforme qui simplifie l’organisation de l’école</title>
+  <meta name="description" content="Ma Trousse Scolaire (MTS) centralise l’appel, les tickets, la cantine, les évaluations, les documents et l’organisation interne. Pensé pour les écoles (maternelle & primaire) et le quotidien des équipes." />
   <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://laodhy.github.io/mts-landing/" />
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Ma Trousse Scolaire" />
-  <meta property="og:description" content="Communication interne, organisation, appel, tickets, documents partagés : un outil pensé pour les équipes d’école." />
+  <!-- OpenGraph -->
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
+  <meta property="og:title" content="Ma Trousse Scolaire — Simplifiez l’organisation de l’école" />
+  <meta property="og:description" content="Une plateforme claire et pratique pour l’appel, les tickets, la cantine, les évaluations, les documents et la coordination interne." />
+  <meta property="og:url" content="https://laodhy.github.io/mts-landing/" />
+  <meta property="og:image" content="https://laodhy.github.io/mts-landing/assets/logo-mts.png" />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ma Trousse Scolaire" />
+  <meta name="twitter:description" content="La plateforme qui simplifie l’organisation de l’école." />
+  <meta name="twitter:image" content="https://laodhy.github.io/mts-landing/assets/logo-mts.png" />
 
-  <link rel="stylesheet" href="./assets/styles.css" />
+  <link rel="icon" href="./assets/logo-mts.png" />
+  <link rel="stylesheet" href="./site.css" />
 
-  <!-- JSON-LD (SoftwareApplication + Organization) -->
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -29,219 +34,237 @@
     "name":"Ma Trousse Scolaire",
     "applicationCategory":"EducationalApplication",
     "operatingSystem":"Web",
-    "description":"Outil web pour la communication interne et l’organisation des équipes d’école (direction, secrétariat, enseignants).",
+    "url":"https://laodhy.github.io/mts-landing/",
+    "image":"https://laodhy.github.io/mts-landing/assets/logo-mts.png",
+    "description":"Plateforme web pour organiser la vie de l’école (appel, tickets, cantine, évaluations, documents, coordination interne).",
     "offers":{
       "@type":"Offer",
       "priceCurrency":"EUR",
-      "price":"40",
-      "description":"40 € HT par classe / an (offre de lancement possible)."
-    },
-    "publisher":{
-      "@type":"Organization",
-      "name":"Ma Trousse Scolaire"
+      "price":"30",
+      "description":"Offre de lancement : 30 € HT par classe / an (puis 40 € HT)."
     }
   }
   </script>
 </head>
 
 <body>
-  <a class="skip-link" href="#contenu">Aller au contenu</a>
-
   <header class="header">
     <div class="container">
-      <div class="nav">
-        <a class="brand" href="./index.html">
-          <div class="brand-badge" aria-hidden="true">MTS</div>
-          <div class="brand-text">
-            <strong>Ma Trousse Scolaire</strong>
-            <span>Communication & organisation d’école</span>
-          </div>
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="brand" href="./index.html" aria-label="Accueil Ma Trousse Scolaire">
+          <img src="./assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
+          <strong>Ma Trousse Scolaire</strong>
         </a>
 
-        <nav class="menu" aria-label="Navigation principale">
-          <a data-page="index.html" href="./index.html">Présentation</a>
-          <a data-page="a-propos.html" href="./a-propos.html">À propos</a>
-          <a data-page="contact.html" href="./contact.html">Contact</a>
-          <a data-page="rgpd.html" href="./rgpd.html">RGPD</a>
-        </nav>
+        <div class="nav-links" role="navigation" aria-label="Liens">
+          <a href="./presentation.html">Présentation</a>
+          <a href="./a-propos.html">À propos</a>
+          <a href="./rgpd.html">RGPD</a>
+          <a href="./contact.html">Contact</a>
+        </div>
 
-        <a class="cta cta-primary" href="./contact.html">Demander une démo</a>
-      </div>
+        <div class="nav-cta">
+          <a class="btn btn-outline" href="./presentation.html">Découvrir</a>
+          <a class="btn btn-primary" href="./contact.html">Demander une démo</a>
+        </div>
+      </nav>
     </div>
   </header>
 
-  <main id="contenu">
+  <main>
+    <!-- HERO -->
     <section class="hero">
       <div class="container">
         <div class="hero-grid">
           <div>
-            <h1 class="h1">Un outil simple, pensé pour le terrain, pour faire tourner la vie de l’école.</h1>
-            <p class="lead">
-              Ma Trousse Scolaire centralise la communication interne, l’organisation du quotidien et le suivi des actions
-              (appel, tickets, documents, planning…). Pour toutes les écoles : publiques ou privées.
+            <p class="kicker"><span class="badge">Pensé pour les écoles · Maternelle & Primaire</span></p>
+
+            <h1 class="h-title">Une seule plateforme pour organiser la vie de l’école — sans WhatsApp, sans bricolage.</h1>
+            <p class="h-sub">
+              Ma Trousse Scolaire centralise les outils du quotidien : appel (absences/retards), tickets à traiter,
+              cantine/APC, évaluations, documents partagés et coordination interne.
+              Simple pour les équipes, clair pour la direction.
             </p>
 
-            <div style="display:flex; gap:12px; flex-wrap:wrap">
-              <a class="cta cta-primary" href="./contact.html">Voir une démo / échanger</a>
-              <a class="cta cta-secondary" href="./a-propos.html">Pourquoi on l’a créée</a>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="./contact.html">📅 Planifier une démo</a>
+              <a class="btn btn-outline" href="./presentation.html#fonctionnalites">Voir les fonctionnalités</a>
             </div>
 
-            <div class="badges" aria-label="Points clés">
-              <div class="badge"><span class="dot"></span><span>Communication structurée (sans WhatsApp)</span></div>
-              <div class="badge"><span class="dot"></span><span>Rôles : direction / secrétariat / enseignants</span></div>
-              <div class="badge"><span class="dot"></span><span>Conçu pour le quotidien, pas pour faire “usine à gaz”</span></div>
+            <div class="hero-points" aria-label="Bénéfices clés">
+              <div class="point"><span class="dot" aria-hidden="true"></span><div><strong>Gain de temps</strong><br><span style="color:var(--muted)">Moins de relances, plus d’automatisme.</span></div></div>
+              <div class="point"><span class="dot" aria-hidden="true"></span><div><strong>Clarté</strong><br><span style="color:var(--muted)">Tickets & actions du jour visibles en un coup d’œil.</span></div></div>
+              <div class="point"><span class="dot" aria-hidden="true"></span><div><strong>Adoption facile</strong><br><span style="color:var(--muted)">Une UI familière, pensée “terrain”.</span></div></div>
+              <div class="point"><span class="dot" aria-hidden="true"></span><div><strong>RGPD</strong><br><span style="color:var(--muted)">Cadre clair + transparence sur les données.</span></div></div>
             </div>
           </div>
 
-          <aside class="card card-pad" aria-label="Encart">
-            <h2>Ce que ça change</h2>
-            <p>
-              Moins de messages dispersés, plus de clarté : qui fait quoi, quand, et pourquoi.
-              L’équipe garde une vue commune sur la journée, les actions à traiter, et les infos utiles.
-            </p>
-            <div class="kpis">
-              <div class="kpi">
-                <strong>Appel</strong>
-                <div class="small">Absences / retards, matin & après-midi</div>
+          <div class="mock" aria-label="Aperçu de l’application">
+            <div class="mock-top">
+              <div class="pills" aria-hidden="true">
+                <span class="pill"></span><span class="pill"></span><span class="pill"></span>
               </div>
-              <div class="kpi">
-                <strong>Tickets</strong>
-                <div class="small">Absence, retard, garderie, imprévus, dérogations…</div>
-              </div>
-              <div class="kpi">
-                <strong>Documents</strong>
-                <div class="small">Espace partagé (PAP/PPRE/CR…)</div>
-              </div>
-              <div class="kpi">
-                <strong>Organisation</strong>
-                <div class="small">Responsabilités, cantine, APC, planning…</div>
-              </div>
+              <span class="small">Aperçu — Homepage</span>
             </div>
-          </aside>
+            <div class="screenshot">
+              <img src="./assets/screenshot-home.png" alt="Capture d’écran : page d’accueil de Ma Trousse Scolaire" loading="lazy">
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- VALUE / FEATURES -->
+    <section class="section" id="valeur">
       <div class="container">
-        <div class="section-title">
-          <h2>Pour qui ?</h2>
-          <p>Une seule plateforme, des vues adaptées selon le rôle.</p>
+        <div class="section-head">
+          <div>
+            <h2>Une plateforme complète, mais simple à prendre en main</h2>
+            <p class="lead">MTS se concentre sur l’essentiel : ce qui aide vraiment une équipe d’école au quotidien, sans complexité inutile.</p>
+          </div>
         </div>
 
         <div class="grid-3">
-          <div class="feature">
-            <strong>Direction</strong>
-            <p>Pilotage, organisation, vision globale et arbitrages.</p>
-            <div class="pill-row">
-              <span class="pill">Paramétrage</span><span class="pill">Organisation</span><span class="pill">Synthèses</span>
-            </div>
+          <div class="card">
+            <div class="icon">👩‍🏫</div>
+            <h3>Appel & suivi</h3>
+            <p>Absences/retards saisis rapidement, et transformés en actions à traiter (secrétariat, relances, etc.).</p>
           </div>
-          <div class="feature">
-            <strong>Secrétariat / vie scolaire</strong>
-            <p>Traitement des tickets, suivi des absences, gestion opérationnelle.</p>
-            <div class="pill-row">
-              <span class="pill">Tickets</span><span class="pill">Appels familles</span><span class="pill">Suivi</span>
-            </div>
-          </div>
-          <div class="feature">
-            <strong>Enseignants</strong>
-            <p>Gestion de classe, appel, informations d’école, coordination entre collègues.</p>
-            <div class="pill-row">
-              <span class="pill">Appel</span><span class="pill">Infos du jour</span><span class="pill">Classe</span>
-            </div>
-          </div>
-        </div>
 
-        <div class="notice" style="margin-top:14px">
-          <strong>Important :</strong> l’application est pensée pour la communication <strong>entre personnels</strong> (pas un outil familles).
-          Elle remplace les échanges informels par un cadre clair, traçable et plus serein.
+          <div class="card">
+            <div class="icon gold">🎫</div>
+            <h3>Tickets & organisation</h3>
+            <p>Absences, retards, cantine, sorties… un système de tickets centralisé pour éviter les oublis.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon blue">🧩</div>
+            <h3>Vie de classe</h3>
+            <p>Évaluations, suivi de travail, groupes, documents… une vraie boîte à outils pour enseigner et organiser.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon pink">📚</div>
+            <h3>Documents partagés</h3>
+            <p>PAP, PPRE, comptes-rendus, ordres du jour… accessible au bon rôle, au bon moment.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon">🍽️</div>
+            <h3>Cantine / APC / créneaux</h3>
+            <p>Plannings lisibles et opérationnels pour le personnel et les enseignants.</p>
+          </div>
+
+          <div class="card">
+            <div class="icon gold">🔒</div>
+            <h3>Rôles & droits</h3>
+            <p>Direction, secrétariat, enseignants, personnel : chacun voit ce dont il a besoin, rien de plus.</p>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- GALLERY -->
+    <section class="section" id="captures">
       <div class="container">
-        <div class="section-title">
-          <h2>Tarification</h2>
-          <p>Simple, lisible, sans options cachées.</p>
+        <div class="section-head">
+          <div>
+            <h2>Un aperçu concret</h2>
+            <p class="lead">Quelques écrans réels pour montrer la “vraie vie” de l’outil (pas des mockups marketing).</p>
+          </div>
+          <a class="btn btn-outline" href="./presentation.html#fonctionnalites">Voir le détail</a>
         </div>
 
-        <div class="card card-pad pricing">
-          <div class="price-box">
+        <div class="gallery">
+          <figure class="shot">
+            <div class="cap"><strong>Suivi de travail</strong><span>Organisation & différenciation</span></div>
+            <img src="./assets/screenshot-suivi.png" alt="Capture : module de suivi de travail" loading="lazy">
+          </figure>
+
+          <figure class="shot">
+            <div class="cap"><strong>Évaluations</strong><span>Simple & efficace</span></div>
+            <img src="./assets/screenshot-evaluations.png" alt="Capture : module évaluations" loading="lazy">
+          </figure>
+
+          <figure class="shot">
+            <div class="cap"><strong>Organisation cantine</strong><span>Glisser-déposer</span></div>
+            <img src="./assets/screenshot-cantine.png" alt="Capture : organisation des services de cantine" loading="lazy">
+          </figure>
+
+          <figure class="shot">
+            <div class="cap"><strong>Tickets</strong><span>Traitement & suivi</span></div>
+            <img src="./assets/screenshot-tickets.png" alt="Capture : système de tickets" loading="lazy">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section" id="demo">
+      <div class="container">
+        <div class="cta">
+          <div class="cta-grid">
             <div>
-              <div class="price">40 € HT <span class="small">/ classe / an</span></div>
-              <div class="small">Offre de lancement possible : <strong>30 € HT / classe / an</strong> la première année.</div>
+              <h2 style="margin:0">Vous voulez voir MTS sur votre cas d’usage ?</h2>
+              <p>On fait une démo courte, centrée sur vos besoins (direction, secrétariat, enseignants, personnel).</p>
             </div>
-            <div style="text-align:right">
-              <div class="small">Maintenance & mises à jour incluses</div>
-              <div class="small">Accès selon le rôle attribué</div>
+            <div style="display:flex;gap:10px;flex-wrap:wrap">
+              <a class="btn btn-outline" href="./rgpd.html">RGPD & données</a>
+              <a class="btn btn-primary" href="./contact.html">Planifier une démo</a>
             </div>
-          </div>
-          <div class="small">
-            Tu veux qu’on en parle selon la taille de ton école (et ton contexte) ? → <a href="./contact.html">Contact</a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <!-- QUICK LINKS -->
+    <section class="section" id="liens">
       <div class="container">
-        <div class="section-title">
-          <h2>Une question RGPD ?</h2>
-          <p>On explique clairement ce qui est stocké, pourquoi, et comment.</p>
-        </div>
-
-        <div class="card card-pad">
-          <p>
-            Transparence, minimisation, accès par rôles, et documentation : tu as une page dédiée RGPD,
-            avec un modèle de registre/mentions à adapter à ton école.
-          </p>
-          <div style="margin-top:12px">
-            <a class="cta cta-secondary" href="./rgpd.html">Lire la page RGPD</a>
+        <div class="section-head">
+          <div>
+            <h2>Aller plus loin</h2>
+            <p class="lead">Une landing propre, multi-pages, et surtout une histoire humaine derrière l’outil.</p>
           </div>
         </div>
-      </div>
-    </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="card card-pad">
-          <h2>Et maintenant ?</h2>
-          <p>
-            Le plus simple : 15 minutes pour comprendre ton fonctionnement (public/privé, taille, organisation),
-            puis on te montre un parcours adapté.
-          </p>
-          <div style="margin-top:12px; display:flex; gap:12px; flex-wrap:wrap">
-            <a class="cta cta-primary" href="./contact.html">Planifier un échange</a>
-            <a class="cta cta-secondary" href="./a-propos.html">Découvrir notre histoire</a>
-          </div>
+        <div class="grid-3">
+          <a class="card" href="./presentation.html">
+            <div class="icon">🚀</div>
+            <h3>Présentation</h3>
+            <p>À qui s’adresse MTS, ce que ça remplace, et comment ça s’intègre au quotidien.</p>
+          </a>
+
+          <a class="card" href="./a-propos.html">
+            <div class="icon gold">🤝</div>
+            <h3>À propos</h3>
+            <p>Pourquoi on l’a créé (Laurent + Cassandra), et notre approche “terrain”.</p>
+          </a>
+
+          <a class="card" href="./contact.html">
+            <div class="icon blue">📩</div>
+            <h3>Contact</h3>
+            <p>Email, téléphone, et prise de rendez-vous (Calendly) pour une démo.</p>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" role="contentinfo">
     <div class="container">
-      <hr class="hr" />
-      <div class="footgrid">
+      <div class="footer-grid">
         <div>
-          <strong>Ma Trousse Scolaire</strong>
-          <div class="small">Outil web pour les équipes d’école — communication & organisation.</div>
+          <div class="small"><strong>Ma Trousse Scolaire</strong> — plateforme d’organisation interne pour les écoles.</div>
+          <div class="small">© <span id="y"></span> — Laurent & Cassandra</div>
         </div>
-        <div style="text-align:right">
-          <div class="small">
-            <a href="./a-propos.html">À propos</a> ·
-            <a href="./contact.html">Contact</a> ·
-            <a href="./rgpd.html">RGPD</a>
-          </div>
+        <div class="small">
+          <a href="./rgpd.html">RGPD</a> ·
+          <a href="./a-propos.html">À propos</a> ·
+          <a href="./contact.html">Contact</a>
         </div>
       </div>
-      <div class="small" style="margin-top:10px">© <span id="y"></span> Ma Trousse Scolaire</div>
     </div>
+    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
   </footer>
-
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-  <script src="./assets/site.js" defer></script>
 </body>
 </html>
