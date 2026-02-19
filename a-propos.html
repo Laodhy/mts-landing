@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>À propos — Ma Trousse Scolaire</title>
+
+  <meta name="description" content="Ma Trousse Scolaire : un projet créé par un développeur et une enseignante, pour répondre aux réalités du terrain et améliorer la communication interne des écoles." />
+  <link rel="canonical" href="./a-propos.html" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="À propos — Ma Trousse Scolaire" />
+  <meta property="og:description" content="Un projet né du terrain : un dev + une enseignante." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="header">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="./index.html">
+          <div class="brand-badge" aria-hidden="true">MTS</div>
+          <div class="brand-text">
+            <strong>Ma Trousse Scolaire</strong>
+            <span>Communication & organisation d’école</span>
+          </div>
+        </a>
+
+        <nav class="menu" aria-label="Navigation principale">
+          <a data-page="index.html" href="./index.html">Présentation</a>
+          <a data-page="a-propos.html" href="./a-propos.html">À propos</a>
+          <a data-page="contact.html" href="./contact.html">Contact</a>
+          <a data-page="rgpd.html" href="./rgpd.html">RGPD</a>
+        </nav>
+
+        <a class="cta cta-primary" href="./contact.html">Demander une démo</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero">
+      <div class="container">
+        <h1 class="h1">Un projet né d’un constat simple : l’école mérite mieux que des messages éparpillés.</h1>
+        <p class="lead">
+          Ma Trousse Scolaire a été conçue pour accompagner le quotidien réel des équipes : informations du jour,
+          organisation, suivi, et communication interne structurée.
+        </p>
+
+        <div class="grid-3" style="margin-top:14px">
+          <div class="card card-pad">
+            <h2>Julien — développement</h2>
+            <p>
+              Développeur .NET (Blazor) : l’objectif est de fournir un outil robuste, simple à prendre en main,
+              et qui évolue vite selon les retours du terrain.
+            </p>
+          </div>
+
+          <div class="card card-pad">
+            <h2>Cassandra — enseignante</h2>
+            <p>
+              Enseignante : le produit est pensé avec les contraintes quotidiennes (temps limité, urgences,
+              coordination entre collègues, besoin de clarté).
+            </p>
+          </div>
+
+          <div class="card card-pad">
+            <h2>Notre promesse</h2>
+            <p>
+              Une application utile dès le premier jour : claire, chaleureuse, et centrée sur l’essentiel.
+              Pas une plateforme lourde : un vrai “outil de travail”.
+            </p>
+          </div>
+        </div>
+
+        <section class="section">
+          <div class="container" style="padding:0">
+            <div class="section-title">
+              <h2>Pourquoi ça marche</h2>
+              <p>Parce que c’est conçu autour de l’usage, pas autour d’un catalogue de features.</p>
+            </div>
+
+            <div class="grid-3">
+              <div class="feature">
+                <strong>Terrain d’abord</strong>
+                <p>On part des situations réelles : appels, infos du jour, urgences, tickets à traiter.</p>
+              </div>
+              <div class="feature">
+                <strong>Rôles & droits</strong>
+                <p>Chaque profil voit ce dont il a besoin, et rien de plus.</p>
+              </div>
+              <div class="feature">
+                <strong>Évolutif</strong>
+                <p>Les retours des équipes guident la roadmap. On itère vite, proprement.</p>
+              </div>
+            </div>
+
+            <div class="notice" style="margin-top:14px">
+              Tu veux nous raconter ton fonctionnement (taille, organisation, irritants actuels) ?
+              <a href="./contact.html">On échange</a>.
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <hr class="hr" />
+      <div class="small">
+        <a href="./index.html">Présentation</a> · <a href="./contact.html">Contact</a> · <a href="./rgpd.html">RGPD</a>
+      </div>
+      <div class="small" style="margin-top:8px">© <span id="y"></span> Ma Trousse Scolaire</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="./assets/site.js" defer></script>
+</body>
+</html>

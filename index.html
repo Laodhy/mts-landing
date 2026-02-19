@@ -3,521 +3,245 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ma Trousse Scolaire — L’outil de communication et d’organisation pour les équipes d’école</title>
 
-  <title>Ma Trousse Scolaire – Outil interne pour écoles privées (maternelle & primaire)</title>
-  <meta name="description" content="Application interne pour écoles privées (maternelle & primaire). Centralisez la communication et l’organisation de l’équipe : tickets, absences, cantine, suivi, documents, responsabilités." />
+  <!-- SEO -->
+  <meta name="description" content="Ma Trousse Scolaire aide les équipes d’école (direction, secrétariat, enseignants) à mieux communiquer, organiser le quotidien et suivre la vie scolaire — simplement, sans WhatsApp." />
+  <link rel="canonical" href="./" />
+  <meta name="robots" content="index,follow" />
 
-  <!-- OpenGraph (préview quand tu partages le lien) -->
-  <meta property="og:title" content="Ma Trousse Scolaire – Outil interne pour écoles privées" />
-  <meta property="og:description" content="Centralisez la communication et l’organisation interne de l’équipe pédagogique : tickets, absences, cantine, suivi, documents, responsabilités." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ma Trousse Scolaire" />
+  <meta property="og:description" content="Communication interne, organisation, appel, tickets, documents partagés : un outil pensé pour les équipes d’école." />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="assets/logo-mts.png" />
+  <meta property="og:locale" content="fr_FR" />
 
-  <style>
-    :root{
-      --brand-1:#0B4867;
-      --brand-2:#12B4AA;
-      --brand-3:#4DD2A8;
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary" />
 
-      --bg:#071924;
-      --surface:rgba(255,255,255,.06);
-      --surface2:rgba(255,255,255,.09);
-      --text:#EAF2F7;
-      --muted:rgba(234,242,247,.74);
-      --stroke:rgba(234,242,247,.14);
-      --shadow:0 18px 50px rgba(0,0,0,.35);
+  <link rel="stylesheet" href="./assets/styles.css" />
 
-      --radius:18px;
-      --radius-lg:26px;
-      --max:1120px;
-      --pad:22px;
-
-      --font: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+  <!-- JSON-LD (SoftwareApplication + Organization) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"Ma Trousse Scolaire",
+    "applicationCategory":"EducationalApplication",
+    "operatingSystem":"Web",
+    "description":"Outil web pour la communication interne et l’organisation des équipes d’école (direction, secrétariat, enseignants).",
+    "offers":{
+      "@type":"Offer",
+      "priceCurrency":"EUR",
+      "price":"40",
+      "description":"40 € HT par classe / an (offre de lancement possible)."
+    },
+    "publisher":{
+      "@type":"Organization",
+      "name":"Ma Trousse Scolaire"
     }
-
-    *{ box-sizing:border-box; }
-    html,body{ height:100%; }
-    body{
-      margin:0;
-      font-family:var(--font);
-      color:var(--text);
-      background:
-        radial-gradient(1200px 900px at 15% 10%, rgba(18,180,170,.18), transparent 60%),
-        radial-gradient(1000px 700px at 85% 20%, rgba(77,210,168,.14), transparent 55%),
-        radial-gradient(900px 700px at 50% 95%, rgba(11,72,103,.22), transparent 60%),
-        linear-gradient(180deg, #06131b 0%, var(--bg) 100%);
-    }
-
-    a{ color:inherit; text-decoration:none; }
-    a:hover{ text-decoration:underline; }
-    img{ max-width:100%; display:block; }
-
-    .container{ max-width:var(--max); margin:0 auto; padding:0 var(--pad); }
-
-    /* Topbar */
-    .topbar{
-      position:sticky; top:0; z-index:20;
-      backdrop-filter: blur(12px);
-      background: linear-gradient(180deg, rgba(7,25,36,.78) 0%, rgba(7,25,36,.45) 100%);
-      border-bottom: 1px solid var(--stroke);
-    }
-    .topbar-inner{
-      display:flex; align-items:center; justify-content:space-between; gap:14px;
-      padding: 14px 0;
-    }
-    .brand{ display:flex; align-items:center; gap:12px; }
-    .brand img{
-      width:42px; height:42px; object-fit:contain;
-      border-radius: 12px;
-      border:1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      padding:6px;
-    }
-    .brand-name{ display:flex; flex-direction:column; line-height:1.1; }
-    .brand-name strong{ font-size: 14.5px; letter-spacing:.2px; }
-    .brand-name span{ font-size: 12.5px; color:var(--muted); }
-
-    .nav{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
-    .nav a{
-      font-size:13.5px; color: rgba(234,242,247,.86);
-      padding: 8px 10px; border-radius: 12px;
-      border: 1px solid transparent;
-    }
-    .nav a:hover{
-      border-color: var(--stroke);
-      text-decoration:none;
-      background: rgba(255,255,255,.04);
-    }
-
-    .btn{
-      display:inline-flex; align-items:center; justify-content:center; gap:10px;
-      padding: 11px 14px;
-      border-radius: 14px;
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.05);
-      color: var(--text);
-      font-weight: 700;
-      font-size: 14px;
-      cursor:pointer;
-      text-decoration:none !important;
-      box-shadow: 0 10px 30px rgba(0,0,0,.18);
-    }
-    .btn:hover{
-      background: rgba(255,255,255,.08);
-      border-color: rgba(255,255,255,.22);
-    }
-    .btn-primary{
-      border-color: rgba(18,180,170,.45);
-      background: linear-gradient(140deg, rgba(18,180,170,.95), rgba(77,210,168,.9));
-      color:#06212a;
-      box-shadow: 0 16px 45px rgba(18,180,170,.25);
-    }
-
-    /* Hero */
-    .hero{ padding: 54px 0 26px; }
-    .hero-grid{
-      display:grid;
-      grid-template-columns: 1.1fr .9fr;
-      gap: 18px;
-      align-items:stretch;
-    }
-    .panel{
-      border-radius: var(--radius-lg);
-      background: linear-gradient(180deg, rgba(255,255,255,.07), rgba(255,255,255,.04));
-      border: 1px solid var(--stroke);
-      box-shadow: var(--shadow);
-      padding: 26px;
-      position:relative;
-      overflow:hidden;
-    }
-    .panel:before{
-      content:"";
-      position:absolute; inset:-1px;
-      background:
-        radial-gradient(700px 260px at 10% 10%, rgba(18,180,170,.18), transparent 60%),
-        radial-gradient(600px 240px at 90% 0%, rgba(77,210,168,.14), transparent 60%);
-      pointer-events:none;
-    }
-    .panel > *{ position:relative; }
-
-    .pill-row{ display:flex; flex-wrap:wrap; gap:10px; margin-bottom: 12px; }
-    .pill{
-      display:inline-flex; align-items:center; gap:8px;
-      font-size: 12.5px; color: rgba(234,242,247,.88);
-      border: 1px solid rgba(255,255,255,.12);
-      background: rgba(255,255,255,.04);
-      padding: 7px 10px;
-      border-radius: 999px;
-    }
-    .dot{ width:8px; height:8px; border-radius:99px; background: var(--brand-2); box-shadow: 0 0 0 3px rgba(18,180,170,.18); }
-
-    h1{
-      margin: 0 0 10px;
-      font-size: clamp(28px, 4vw, 44px);
-      letter-spacing: -0.6px;
-      line-height: 1.08;
-    }
-    .subtitle{
-      margin:0 0 16px;
-      color: var(--muted);
-      font-size: 15.5px;
-      line-height: 1.55;
-      max-width: 70ch;
-    }
-    .hero-actions{ display:flex; flex-wrap:wrap; gap:12px; align-items:center; margin-top: 8px; }
-    .micro{ font-size: 12.5px; color: rgba(234,242,247,.68); margin-top: 10px; }
-
-    .facts{ display:grid; gap:12px; height:100%; }
-    .fact{
-      border-radius: var(--radius);
-      border: 1px solid var(--stroke);
-      background: rgba(255,255,255,.05);
-      padding: 16px;
-    }
-    .fact strong{ display:block; font-size: 14px; margin-bottom: 4px; }
-    .fact span{ color: var(--muted); font-size: 13px; line-height:1.4; }
-    .fact b{ color: rgba(234,242,247,.92); }
-
-    /* Sections */
-    section{ padding: 22px 0; }
-    .section-title{ font-size: 22px; margin: 0 0 10px; letter-spacing: -0.2px; }
-    .section-sub{ margin: 0 0 18px; color: var(--muted); line-height: 1.6; max-width: 85ch; }
-
-    .grid2{ display:grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .grid3{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-
-    .card{
-      border-radius: var(--radius);
-      border: 1px solid var(--stroke);
-      background: rgba(255,255,255,.05);
-      padding: 18px;
-      box-shadow: 0 12px 35px rgba(0,0,0,.22);
-    }
-    .card h3{ margin:0 0 8px; font-size: 16px; }
-    .card p{ margin:0; color: var(--muted); line-height:1.55; font-size: 13.5px; }
-
-    /* Screens */
-    .shots{
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 14px;
-    }
-    .shot{
-      border-radius: var(--radius);
-      overflow:hidden;
-      border: 1px solid var(--stroke);
-      background: rgba(255,255,255,.03);
-      box-shadow: var(--shadow);
-    }
-    .shot img{ width:100%; height:auto; }
-    .shot .cap{
-      padding: 12px 14px;
-      border-top: 1px solid var(--stroke);
-      background: rgba(7,25,36,.45);
-      font-size: 13px;
-      color: rgba(234,242,247,.85);
-    }
-
-    /* About */
-    .about{ display:grid; grid-template-columns: 1fr 1fr; gap: 14px; }
-    .profile{ display:flex; gap: 14px; align-items:flex-start; }
-    .avatar{
-      width: 54px; height: 54px; border-radius: 18px;
-      border: 1px solid rgba(255,255,255,.14);
-      background: rgba(255,255,255,.06);
-      display:flex; align-items:center; justify-content:center;
-      font-weight:900; letter-spacing:.4px;
-      color: rgba(234,242,247,.88);
-    }
-    .kpi{ margin-top: 10px; display:flex; flex-wrap:wrap; gap: 10px; }
-    .kpi .pill{ background: rgba(255,255,255,.05); }
-
-    /* CTA block */
-    .cta{
-      padding: 22px;
-      border-radius: var(--radius-lg);
-      border: 1px solid rgba(18,180,170,.32);
-      background: radial-gradient(900px 320px at 20% 0%, rgba(18,180,170,.22), transparent 60%),
-                  radial-gradient(800px 300px at 95% 20%, rgba(77,210,168,.18), transparent 60%),
-                  rgba(255,255,255,.04);
-      box-shadow: var(--shadow);
-      display:flex;
-      align-items:center;
-      justify-content:space-between;
-      gap: 16px;
-      flex-wrap:wrap;
-    }
-    .cta h3{ margin:0 0 6px; font-size: 18px; }
-    .cta p{ margin:0; color: var(--muted); line-height:1.55; font-size: 13.5px; max-width: 75ch; }
-
-    footer{
-      padding: 34px 0 46px;
-      color: rgba(234,242,247,.62);
-      font-size: 12.5px;
-      border-top: 1px solid var(--stroke);
-      margin-top: 18px;
-    }
-    .footer-grid{ display:flex; flex-wrap:wrap; gap: 12px; justify-content:space-between; align-items:center; }
-
-    @media (max-width: 980px){
-      .hero-grid{ grid-template-columns: 1fr; }
-      .grid2, .grid3{ grid-template-columns: 1fr; }
-      .shots{ grid-template-columns: 1fr; }
-      .about{ grid-template-columns: 1fr; }
-    }
-  </style>
+  }
+  </script>
 </head>
 
 <body>
-  <header class="topbar">
-    <div class="container">
-      <div class="topbar-inner">
-        <div class="brand">
-          <img src="assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
-          <div class="brand-name">
-            <strong>Ma Trousse Scolaire</strong>
-            <span>Outil interne – écoles privées maternelle & primaire</span>
-          </div>
-        </div>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-        <nav class="nav" aria-label="Navigation">
-          <a href="#produit">Produit</a>
-          <a href="#captures">Captures</a>
-          <a href="#nous">Qui sommes-nous</a>
-          <a href="#contact" class="btn btn-primary">Demander une démo</a>
+  <header class="header">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="./index.html">
+          <div class="brand-badge" aria-hidden="true">MTS</div>
+          <div class="brand-text">
+            <strong>Ma Trousse Scolaire</strong>
+            <span>Communication & organisation d’école</span>
+          </div>
+        </a>
+
+        <nav class="menu" aria-label="Navigation principale">
+          <a data-page="index.html" href="./index.html">Présentation</a>
+          <a data-page="a-propos.html" href="./a-propos.html">À propos</a>
+          <a data-page="contact.html" href="./contact.html">Contact</a>
+          <a data-page="rgpd.html" href="./rgpd.html">RGPD</a>
         </nav>
+
+        <a class="cta cta-primary" href="./contact.html">Demander une démo</a>
       </div>
     </div>
   </header>
 
-  <main>
-    <!-- HERO -->
+  <main id="contenu">
     <section class="hero">
       <div class="container">
         <div class="hero-grid">
-          <div class="panel">
-            <div class="pill-row">
-              <span class="pill"><span class="dot"></span> Spécial écoles privées</span>
-              <span class="pill"><span class="dot" style="background:var(--brand-3)"></span> Organisation interne</span>
-              <span class="pill"><span class="dot" style="background:var(--brand-1)"></span> Accès par rôles</span>
-            </div>
-
-            <h1>Un outil interne pour structurer<br/>la vie de l’école privée.</h1>
-
-            <p class="subtitle">
-              <b>Ma Trousse Scolaire</b> centralise la communication et l’organisation de l’équipe (direction, secrétariat, enseignants)
-              dans un cadre clair : tickets, suivi, cantine, documents, responsabilités…
-              <br/><br/>
-              Conçu pour les <b>écoles privées</b> (maternelle & primaire), notamment quand la taille de l’équipe rend les échanges dispersés difficiles à maîtriser.
+          <div>
+            <h1 class="h1">Un outil simple, pensé pour le terrain, pour faire tourner la vie de l’école.</h1>
+            <p class="lead">
+              Ma Trousse Scolaire centralise la communication interne, l’organisation du quotidien et le suivi des actions
+              (appel, tickets, documents, planning…). Pour toutes les écoles : publiques ou privées.
             </p>
 
-            <div class="hero-actions" id="contact">
-              <a class="btn btn-primary" href="https://tally.so/r/XXXXXX" target="_blank" rel="noopener">
-                Demander une démonstration
-              </a>
-              <a class="btn" href="#captures">Voir des captures</a>
+            <div style="display:flex; gap:12px; flex-wrap:wrap">
+              <a class="cta cta-primary" href="./contact.html">Voir une démo / échanger</a>
+              <a class="cta cta-secondary" href="./a-propos.html">Pourquoi on l’a créée</a>
             </div>
 
-            <div class="micro">
-              Démo courte (20 min) + questions. On démarre simple, puis on itère avec vos retours terrain.
-            </div>
-          </div>
-
-          <div class="facts">
-            <div class="fact">
-              <strong>Problème courant</strong>
-              <span>Messages dispersés (WhatsApp/email), informations perdues, responsabilités floues, suivi difficile à tenir dans la durée.</span>
-            </div>
-            <div class="fact">
-              <strong>Ce que ça change</strong>
-              <span>Un <b>cadre unique</b> : chaque demande atterrit au bon endroit, avec un historique et une visibilité par rôle.</span>
-            </div>
-            <div class="fact">
-              <strong>Pour qui ?</strong>
-              <span><b>Écoles privées</b> maternelle & primaire, taille moyenne à grande, équipes qui veulent fluidifier le quotidien.</span>
-            </div>
-            <div class="fact">
-              <strong>Déploiement</strong>
-              <span>On commence par un périmètre simple (ex : tickets + organisation), puis on étend selon vos priorités.</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PRODUIT -->
-    <section id="produit">
-      <div class="container">
-        <h2 class="section-title">Un outil pensé pour la réalité terrain</h2>
-        <p class="section-sub">
-          En école privée, l’organisation interne repose sur la coordination et la réactivité.
-          Ma Trousse Scolaire vise une chose : <b>réduire la charge mentale</b> de l’équipe,
-          en remplaçant les circuits parallèles par un outil unique, simple et structuré.
-        </p>
-
-        <div class="grid3">
-          <div class="card">
-            <h3>Communication structurée</h3>
-            <p>Remplace les messages dispersés par des tickets et des actions claires (qui fait quoi, quand, pourquoi).</p>
-          </div>
-          <div class="card">
-            <h3>Accès par rôles</h3>
-            <p>Chaque profil voit ce qu’il doit voir : direction, secrétariat, enseignants, personnel. Pas de bruit inutile.</p>
-          </div>
-          <div class="card">
-            <h3>Un seul endroit</h3>
-            <p>Organisation, suivi, cantine/APC, documents : une source de vérité commune pour l’équipe.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CAPTURES -->
-    <section id="captures">
-      <div class="container">
-        <h2 class="section-title">Captures (vrai produit)</h2>
-        <p class="section-sub">
-          Quelques écrans clés. Le but n’est pas de tout montrer ici : la démo sert à voir les flux réels selon votre école.
-        </p>
-
-        <div class="shots">
-          <div class="shot">
-            <img src="assets/screenshot-tickets.png" alt="Gestion des tickets – Ma Trousse Scolaire" />
-            <div class="cap"><b>Tickets</b> – demandes internes, suivi, actions à traiter</div>
-          </div>
-
-          <div class="shot">
-            <img src="assets/screenshot-cantine.png" alt="Organisation cantine – Ma Trousse Scolaire" />
-            <div class="cap"><b>Cantine</b> – organisation du temps méridien, répartition & visibilité</div>
-          </div>
-
-          <div class="shot">
-            <img src="assets/screenshot-suivi.png" alt="Suivi de travail – Ma Trousse Scolaire" />
-            <div class="cap"><b>Suivi</b> – différenciation, groupes, suivi des tâches en classe</div>
-          </div>
-
-          <div class="shot">
-            <img src="assets/screenshot-evaluations.png" alt="Évaluations – Ma Trousse Scolaire" />
-            <div class="cap"><b>Évaluations</b> – saisie simple, visualisation et suivi</div>
-          </div>
-        </div>
-
-        <div style="height:14px"></div>
-
-        <div class="cta">
-          <div>
-            <h3>Tu veux voir les modules utiles pour ton école ?</h3>
-            <p>On te montre les flux concrets (tickets, absences, cantine, documents…) et on identifie un périmètre de démarrage simple.</p>
-          </div>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://tally.so/r/XXXXXX" target="_blank" rel="noopener">Demander une démo</a>
-            <a class="btn" href="mailto:contact@exemple.fr?subject=Demande%20de%20d%C3%A9mo%20-%20Ma%20Trousse%20Scolaire">Email direct</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- NOUS -->
-    <section id="nous">
-      <div class="container">
-        <h2 class="section-title">Qui sommes-nous</h2>
-        <p class="section-sub">
-          Ma Trousse Scolaire est construit par un duo <b>tech + terrain</b>.
-          C’est volontaire : on veut un outil utile au quotidien, pas une “belle app” qui ne colle pas à la réalité d’une école.
-        </p>
-
-        <div class="about">
-          <div class="card">
-            <div class="profile">
-              <div class="avatar">LD</div>
-              <div>
-                <h3>Laurent — Développement & produit</h3>
-                <p>
-                  Ingénieur logiciel (.NET / Blazor), orienté produit robuste et maintenable.
-                  Objectif : une application fluide, stable, et qui tient dans la durée pour une équipe d’école.
-                </p>
-                <div class="kpi">
-                  <span class="pill"><span class="dot"></span> Robustesse</span>
-                  <span class="pill"><span class="dot" style="background:var(--brand-1)"></span> Sécurité / rôles</span>
-                  <span class="pill"><span class="dot" style="background:var(--brand-3)"></span> Performance UX</span>
-                </div>
-              </div>
+            <div class="badges" aria-label="Points clés">
+              <div class="badge"><span class="dot"></span><span>Communication structurée (sans WhatsApp)</span></div>
+              <div class="badge"><span class="dot"></span><span>Rôles : direction / secrétariat / enseignants</span></div>
+              <div class="badge"><span class="dot"></span><span>Conçu pour le quotidien, pas pour faire “usine à gaz”</span></div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="profile">
-              <div class="avatar">CM</div>
-              <div>
-                <h3>Cassandra — Vision terrain (enseignante)</h3>
-                <p>
-                  Enseignante en maternelle/primaire : besoins réels, contraintes de temps, simplicité d’usage.
-                  Cassandra challenge chaque écran : “est-ce que je peux faire ça vite, entre deux moments de classe ?”
-                </p>
-                <div class="kpi">
-                  <span class="pill"><span class="dot" style="background:var(--brand-2)"></span> Réalité terrain</span>
-                  <span class="pill"><span class="dot" style="background:var(--brand-3)"></span> Simplicité</span>
-                  <span class="pill"><span class="dot" style="background:var(--brand-1)"></span> Process école</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div style="height:14px"></div>
-
-        <div class="card">
-          <h3>Notre manière de travailler</h3>
-          <p>
-            Démo → périmètre simple → retours → itérations rapides.
-            On préfère démarrer avec une école pilote et construire ce qui apporte de la valeur immédiatement.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section>
-      <div class="container">
-        <h2 class="section-title">Contact</h2>
-        <p class="section-sub">
-          Une démo de 20 minutes suffit pour voir si l’outil correspond à votre organisation (taille, rôles, habitudes, priorités).
-        </p>
-
-        <div class="cta">
-          <div>
-            <h3>Demander un rendez-vous</h3>
+          <aside class="card card-pad" aria-label="Encart">
+            <h2>Ce que ça change</h2>
             <p>
-              Formulaire : 3 questions et on revient vers vous rapidement.
-              <br />
-              <span style="color:rgba(234,242,247,.78)">Email :</span> <b>contact@exemple.fr</b> &nbsp;·&nbsp;
-              <span style="color:rgba(234,242,247,.78)">Téléphone :</span> <b>06 00 00 00 00</b>
+              Moins de messages dispersés, plus de clarté : qui fait quoi, quand, et pourquoi.
+              L’équipe garde une vue commune sur la journée, les actions à traiter, et les infos utiles.
             </p>
+            <div class="kpis">
+              <div class="kpi">
+                <strong>Appel</strong>
+                <div class="small">Absences / retards, matin & après-midi</div>
+              </div>
+              <div class="kpi">
+                <strong>Tickets</strong>
+                <div class="small">Absence, retard, garderie, imprévus, dérogations…</div>
+              </div>
+              <div class="kpi">
+                <strong>Documents</strong>
+                <div class="small">Espace partagé (PAP/PPRE/CR…)</div>
+              </div>
+              <div class="kpi">
+                <strong>Organisation</strong>
+                <div class="small">Responsabilités, cantine, APC, planning…</div>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Pour qui ?</h2>
+          <p>Une seule plateforme, des vues adaptées selon le rôle.</p>
+        </div>
+
+        <div class="grid-3">
+          <div class="feature">
+            <strong>Direction</strong>
+            <p>Pilotage, organisation, vision globale et arbitrages.</p>
+            <div class="pill-row">
+              <span class="pill">Paramétrage</span><span class="pill">Organisation</span><span class="pill">Synthèses</span>
+            </div>
           </div>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="https://tally.so/r/XXXXXX" target="_blank" rel="noopener">Formulaire RDV</a>
-            <a class="btn" href="mailto:contact@exemple.fr?subject=Demande%20de%20d%C3%A9mo%20-%20Ma%20Trousse%20Scolaire">Email direct</a>
+          <div class="feature">
+            <strong>Secrétariat / vie scolaire</strong>
+            <p>Traitement des tickets, suivi des absences, gestion opérationnelle.</p>
+            <div class="pill-row">
+              <span class="pill">Tickets</span><span class="pill">Appels familles</span><span class="pill">Suivi</span>
+            </div>
+          </div>
+          <div class="feature">
+            <strong>Enseignants</strong>
+            <p>Gestion de classe, appel, informations d’école, coordination entre collègues.</p>
+            <div class="pill-row">
+              <span class="pill">Appel</span><span class="pill">Infos du jour</span><span class="pill">Classe</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="notice" style="margin-top:14px">
+          <strong>Important :</strong> l’application est pensée pour la communication <strong>entre personnels</strong> (pas un outil familles).
+          Elle remplace les échanges informels par un cadre clair, traçable et plus serein.
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Tarification</h2>
+          <p>Simple, lisible, sans options cachées.</p>
+        </div>
+
+        <div class="card card-pad pricing">
+          <div class="price-box">
+            <div>
+              <div class="price">40 € HT <span class="small">/ classe / an</span></div>
+              <div class="small">Offre de lancement possible : <strong>30 € HT / classe / an</strong> la première année.</div>
+            </div>
+            <div style="text-align:right">
+              <div class="small">Maintenance & mises à jour incluses</div>
+              <div class="small">Accès selon le rôle attribué</div>
+            </div>
+          </div>
+          <div class="small">
+            Tu veux qu’on en parle selon la taille de ton école (et ton contexte) ? → <a href="./contact.html">Contact</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Une question RGPD ?</h2>
+          <p>On explique clairement ce qui est stocké, pourquoi, et comment.</p>
+        </div>
+
+        <div class="card card-pad">
+          <p>
+            Transparence, minimisation, accès par rôles, et documentation : tu as une page dédiée RGPD,
+            avec un modèle de registre/mentions à adapter à ton école.
+          </p>
+          <div style="margin-top:12px">
+            <a class="cta cta-secondary" href="./rgpd.html">Lire la page RGPD</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="card card-pad">
+          <h2>Et maintenant ?</h2>
+          <p>
+            Le plus simple : 15 minutes pour comprendre ton fonctionnement (public/privé, taille, organisation),
+            puis on te montre un parcours adapté.
+          </p>
+          <div style="margin-top:12px; display:flex; gap:12px; flex-wrap:wrap">
+            <a class="cta cta-primary" href="./contact.html">Planifier un échange</a>
+            <a class="cta cta-secondary" href="./a-propos.html">Découvrir notre histoire</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div>© <span id="y"></span> Ma Trousse Scolaire – Outil interne pour écoles privées</div>
+      <hr class="hr" />
+      <div class="footgrid">
         <div>
-          <a href="#produit">Produit</a> · <a href="#captures">Captures</a> · <a href="#nous">Nous</a> · <a href="#contact">Contact</a>
+          <strong>Ma Trousse Scolaire</strong>
+          <div class="small">Outil web pour les équipes d’école — communication & organisation.</div>
+        </div>
+        <div style="text-align:right">
+          <div class="small">
+            <a href="./a-propos.html">À propos</a> ·
+            <a href="./contact.html">Contact</a> ·
+            <a href="./rgpd.html">RGPD</a>
+          </div>
         </div>
       </div>
-      <div style="height:10px"></div>
-      <div>
-        Mentions RGPD / hébergement / politique de confidentialité : on les ajoutera au moment de l’ouverture “espace utilisateur”.
-      </div>
+      <div class="small" style="margin-top:10px">© <span id="y"></span> Ma Trousse Scolaire</div>
     </div>
   </footer>
 
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="./assets/site.js" defer></script>
 </body>
 </html>

@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Ma Trousse Scolaire</title>
+
+  <meta name="description" content="Contactez Ma Trousse Scolaire : planifiez un échange (Calendly) ou envoyez un message. Démo et questions RGPD bienvenues." />
+  <link rel="canonical" href="./contact.html" />
+  <meta name="robots" content="index,follow" />
+
+  <meta property="og:title" content="Contact — Ma Trousse Scolaire" />
+  <meta property="og:description" content="Planifier un échange / demander une démo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="fr_FR" />
+
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <header class="header">
+    <div class="container">
+      <div class="nav">
+        <a class="brand" href="./index.html">
+          <div class="brand-badge" aria-hidden="true">MTS</div>
+          <div class="brand-text">
+            <strong>Ma Trousse Scolaire</strong>
+            <span>Communication & organisation d’école</span>
+          </div>
+        </a>
+
+        <nav class="menu" aria-label="Navigation principale">
+          <a data-page="index.html" href="./index.html">Présentation</a>
+          <a data-page="a-propos.html" href="./a-propos.html">À propos</a>
+          <a data-page="contact.html" href="./contact.html">Contact</a>
+          <a data-page="rgpd.html" href="./rgpd.html">RGPD</a>
+        </nav>
+
+        <a class="cta cta-primary" href="./contact.html">Demander une démo</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero">
+      <div class="container">
+        <h1 class="h1">Contact</h1>
+        <p class="lead">
+          Le plus efficace : planifier un créneau (15–30 min) pour comprendre ton contexte et te montrer le bon parcours.
+          Sinon, tu peux aussi nous écrire.
+        </p>
+
+        <div class="grid-3" style="margin-top:14px">
+          <div class="card card-pad">
+            <h2>Planifier un échange</h2>
+            <p class="small">
+              Remplace <strong>YOUR_CALENDLY_LINK</strong> par ton lien Calendly (ex: https://calendly.com/ton-compte/demo).
+            </p>
+            <div class="notice" style="margin-top:12px">
+              Astuce : tu peux utiliser l’intégration “inline” (ci-dessous) ou un bouton popup.
+            </div>
+          </div>
+
+          <div class="card card-pad" style="grid-column: span 2">
+            <!-- Calendly inline widget begin -->
+            <div
+              class="calendly-inline-widget"
+              data-url="https://calendly.com/YOUR_CALENDLY_LINK"
+              data-resize="true"
+              style="min-width:320px;height:720px;">
+            </div>
+            <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+            <!-- Calendly inline widget end -->
+          </div>
+        </div>
+
+        <section class="section">
+          <div class="container" style="padding:0">
+            <div class="section-title">
+              <h2>Nous écrire</h2>
+              <p>Alternative simple si tu préfères un premier message.</p>
+            </div>
+
+            <div class="card card-pad">
+              <p class="small">
+                Tu peux créer une adresse dédiée (ex: contact@…) plus tard. Pour l’instant, mets ton email ici :
+                <strong>CONTACT_EMAIL</strong>.
+              </p>
+
+              <div style="display:flex; gap:12px; flex-wrap:wrap; margin-top:12px">
+                <a class="cta cta-primary" href="mailto:CONTACT_EMAIL?subject=Demande%20d%27infos%20-%20Ma%20Trousse%20Scolaire">
+                  Envoyer un email
+                </a>
+                <a class="cta cta-secondary" href="./rgpd.html">Questions RGPD</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <hr class="hr" />
+      <div class="small">
+        <a href="./index.html">Présentation</a> · <a href="./a-propos.html">À propos</a> · <a href="./rgpd.html">RGPD</a>
+      </div>
+      <div class="small" style="margin-top:8px">© <span id="y"></span> Ma Trousse Scolaire</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+  <script src="./assets/site.js" defer></script>
+</body>
+</html>
