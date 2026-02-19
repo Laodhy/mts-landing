@@ -7,79 +7,86 @@
   <meta name="description" content="Ma Trousse Scolaire est conçu par Laurent (développeur) et Cassandra (enseignante), avec une approche terrain et une exigence produit." />
   <link rel="canonical" href="https://laodhy.github.io/mts-landing/a-propos.html" />
   <link rel="icon" href="./assets/logo-mts.png" />
-  <link rel="stylesheet" href="./site.css" />
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="container">
-      <nav class="nav">
+      <div class="topbar">
         <a class="brand" href="./index.html">
           <img src="./assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
           <strong>Ma Trousse Scolaire</strong>
         </a>
 
-        <div class="nav-links">
-          <a href="./index.html#captures">Captures</a>
-          <a href="./a-propos.html">À propos</a>
-          <a href="./contact.html">Contact</a>
+        <div class="topbar-actions">
+          <a class="btn btn-outline btn-sm" href="./index.html#produit">L’application</a>
+          <a class="btn btn-outline btn-sm" href="./index.html#tarifs">Tarifs</a>
+          <a class="btn btn-outline btn-sm" href="./a-propos.html">Nous</a>
+          <a class="btn btn-primary btn-sm" href="./contact.html">Demandez une démo</a>
         </div>
-
-        <div class="nav-cta">
-          <a class="btn btn-outline" href="./index.html">Accueil</a>
-          <a class="btn btn-primary" href="./contact.html">Demander une démo</a>
-        </div>
-      </nav>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="page-hero page-hero-lite">
+    <section class="page-hero">
       <div class="container">
         <h1>À propos</h1>
         <p>Un produit construit avec une idée simple : si c’est utile au quotidien d’une école, cela doit être clair, rapide et agréable à utiliser.</p>
       </div>
     </section>
 
-    <section class="section section-lite">
+    <section class="section">
       <div class="container">
-        <div class="grid-3 grid-3-lite" style="grid-template-columns:1fr 1fr;gap:16px">
-          <div class="card card-lite">
+        <div class="grid-3" style="grid-template-columns:1fr 1fr;gap:18px">
+
+          <div class="card">
             <div class="icon">👨‍💻</div>
             <h3>Laurent</h3>
-            <p>Développement & produit. Une attention forte à la robustesse, la maintenabilité et la fluidité d’usage.</p>
+            <p>Développement & produit. Exigence technique, robustesse et fluidité d’usage.</p>
           </div>
 
-          <div class="card card-lite">
+          <div class="card">
             <div class="icon gold">👩‍🏫</div>
             <h3>Cassandra</h3>
-            <p>Enseignante. Elle apporte la réalité terrain, les besoins concrets et le “bon sens école”.</p>
+            <p>Enseignante. Réalité terrain, besoins concrets, pragmatisme.</p>
           </div>
+
         </div>
 
-        <div class="prose prose-lite" style="margin-top:16px">
-          <h2 style="margin:0 0 8px">Pourquoi Ma Trousse Scolaire ?</h2>
-          <p style="margin:0">
-            Parce que l’organisation interne est souvent gérée avec des outils dispersés.
-            MTS centralise l’essentiel (appel, tickets, plannings, évaluations, documents) dans une interface pensée pour l’usage quotidien.
+        <div style="margin-top:28px;max-width:820px">
+          <h2 style="color:var(--primary-color);margin-bottom:10px">Pourquoi Ma Trousse Scolaire ?</h2>
+          <p>
+            L’organisation interne d’une école repose souvent sur des outils dispersés.
+            Ma Trousse Scolaire centralise l’essentiel dans une interface pensée pour l’usage quotidien,
+            avec une attention forte à la simplicité et à la cohérence.
           </p>
 
-          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
-            <a class="btn btn-primary" href="./contact.html">📅 Planifier une démo</a>
-            <a class="btn btn-outline" href="./index.html#captures">Voir les captures</a>
+          <div style="margin-top:18px">
+            <a class="btn btn-primary" href="./contact.html">📅 Demandez une démo</a>
           </div>
         </div>
+
       </div>
     </section>
   </main>
 
-  <footer class="footer footer-lite">
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="small"><strong>Ma Trousse Scolaire</strong> — © <span id="y"></span></div>
-        <div class="small"><a href="./contact.html">Contact</a> · <a href="./rgpd.html">RGPD</a></div>
+        <div class="small">
+          <a href="./a-propos.html">Nous</a> ·
+          <a href="./contact.html">Contact</a> ·
+          <a href="./rgpd.html">RGPD</a>
+        </div>
       </div>
     </div>
-    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
   </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>

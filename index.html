@@ -1,23 +1,24 @@
+<!-- index.html -->
 <!doctype html>
 <html lang="fr">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Ma Trousse Scolaire — Simplifiez l’organisation de votre école</title>
+  <title>Ma Trousse Scolaire — L’organisation d’école, enfin simple</title>
   <meta name="description" content="Ma Trousse Scolaire centralise l’appel, les tickets, la cantine/APC, les évaluations et les documents. Une plateforme claire, pensée pour les équipes d’école." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://laodhy.github.io/mts-landing/" />
 
   <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />
-  <meta property="og:title" content="Ma Trousse Scolaire — Simplifiez l’organisation de votre école" />
+  <meta property="og:title" content="Ma Trousse Scolaire — L’organisation d’école, enfin simple" />
   <meta property="og:description" content="Appel, tickets, cantine/APC, évaluations, documents : une seule plateforme, pensée pour le terrain." />
   <meta property="og:url" content="https://laodhy.github.io/mts-landing/" />
   <meta property="og:image" content="https://laodhy.github.io/mts-landing/assets/logo-mts.png" />
 
   <link rel="icon" href="./assets/logo-mts.png" />
-  <link rel="stylesheet" href="./site.css" />
+  <link rel="stylesheet" href="./style.css" />
 
   <script type="application/ld+json">
   {
@@ -34,58 +35,54 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header header-lite">
     <div class="container">
-      <nav class="nav" aria-label="Navigation principale">
-        <a class="brand" href="./index.html" aria-label="Accueil Ma Trousse Scolaire">
+      <div class="topbar">
+        <a class="brand brand-lite" href="./index.html" aria-label="Accueil Ma Trousse Scolaire">
           <img src="./assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
           <strong>Ma Trousse Scolaire</strong>
         </a>
 
-        <div class="nav-links" role="navigation" aria-label="Liens">
-          <a href="#captures">Captures</a>
-          <a href="./a-propos.html">À propos</a>
-          <a href="./contact.html">Contact</a>
+        <div class="topbar-actions">
+          <a class="btn btn-outline btn-sm" href="#produit">L’application</a>
+          <a class="btn btn-outline btn-sm" href="#tarifs">Tarifs</a>
+          <a class="btn btn-outline btn-sm" href="./a-propos.html">Nous</a>
+          <a class="btn btn-primary btn-sm" href="./contact.html">Demandez une démo</a>
         </div>
-
-        <div class="nav-cta">
-          <a class="btn btn-outline" href="#captures">Voir</a>
-          <a class="btn btn-primary" href="./contact.html">Demander une démo</a>
-        </div>
-      </nav>
+      </div>
     </div>
   </header>
 
   <main>
-    <!-- HERO minimal -->
-    <section class="hero hero-lite">
+    <section class="hero hero-compact" id="top">
       <div class="container">
-        <div class="hero-grid hero-grid-lite">
+        <div class="hero-grid hero-grid-compact">
           <div>
-            <p class="kicker">
-              <span class="badge">Pour les écoles · Maternelle & Primaire</span>
-            </p>
+            <div class="kicker">
+              <span class="badge">Maternelle & Primaire</span>
+              <span class="dot">•</span>
+              <span class="muted">Direction · Secrétariat · Enseignants · Personnel</span>
+            </div>
 
-            <h1 class="h-title">Organisez votre école, sans friction.</h1>
-
+            <h1 class="h-title">L’organisation d’école, enfin simple.</h1>
             <p class="h-sub">
               Appel, tickets, cantine/APC, évaluations, documents : une plateforme unique,
               claire et réellement utilisable au quotidien.
             </p>
 
             <div class="hero-actions">
-              <a class="btn btn-primary" href="./contact.html">📅 Planifier une démo</a>
-              <a class="btn btn-outline" href="#captures">Voir les captures</a>
+              <a class="btn btn-primary" href="./contact.html">📅 Demandez une démo</a>
+              <a class="btn btn-outline" href="#produit">Découvrir</a>
             </div>
 
             <div class="mini-proof">
               <span class="mini-pill">✔ Rôles & droits</span>
-              <span class="mini-pill">✔ Simple à prendre en main</span>
-              <span class="mini-pill">✔ Pensé “terrain”</span>
+              <span class="mini-pill">✔ Prise en main rapide</span>
+              <span class="mini-pill">✔ Pensé terrain</span>
             </div>
           </div>
 
-          <div class="mock mock-lite" aria-label="Aperçu de l’application">
+          <div class="mock mock-compact" aria-label="Aperçu de l’application">
             <div class="mock-top">
               <div class="pills" aria-hidden="true"><span class="pill"></span><span class="pill"></span><span class="pill"></span></div>
               <span class="small">Aperçu</span>
@@ -98,85 +95,116 @@
       </div>
     </section>
 
-    <!-- 3 bénéfices, ultra courts -->
-    <section class="section section-lite">
-      <div class="container">
-        <div class="grid-3 grid-3-lite">
-          <div class="card card-lite">
-            <div class="icon">⏱️</div>
-            <h3>Moins d’oubli, plus d’impact</h3>
-            <p>Les actions du jour sont visibles et suivies.</p>
-          </div>
-          <div class="card card-lite">
-            <div class="icon gold">🧭</div>
-            <h3>Clair pour toute l’équipe</h3>
-            <p>Direction, secrétariat, enseignants, personnel.</p>
-          </div>
-          <div class="card card-lite">
-            <div class="icon blue">🧩</div>
-            <h3>Tout au même endroit</h3>
-            <p>Sans outils dispersés ni bricolage.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CAPTURES style “skipcall”: scroll souris => slide -->
-    <section class="section section-lite" id="captures">
+    <section class="section section-lite" id="produit">
       <div class="container">
         <div class="section-head section-head-lite">
           <div>
-            <h2>Captures</h2>
-            <p class="lead">Faites défiler à la molette : les écrans glissent.</p>
+            <h2>L’application</h2>
+            <p class="lead">Le cœur de la vie d’école, rassemblé au même endroit.</p>
           </div>
-          <a class="btn btn-outline" href="./contact.html">Demander une démo</a>
+          <a class="btn btn-outline" href="./contact.html">Demandez une démo</a>
         </div>
 
-        <div class="shots-wrap" aria-label="Carrousel de captures">
-          <div class="shots" id="shots" tabindex="0" aria-label="Carrousel horizontal">
-            <figure class="shot">
-              <div class="cap"><strong>Homepage</strong><span>Quotidien</span></div>
-              <img src="./assets/screenshot-home.png" alt="Capture : homepage" loading="lazy">
-            </figure>
+        <div class="grid-3 grid-3-lite">
+          <div class="card card-lite">
+            <div class="icon">🧾</div>
+            <h3>Tickets & organisation</h3>
+            <p>Absences, retards, autorisations, imprévus : suivi clair et traçable.</p>
+          </div>
 
-            <figure class="shot">
-              <div class="cap"><strong>Suivi de travail</strong><span>Organisation</span></div>
-              <img src="./assets/screenshot-suivi.png" alt="Capture : suivi de travail" loading="lazy">
-            </figure>
+          <div class="card card-lite">
+            <div class="icon gold">🕒</div>
+            <h3>Appel & quotidien</h3>
+            <p>Un réflexe simple pour le matin et l’après-midi, sans lourdeur.</p>
+          </div>
 
-            <figure class="shot">
-              <div class="cap"><strong>Évaluations</strong><span>Simple</span></div>
-              <img src="./assets/screenshot-evaluations.png" alt="Capture : évaluations" loading="lazy">
-            </figure>
-
-            <figure class="shot">
-              <div class="cap"><strong>Cantine</strong><span>Planning</span></div>
-              <img src="./assets/screenshot-cantine.png" alt="Capture : cantine" loading="lazy">
-            </figure>
-
-            <figure class="shot">
-              <div class="cap"><strong>Tickets</strong><span>Traitement</span></div>
-              <img src="./assets/screenshot-tickets.png" alt="Capture : tickets" loading="lazy">
-            </figure>
+          <div class="card card-lite">
+            <div class="icon blue">📚</div>
+            <h3>Suivi & évaluations</h3>
+            <p>Suivi de travail et évaluations simples, lisibles, efficaces.</p>
           </div>
         </div>
 
-        <p class="small hint">
-          Astuce : vous pouvez aussi glisser au trackpad / à la souris.
-        </p>
+        <div class="shots-grid" aria-label="Captures du produit">
+          <button class="shot-tile" type="button" data-full="./assets/screenshot-home.png" aria-label="Ouvrir la capture : Homepage">
+            <img src="./assets/screenshot-home.png" alt="Capture : homepage" loading="lazy">
+            <span class="shot-label"><strong>Homepage</strong><span>Quotidien</span></span>
+          </button>
+
+          <button class="shot-tile" type="button" data-full="./assets/screenshot-suivi.png" aria-label="Ouvrir la capture : Suivi de travail">
+            <img src="./assets/screenshot-suivi.png" alt="Capture : suivi de travail" loading="lazy">
+            <span class="shot-label"><strong>Suivi</strong><span>Organisation</span></span>
+          </button>
+
+          <button class="shot-tile" type="button" data-full="./assets/screenshot-evaluations.png" aria-label="Ouvrir la capture : Évaluations">
+            <img src="./assets/screenshot-evaluations.png" alt="Capture : évaluations" loading="lazy">
+            <span class="shot-label"><strong>Évaluations</strong><span>Simple</span></span>
+          </button>
+
+          <button class="shot-tile" type="button" data-full="./assets/screenshot-cantine.png" aria-label="Ouvrir la capture : Cantine">
+            <img src="./assets/screenshot-cantine.png" alt="Capture : cantine" loading="lazy">
+            <span class="shot-label"><strong>Cantine</strong><span>Planning</span></span>
+          </button>
+
+          <button class="shot-tile" type="button" data-full="./assets/screenshot-tickets.png" aria-label="Ouvrir la capture : Tickets">
+            <img src="./assets/screenshot-tickets.png" alt="Capture : tickets" loading="lazy">
+            <span class="shot-label"><strong>Tickets</strong><span>Traitement</span></span>
+          </button>
+        </div>
       </div>
     </section>
 
-    <!-- CTA court -->
+    <section class="section section-lite" id="tarifs">
+      <div class="container">
+        <div class="section-head section-head-lite">
+          <div>
+            <h2>Tarifs</h2>
+            <p class="lead">Simple, clair, sans surprise.</p>
+          </div>
+        </div>
+
+        <div class="pricing">
+          <div class="pricing-card">
+            <div class="pricing-top">
+              <div>
+                <div class="pricing-name">École</div>
+                <div class="pricing-price">
+                  <span class="price">40€</span> <span class="per">HT / classe / an</span>
+                </div>
+              </div>
+              <div class="pricing-badge">Offre de lancement</div>
+            </div>
+
+            <div class="pricing-highlight">
+              <div class="hl">
+                <span class="hl-strong">30€</span> <span class="hl-muted">HT / classe / an la première année</span>
+              </div>
+            </div>
+
+            <ul class="pricing-list">
+              <li>Accès selon le rôle attribué</li>
+              <li>Mises à jour & maintenance incluses</li>
+              <li>Déploiement progressif possible</li>
+            </ul>
+
+            <div class="pricing-cta">
+              <a class="btn btn-primary" href="./contact.html">Demandez une démo</a>
+              <a class="btn btn-outline" href="./a-propos.html">Nous découvrir</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section section-lite">
       <div class="container">
         <div class="cta cta-lite">
           <div class="cta-grid">
             <div>
               <h2 style="margin:0">Une démo courte, centrée sur votre école.</h2>
-              <p>En visio, et orientée “besoins réels”.</p>
+              <p>En visio, orientée besoins réels.</p>
             </div>
-            <a class="btn btn-primary" href="./contact.html">📅 Réserver</a>
+            <a class="btn btn-primary" href="./contact.html">📅 Demandez une démo</a>
           </div>
         </div>
       </div>
@@ -190,32 +218,58 @@
           <strong>Ma Trousse Scolaire</strong> — © <span id="y"></span>
         </div>
         <div class="small">
-          <a href="./a-propos.html">À propos</a> ·
+          <a href="./a-propos.html">Nous</a> ·
           <a href="./contact.html">Contact</a> ·
           <a href="./rgpd.html">RGPD</a>
         </div>
       </div>
     </div>
-
-    <script>
-      document.getElementById("y").textContent = new Date().getFullYear();
-
-      // Scroll vertical => scroll horizontal (style skipcall)
-      (function() {
-        const el = document.getElementById("shots");
-        if (!el) return;
-
-        el.addEventListener("wheel", (e) => {
-          // Autoriser le scroll vertical normal si SHIFT (accessibilité)
-          if (e.shiftKey) return;
-
-          // Convertit la molette en scroll horizontal
-          const delta = Math.abs(e.deltaY) > Math.abs(e.deltaX) ? e.deltaY : e.deltaX;
-          el.scrollBy({ left: delta, top: 0, behavior: "auto" });
-          e.preventDefault();
-        }, { passive: false });
-      })();
-    </script>
   </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-backdrop" data-close="1" aria-label="Fermer"></div>
+    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Aperçu de la capture">
+      <button class="lightbox-close" type="button" aria-label="Fermer" data-close="1">✕</button>
+      <img id="lightboxImg" alt="Capture en grand" />
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+
+    (function () {
+      const lb = document.getElementById("lightbox");
+      const img = document.getElementById("lightboxImg");
+      const tiles = document.querySelectorAll("[data-full]");
+
+      function open(src, alt) {
+        img.src = src;
+        img.alt = alt || "Capture en grand";
+        lb.classList.add("is-open");
+        lb.setAttribute("aria-hidden", "false");
+        document.body.classList.add("no-scroll");
+      }
+
+      function close() {
+        lb.classList.remove("is-open");
+        lb.setAttribute("aria-hidden", "true");
+        img.removeAttribute("src");
+        document.body.classList.remove("no-scroll");
+      }
+
+      tiles.forEach(t => {
+        t.addEventListener("click", () => open(t.getAttribute("data-full"), t.querySelector("img")?.alt));
+      });
+
+      lb.addEventListener("click", (e) => {
+        if (e.target && e.target.getAttribute && e.target.getAttribute("data-close") === "1") close();
+      });
+
+      document.addEventListener("keydown", (e) => {
+        if (e.key === "Escape" && lb.classList.contains("is-open")) close();
+      });
+    })();
+  </script>
 </body>
 </html>

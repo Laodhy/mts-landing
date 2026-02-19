@@ -4,91 +4,107 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Ma Trousse Scolaire</title>
-  <meta name="description" content="Contact Ma Trousse Scolaire : email, téléphone, et réservation de démonstration." />
+  <meta name="description" content="Contact Ma Trousse Scolaire : email, téléphone et réservation de démonstration en ligne." />
   <link rel="canonical" href="https://laodhy.github.io/mts-landing/contact.html" />
   <link rel="icon" href="./assets/logo-mts.png" />
-  <link rel="stylesheet" href="./site.css" />
-
-  <!-- Calendly (optionnel : activez seulement si vous l’utilisez) -->
-  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
 </head>
+
 <body>
   <header class="header">
     <div class="container">
-      <nav class="nav">
+      <div class="topbar">
         <a class="brand" href="./index.html">
           <img src="./assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
           <strong>Ma Trousse Scolaire</strong>
         </a>
 
-        <div class="nav-links">
-          <a href="./index.html#captures">Captures</a>
-          <a href="./a-propos.html">À propos</a>
-          <a href="./contact.html">Contact</a>
+        <div class="topbar-actions">
+          <a class="btn btn-outline btn-sm" href="./index.html#produit">L’application</a>
+          <a class="btn btn-outline btn-sm" href="./index.html#tarifs">Tarifs</a>
+          <a class="btn btn-outline btn-sm" href="./a-propos.html">Nous</a>
+          <a class="btn btn-primary btn-sm" href="./contact.html">Demandez une démo</a>
         </div>
-
-        <div class="nav-cta">
-          <a class="btn btn-outline" href="./index.html">Accueil</a>
-          <a class="btn btn-primary" href="#rdv">Réserver</a>
-        </div>
-      </nav>
+      </div>
     </div>
   </header>
 
   <main>
-    <section class="page-hero page-hero-lite">
+    <section class="page-hero">
       <div class="container">
-        <h1>Contact</h1>
-        <p>Pour une question ou une démonstration, vous pouvez nous écrire, nous appeler, ou réserver un créneau.</p>
+        <h1>Contact & démonstration</h1>
+        <p>
+          Pour une présentation personnalisée de Ma Trousse Scolaire,
+          réservez directement un créneau ou contactez-nous.
+        </p>
       </div>
     </section>
 
-    <section class="section section-lite">
+    <section class="section">
       <div class="container">
-        <div class="grid-3 grid-3-lite">
-          <div class="card card-lite">
+
+        <div class="grid-3" style="grid-template-columns:1fr 1fr;gap:18px">
+
+          <div class="card">
             <div class="icon">📩</div>
             <h3>Email</h3>
-            <p><a href="mailto:troussescolaireapp@gmail.com"><strong>troussescolaireapp@gmail.com</strong></a></p>
+            <p>
+              <a href="mailto:troussescolaireapp@gmail.com">
+                <strong>troussescolaireapp@gmail.com</strong>
+              </a>
+            </p>
           </div>
 
-          <div class="card card-lite">
+          <div class="card">
             <div class="icon gold">📞</div>
             <h3>Téléphone</h3>
-            <p><a href="tel:+33689668538"><strong>06 89 66 85 38</strong></a></p>
+            <p>
+              <a href="tel:+33689668538">
+                <strong>06 89 66 85 38</strong>
+              </a>
+            </p>
           </div>
 
-          <div class="card card-lite">
-            <div class="icon blue">🗓️</div>
-            <h3>Démonstration</h3>
-            <p>Réservation en visio, au créneau qui vous convient.</p>
-          </div>
         </div>
+
       </div>
     </section>
 
-    <section class="section section-lite" id="rdv">
+    <section class="section">
       <div class="container">
-        <div class="prose prose-lite">
-          <h2 style="margin:0 0 8px">Réserver un créneau</h2>
+
+        <div class="card" style="padding:0;overflow:hidden;border-radius:22px">
           
           <!-- Début de widget en ligne Calendly -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/troussescolaireapp/nouvelle-reunion?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Fin de widget en ligne Calendly -->
+          <div class="calendly-inline-widget"
+               data-url="https://calendly.com/troussescolaireapp/nouvelle-reunion?hide_event_type_details=1&hide_gdpr_banner=1"
+               style="min-width:320px;height:700px;">
+          </div>
+          <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+          <!-- Fin de widget en ligne Calendly -->
+
         </div>
+
       </div>
     </section>
   </main>
 
-  <footer class="footer footer-lite">
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="small"><strong>Ma Trousse Scolaire</strong> — © <span id="y"></span></div>
-        <div class="small"><a href="./a-propos.html">À propos</a> · <a href="./rgpd.html">RGPD</a></div>
+        <div class="small">
+          <a href="./a-propos.html">Nous</a> ·
+          <a href="./contact.html">Contact</a> ·
+          <a href="./rgpd.html">RGPD</a>
+        </div>
       </div>
     </div>
-    <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
   </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+
 </body>
 </html>
