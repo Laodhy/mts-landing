@@ -1,110 +1,172 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact — Ma Trousse Scolaire</title>
-  <meta name="description" content="Contact Ma Trousse Scolaire : email, téléphone et réservation de démonstration en ligne." />
-  <link rel="canonical" href="https://laodhy.github.io/mts-landing/contact.html" />
-  <link rel="icon" href="./assets/logo-mts.png" />
-  <link rel="stylesheet" href="./style.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Demandez une démo — Ma Trousse Scolaire</title>
+    <meta
+      name="description"
+      content="Planifiez une démonstration de Ma Trousse Scolaire et découvrez comment votre école peut gagner en clarté, en organisation et en sérénité."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="topbar">
-        <a class="brand" href="./index.html">
-          <img src="./assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
-          <strong>Ma Trousse Scolaire</strong>
-        </a>
+  <body>
+    <!-- HEADER identique -->
+    <header class="header" id="site-header">
+      <div class="container">
+        <div class="topbar topbar-branding">
+          <a class="brand brand-xl" href="index.html" aria-label="Ma Trousse Scolaire">
+            <img src="assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
+            <div class="brand-text">
+              <strong>Ma Trousse Scolaire</strong>
+              <span>Communication & organisation d’école</span>
+            </div>
+          </a>
 
-        <div class="topbar-actions">
-          <a class="btn btn-outline btn-sm" href="./index.html#produit">L’application</a>
-          <a class="btn btn-outline btn-sm" href="./index.html#tarifs">Tarifs</a>
-          <a class="btn btn-outline btn-sm" href="./a-propos.html">Nous</a>
-          <a class="btn btn-primary btn-sm" href="./contact.html">Demandez une démo</a>
+          <div class="header-float-actions">
+            <a class="btn btn-outline btn-sm" href="index.html#presentation">Présentation</a>
+            <a class="btn btn-outline btn-sm" href="a-propos.html">Qui sommes-nous ?</a>
+            <a class="btn btn-primary btn-sm" href="contact.html">Demandez une démo</a>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main>
-    <section class="page-hero">
-      <div class="container">
-        <h1>Contact & démonstration</h1>
-        <p>
-          Pour une présentation personnalisée de Ma Trousse Scolaire,
-          réservez directement un créneau ou contactez-nous.
-        </p>
-      </div>
-    </section>
+    <main>
+      <!-- HERO CONTACT -->
+      <section class="hero">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="reveal">
+              <div class="kicker">
+                <span class="badge">Présentation personnalisée</span>
+              </div>
 
-    <section class="section">
-      <div class="container">
+              <h1 class="h-title">Découvrez l’application en situation réelle.</h1>
 
-        <div class="grid-3" style="grid-template-columns:1fr 1fr;gap:18px">
+              <p class="h-sub">
+                Une démonstration claire, adaptée à votre école.
+                <br />
+                En moyenne, l’échange dure <strong>30 minutes</strong>.
+              </p>
 
-          <div class="card">
-            <div class="icon">📩</div>
-            <h3>Email</h3>
-            <p>
-              <a href="mailto:troussescolaireapp@gmail.com">
-                <strong>troussescolaireapp@gmail.com</strong>
-              </a>
-            </p>
+              <div class="hero-bullets">
+                <span class="mini-pill">✅ Sans engagement</span>
+                <span class="mini-pill">✅ Adapté à votre fonctionnement</span>
+                <span class="mini-pill">✅ Réponse à vos questions</span>
+              </div>
+            </div>
+
+            <div class="card reveal" data-reveal-delay="80">
+              <h3 style="margin-top:0">Ce que vous allez voir</h3>
+              <p style="color:var(--muted);font-weight:600">
+                Nous vous présentons l’application complète :
+              </p>
+              <ul style="color:var(--muted);font-weight:500;line-height:1.6;padding-left:18px">
+                <li>Communication interne structurée</li>
+                <li>Suivi et organisation quotidienne</li>
+                <li>Centralisation des informations importantes</li>
+                <li>Vision adaptée à la direction et à l’équipe</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION CALENDLY -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <h2 style="margin:0;font-size:28px">Choisissez votre créneau.</h2>
+              <p style="margin:10px 0 0;color:var(--muted);font-weight:600;max-width:72ch">
+                Sélectionnez un horaire disponible ci-dessous.  
+                La présentation dure en moyenne <strong>30 minutes</strong>.
+              </p>
+            </div>
           </div>
 
-          <div class="card">
-            <div class="icon gold">📞</div>
-            <h3>Téléphone</h3>
-            <p>
-              <a href="tel:+33689668538">
-                <strong>06 89 66 85 38</strong>
-              </a>
-            </p>
+          <div class="frame reveal">
+            <div class="frame-body">
+              <!-- Début widget Calendly -->
+              <div class="calendly-inline-widget"
+                   data-url="https://calendly.com/troussescolaireapp/nouvelle-reunion?hide_event_type_details=1&hide_gdpr_banner=1"
+                   style="min-width:320px;height:700px;">
+              </div>
+              <script type="text/javascript"
+                      src="https://assets.calendly.com/assets/external/widget.js"
+                      async>
+              </script>
+              <!-- Fin widget Calendly -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMMENT ÇA SE PASSE -->
+      <section class="section">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <h2 style="margin:0;font-size:28px">Comment se déroule la démo ?</h2>
+            </div>
           </div>
 
+          <div class="grid-3">
+            <article class="card reveal" data-reveal-delay="40">
+              <div class="icon">💬</div>
+              <h3>1. Échange rapide</h3>
+              <p>Vous nous expliquez brièvement votre organisation actuelle et vos enjeux.</p>
+            </article>
+
+            <article class="card reveal" data-reveal-delay="80">
+              <div class="icon">🖥️</div>
+              <h3>2. Présentation complète</h3>
+              <p>Nous vous montrons l’application dans son ensemble, adaptée à votre contexte.</p>
+            </article>
+
+            <article class="card reveal" data-reveal-delay="120">
+              <div class="icon">🤝</div>
+              <h3>3. Questions & mise en place</h3>
+              <p>Nous répondons à vos questions et voyons ensemble si cela correspond à votre école.</p>
+            </article>
+          </div>
         </div>
+      </section>
 
-      </div>
-    </section>
+      <!-- RASSURANCE -->
+      <section class="section">
+        <div class="container">
+          <div class="cta reveal">
+            <div class="cta-grid">
+              <div>
+                <strong style="font-size:18px">
+                  Ma Trousse Scolaire n’est pas un outil isolé.
+                </strong>
+                <div style="color:var(--muted);font-weight:600;margin-top:6px">
+                  C’est l’application complète, pensée pour structurer la communication et l’organisation interne d’une école.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    <section class="section">
+    <footer class="footer">
       <div class="container">
-
-        <div class="card" style="padding:0;overflow:hidden;border-radius:22px">
-          
-          <!-- Début de widget en ligne Calendly -->
-          <div class="calendly-inline-widget"
-               data-url="https://calendly.com/troussescolaireapp/nouvelle-reunion?hide_event_type_details=1&hide_gdpr_banner=1"
-               style="min-width:320px;height:700px;">
+        <div class="footer-grid">
+          <div>© <span id="year"></span> Ma Trousse Scolaire</div>
+          <div style="display:flex;gap:14px;flex-wrap:wrap">
+            <a href="a-propos.html">Qui sommes-nous ?</a>
+            <a href="rgpd.html">RGPD</a>
+            <a href="contact.html">Contact</a>
           </div>
-          <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
-          <!-- Fin de widget en ligne Calendly -->
-
-        </div>
-
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="small"><strong>Ma Trousse Scolaire</strong> — © <span id="y"></span></div>
-        <div class="small">
-          <a href="./a-propos.html">Nous</a> ·
-          <a href="./contact.html">Contact</a> ·
-          <a href="./rgpd.html">RGPD</a>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-  </script>
-
-</body>
+    <script src="site.js"></script>
+  </body>
 </html>

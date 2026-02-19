@@ -1,275 +1,399 @@
-<!-- index.html -->
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Ma Trousse Scolaire — Communication & organisation pour les écoles</title>
+    <meta
+      name="description"
+      content="Ma Trousse Scolaire centralise la communication interne, les informations importantes et l’organisation quotidienne d’une école. Simple, clair, pensé pour le terrain."
+    />
 
-  <title>Ma Trousse Scolaire — L’organisation d’école, enfin simple</title>
-  <meta name="description" content="Ma Trousse Scolaire centralise l’appel, les tickets, la cantine/APC, les évaluations et les documents. Une plateforme claire, pensée pour les équipes d’école." />
-  <meta name="robots" content="index,follow" />
-  <link rel="canonical" href="https://laodhy.github.io/mts-landing/" />
+    <meta property="og:title" content="Ma Trousse Scolaire — L’espace interne pensé pour les écoles" />
+    <meta
+      property="og:description"
+      content="Communication claire. Informations conservées. Organisation simplifiée."
+    />
+    <meta property="og:type" content="website" />
 
-  <meta property="og:type" content="website" />
-  <meta property="og:locale" content="fr_FR" />
-  <meta property="og:title" content="Ma Trousse Scolaire — L’organisation d’école, enfin simple" />
-  <meta property="og:description" content="Appel, tickets, cantine/APC, évaluations, documents : une seule plateforme, pensée pour le terrain." />
-  <meta property="og:url" content="https://laodhy.github.io/mts-landing/" />
-  <meta property="og:image" content="https://laodhy.github.io/mts-landing/assets/logo-mts.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <link rel="icon" href="./assets/logo-mts.png" />
-  <link rel="stylesheet" href="./style.css" />
-
-  <script type="application/ld+json">
-  {
-    "@context":"https://schema.org",
-    "@type":"SoftwareApplication",
-    "name":"Ma Trousse Scolaire",
-    "applicationCategory":"EducationalApplication",
-    "operatingSystem":"Web",
-    "url":"https://laodhy.github.io/mts-landing/",
-    "image":"https://laodhy.github.io/mts-landing/assets/logo-mts.png",
-    "description":"Plateforme web pour organiser la vie de l’école (appel, tickets, cantine/APC, évaluations, documents)."
-  }
-  </script>
-</head>
-
-<body>
-  <header class="header header-lite">
-    <div class="container">
-      <div class="topbar">
-        <a class="brand brand-lite" href="./index.html" aria-label="Accueil Ma Trousse Scolaire">
-          <img src="./assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
-          <strong>Ma Trousse Scolaire</strong>
-        </a>
-
-        <div class="topbar-actions">
-          <a class="btn btn-outline btn-sm" href="#produit">L’application</a>
-          <a class="btn btn-outline btn-sm" href="#tarifs">Tarifs</a>
-          <a class="btn btn-outline btn-sm" href="./a-propos.html">Nous</a>
-          <a class="btn btn-primary btn-sm" href="./contact.html">Demandez une démo</a>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero hero-compact" id="top">
+  <body>
+    <!-- Header sticky: brand XL + actions horizontal -->
+    <header class="header" id="site-header">
       <div class="container">
-        <div class="hero-grid hero-grid-compact">
-          <div>
-            <div class="kicker">
-              <span class="badge">Maternelle & Primaire</span>
-              <span class="dot">•</span>
-              <span class="muted">Direction · Secrétariat · Enseignants · Personnel</span>
+        <div class="topbar topbar-branding">
+          <a class="brand brand-xl" href="index.html" aria-label="Ma Trousse Scolaire">
+            <img src="assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
+            <div class="brand-text">
+              <strong>Ma Trousse Scolaire</strong>
+              <span>Communication & organisation d’école</span>
             </div>
+          </a>
 
-            <h1 class="h-title">L’organisation d’école, enfin simple.</h1>
-            <p class="h-sub">
-              Appel, tickets, cantine/APC, évaluations, documents : une plateforme unique,
-              claire et réellement utilisable au quotidien.
-            </p>
-
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="./contact.html">📅 Demandez une démo</a>
-              <a class="btn btn-outline" href="#produit">Découvrir</a>
-            </div>
-
-            <div class="mini-proof">
-              <span class="mini-pill">✔ Rôles & droits</span>
-              <span class="mini-pill">✔ Prise en main rapide</span>
-              <span class="mini-pill">✔ Pensé terrain</span>
-            </div>
-          </div>
-
-          <div class="mock mock-compact" aria-label="Aperçu de l’application">
-            <div class="mock-top">
-              <div class="pills" aria-hidden="true"><span class="pill"></span><span class="pill"></span><span class="pill"></span></div>
-              <span class="small">Aperçu</span>
-            </div>
-            <div class="screenshot">
-              <img src="./assets/screenshot-home.png" alt="Capture d’écran : page d’accueil de Ma Trousse Scolaire" loading="lazy">
-            </div>
+          <div class="header-float-actions" aria-label="Actions">
+            <a class="btn btn-outline btn-sm" href="#presentation" data-scroll>Présentation</a>
+            <a class="btn btn-outline btn-sm" href="a-propos.html">Qui sommes-nous ?</a>
+            <a class="btn btn-primary btn-sm" href="contact.html">Demandez une demo</a>
           </div>
         </div>
       </div>
-    </section>
+    </header>
 
-    <section class="section section-lite" id="produit">
-      <div class="container">
-        <div class="section-head section-head-lite">
-          <div>
-            <h2>L’application</h2>
-            <p class="lead">Le cœur de la vie d’école, rassemblé au même endroit.</p>
-          </div>
-          <a class="btn btn-outline" href="./contact.html">Demandez une démo</a>
-        </div>
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="top">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="reveal">
+              <div class="kicker">
+                <span class="badge">Conçu pour la réalité d’une école</span>
+              </div>
 
-        <div class="grid-3 grid-3-lite">
-          <div class="card card-lite">
-            <div class="icon">🧾</div>
-            <h3>Tickets & organisation</h3>
-            <p>Absences, retards, autorisations, imprévus : suivi clair et traçable.</p>
-          </div>
+              <h1 class="h-title">L’espace interne pensé pour les écoles.</h1>
 
-          <div class="card card-lite">
-            <div class="icon gold">🕒</div>
-            <h3>Appel & quotidien</h3>
-            <p>Un réflexe simple pour le matin et l’après-midi, sans lourdeur.</p>
-          </div>
+              <p class="h-sub">
+                Communication claire. Informations conservées. Organisation simplifiée.
+                <br />
+                <span class="muted-strong">Fini les messages perdus, les oublis et les informations dispersées.</span>
+              </p>
 
-          <div class="card card-lite">
-            <div class="icon blue">📚</div>
-            <h3>Suivi & évaluations</h3>
-            <p>Suivi de travail et évaluations simples, lisibles, efficaces.</p>
-          </div>
-        </div>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#demo" data-scroll>🎥 Voir la démonstration</a>
+                <a class="btn btn-outline" href="#outils" data-scroll>📄 Découvrir la plateforme</a>
+              </div>
 
-        <div class="shots-grid" aria-label="Captures du produit">
-          <button class="shot-tile" type="button" data-full="./assets/screenshot-home.png" aria-label="Ouvrir la capture : Homepage">
-            <img src="./assets/screenshot-home.png" alt="Capture : homepage" loading="lazy">
-            <span class="shot-label"><strong>Homepage</strong><span>Quotidien</span></span>
-          </button>
+              <div class="hero-bullets">
+                <span class="mini-pill">✅ Centralisé</span>
+                <span class="mini-pill">✅ Clair</span>
+                <span class="mini-pill">✅ Traçable</span>
+                <span class="mini-pill">✅ Adapté au quotidien</span>
+              </div>
+            </div>
 
-          <button class="shot-tile" type="button" data-full="./assets/screenshot-suivi.png" aria-label="Ouvrir la capture : Suivi de travail">
-            <img src="./assets/screenshot-suivi.png" alt="Capture : suivi de travail" loading="lazy">
-            <span class="shot-label"><strong>Suivi</strong><span>Organisation</span></span>
-          </button>
-
-          <button class="shot-tile" type="button" data-full="./assets/screenshot-evaluations.png" aria-label="Ouvrir la capture : Évaluations">
-            <img src="./assets/screenshot-evaluations.png" alt="Capture : évaluations" loading="lazy">
-            <span class="shot-label"><strong>Évaluations</strong><span>Simple</span></span>
-          </button>
-
-          <button class="shot-tile" type="button" data-full="./assets/screenshot-cantine.png" aria-label="Ouvrir la capture : Cantine">
-            <img src="./assets/screenshot-cantine.png" alt="Capture : cantine" loading="lazy">
-            <span class="shot-label"><strong>Cantine</strong><span>Planning</span></span>
-          </button>
-
-          <button class="shot-tile" type="button" data-full="./assets/screenshot-tickets.png" aria-label="Ouvrir la capture : Tickets">
-            <img src="./assets/screenshot-tickets.png" alt="Capture : tickets" loading="lazy">
-            <span class="shot-label"><strong>Tickets</strong><span>Traitement</span></span>
-          </button>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-lite" id="tarifs">
-      <div class="container">
-        <div class="section-head section-head-lite">
-          <div>
-            <h2>Tarifs</h2>
-            <p class="lead">Simple, clair, sans surprise.</p>
+            <div class="frame reveal" data-reveal-delay="80">
+              <div class="frame-top">
+                <div>
+                  <strong>Vue d’ensemble</strong>
+                  <div class="frame-meta">Un seul espace pour l’équipe</div>
+                </div>
+                <div class="frame-meta">Aperçu</div>
+              </div>
+              <div class="frame-body">
+                <img
+                  src="assets/screenshot-home.png"
+                  alt="Capture d’écran - Tableau de bord Ma Trousse Scolaire"
+                  loading="lazy"
+                />
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-        <div class="pricing">
-          <div class="pricing-card">
-            <div class="pricing-top">
+      <!-- PRESENTATION / PROBLÈME -->
+      <section class="section" id="presentation">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <h2 style="margin:0;font-size:28px">Une école ne devrait pas fonctionner sur des messages dispersés.</h2>
+              <p style="margin:10px 0 0;color:var(--muted);font-weight:600;max-width:72ch">
+                Quand l’information n’est pas structurée, la charge mentale augmente. Nous remettons de la clarté, sans
+                alourdir le quotidien.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <article class="card reveal" data-reveal-delay="40">
+              <div class="icon">🧩</div>
+              <h3>Informations éparpillées</h3>
+              <p>Messages noyés, décisions non tracées, infos importantes difficiles à retrouver.</p>
+            </article>
+
+            <article class="card reveal" data-reveal-delay="80">
+              <div class="icon">🧠</div>
+              <h3>Charge mentale</h3>
+              <p>On “se souvient” de tout… jusqu’au jour où l’on ne peut plus. L’organisation dépend trop des personnes.</p>
+            </article>
+
+            <article class="card reveal" data-reveal-delay="120">
+              <div class="icon">🗂️</div>
+              <h3>Documents introuvables</h3>
+              <p>Des fichiers “quelque part”. Des versions multiples. Des infos clés qui se perdent.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SOLUTION -->
+      <section class="section" id="solution">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <h2 style="margin:0;font-size:28px">Un seul espace pour toute la vie de l’école.</h2>
+              <p style="margin:10px 0 0;color:var(--muted);font-weight:600;max-width:72ch">
+                Chaque information a sa place. Chaque action laisse une trace. Tout est clair pour l’équipe.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <article class="card reveal" data-reveal-delay="40">
+              <div class="icon">💬</div>
+              <h3>Communication interne</h3>
+              <p>Moins de dispersion. Plus de lisibilité. Les informations arrivent au bon endroit.</p>
+            </article>
+
+            <article class="card reveal" data-reveal-delay="80">
+              <div class="icon">🧭</div>
+              <h3>Organisation quotidienne</h3>
+              <p>Une vision claire pour agir : ce qui est à faire, ce qui est en cours, ce qui est réglé.</p>
+            </article>
+
+            <article class="card reveal" data-reveal-delay="120">
+              <div class="icon">🧾</div>
+              <h3>Traçabilité simple</h3>
+              <p>On garde l’historique utile : pour éviter les oublis, les malentendus et les pertes d’infos.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- OUTILS + SCREENSHOTS -->
+      <section class="section" id="outils">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <h2 style="margin:0;font-size:28px">Des outils concrets, au service du quotidien.</h2>
+              <p style="margin:10px 0 0;color:var(--muted);font-weight:600;max-width:72ch">
+                L’objectif est simple : moins d’effort, plus de clarté — pour la direction, les enseignants et l’équipe.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <article class="card reveal" data-reveal-delay="40">
+              <div class="icon">📋</div>
+              <h3>L’appel simplifié</h3>
+              <p>Présences, absences, retards : une saisie simple, un suivi clair.</p>
+            </article>
+
+            <article class="card reveal" data-reveal-delay="80">
+              <div class="icon">🎫</div>
+              <h3>Demandes & signalements</h3>
+              <p>Une information devient une action à traiter. Plus d’ambiguïté. Plus d’oubli.</p>
+            </article>
+
+            <article class="card reveal" data-reveal-delay="120">
+              <div class="icon">🏫</div>
+              <h3>Organisation visible</h3>
+              <p>Responsabilités, remplacements, suivi : l’équipe voit, comprend, agit.</p>
+            </article>
+          </div>
+
+          <div class="shots-grid" aria-label="Aperçus de la plateforme">
+            <button class="shot-tile reveal" data-lightbox="assets/screenshot-home.png" data-reveal-delay="0" type="button">
+              <img src="assets/screenshot-home.png" alt="Aperçu - Accueil" loading="lazy" />
+              <span class="shot-label">
+                <strong>Accueil</strong>
+                <span>Vue d’ensemble</span>
+              </span>
+            </button>
+
+            <button class="shot-tile reveal" data-lightbox="assets/screenshot-tickets.png" data-reveal-delay="40" type="button">
+              <img src="assets/screenshot-tickets.png" alt="Aperçu - Tickets" loading="lazy" />
+              <span class="shot-label">
+                <strong>Tickets</strong>
+                <span>Actions à traiter</span>
+              </span>
+            </button>
+
+            <button class="shot-tile reveal" data-lightbox="assets/screenshot-suivi.png" data-reveal-delay="80" type="button">
+              <img src="assets/screenshot-suivi.png" alt="Aperçu - Suivi" loading="lazy" />
+              <span class="shot-label">
+                <strong>Suivi</strong>
+                <span>Clarté & historique</span>
+              </span>
+            </button>
+
+            <button class="shot-tile reveal" data-lightbox="assets/screenshot-cantine.png" data-reveal-delay="120" type="button">
+              <img src="assets/screenshot-cantine.png" alt="Aperçu - Cantine" loading="lazy" />
+              <span class="shot-label">
+                <strong>Cantine</strong>
+                <span>Organisation</span>
+              </span>
+            </button>
+
+            <button class="shot-tile reveal" data-lightbox="assets/screenshot-evaluations.png" data-reveal-delay="160" type="button">
+              <img src="assets/screenshot-evaluations.png" alt="Aperçu - Évaluations" loading="lazy" />
+              <span class="shot-label">
+                <strong>Évaluations</strong>
+                <span>Suivi classe</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- VIDEO DEMO -->
+      <section class="section" id="demo">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <h2 style="margin:0;font-size:28px">3 minutes pour comprendre.</h2>
+              <p style="margin:10px 0 0;color:var(--muted);font-weight:600;max-width:72ch">
+                Une démonstration rapide pour voir comment une école retrouve de la clarté, simplement.
+              </p>
+            </div>
+            <div class="topbar-actions">
+              <a class="btn btn-primary btn-sm" href="contact.html">Demandez une demo</a>
+            </div>
+          </div>
+
+          <div class="frame reveal">
+            <div class="frame-top">
               <div>
-                <div class="pricing-name">École</div>
-                <div class="pricing-price">
-                  <span class="price">40€</span> <span class="per">HT / classe / an</span>
+                <strong>Démonstration</strong>
+                <div class="frame-meta">Vidéo courte</div>
+              </div>
+              <div class="frame-meta">Lecture</div>
+            </div>
+
+            <div class="frame-body">
+              <div class="video-embed" role="group" aria-label="Vidéo de démonstration">
+                <iframe
+                  title="Démonstration Ma Trousse Scolaire"
+                  src="https://www.youtube.com/embed/VIDEO_ID"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- DIFFÉRENCIATION -->
+      <section class="section" id="differenciation">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <h2 style="margin:0;font-size:28px">Pensé par le terrain. Construit pour le terrain.</h2>
+              <p style="margin:10px 0 0;color:var(--muted);font-weight:600;max-width:72ch">
+                Imaginé par une enseignante, à partir de situations réelles et de besoins concrets. Mis en forme pour être
+                simple, clair et agréable à utiliser.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid-3">
+            <article class="card reveal" data-reveal-delay="40">
+              <div class="icon">👩‍🏫</div>
+              <h3>Une vision du quotidien</h3>
+              <p>Les vrais sujets : organisation, suivi, clarté, continuité, charge mentale.</p>
+            </article>
+
+            <article class="card reveal" data-reveal-delay="80">
+              <div class="icon">✨</div>
+              <h3>Simple et lisible</h3>
+              <p>Un espace pensé pour aller vite, comprendre facilement et agir sans friction.</p>
+            </article>
+
+            <article class="card reveal" data-reveal-delay="120">
+              <div class="icon">🔗</div>
+              <h3>En savoir plus</h3>
+              <p>👉 <a class="inline-link" href="a-propos.html">Voir la page “Qui sommes-nous ?”</a></p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING + CTA -->
+      <section class="section" id="tarifs">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <h2 style="margin:0;font-size:28px">Simple et transparent.</h2>
+              <p style="margin:10px 0 0;color:var(--muted);font-weight:600;max-width:72ch">
+                Une tarification lisible, adaptée aux écoles.
+              </p>
+            </div>
+          </div>
+
+          <div class="pricing">
+            <div class="card pricing-card reveal">
+              <div class="pricing-head">
+                <div>
+                  <strong>Tarification</strong>
+                  <div class="frame-meta">Par classe / an</div>
+                </div>
+                <div class="promo">Offre de lancement</div>
+              </div>
+
+              <div style="padding:18px">
+                <div class="price">
+                  40 € HT <span style="font-size:14px;color:var(--muted);font-weight:700">/ classe / an</span>
+                </div>
+                <p style="margin:10px 0 0;color:var(--muted);font-weight:600">
+                  Offre de lancement : <strong>30 € HT</strong> par classe / an la première année.
+                </p>
+
+                <div style="margin-top:14px">
+                  <div class="highlight">✔ Mises à jour incluses</div>
+                  <div class="highlight">✔ Organisation et suivi centralisés</div>
+                  <div class="highlight">✔ Un espace clair pour l’équipe</div>
+                </div>
+
+                <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
+                  <a class="btn btn-primary" href="contact.html">Demandez une demo</a>
+                  <a class="btn btn-outline" href="rgpd.html">RGPD</a>
                 </div>
               </div>
-              <div class="pricing-badge">Offre de lancement</div>
             </div>
+          </div>
 
-            <div class="pricing-highlight">
-              <div class="hl">
-                <span class="hl-strong">30€</span> <span class="hl-muted">HT / classe / an la première année</span>
+          <div class="cta reveal" style="margin-top:18px">
+            <div class="cta-grid">
+              <div>
+                <strong style="font-size:18px">Et si votre école gagnait en sérénité ?</strong>
+                <div style="color:var(--muted);font-weight:600;margin-top:6px">
+                  Voyez la plateforme en action et discutons de votre fonctionnement.
+                </div>
+              </div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <a class="btn btn-outline" href="#demo" data-scroll>🎥 Voir la démo</a>
+                <a class="btn btn-primary" href="contact.html">Demandez une demo</a>
               </div>
             </div>
-
-            <ul class="pricing-list">
-              <li>Accès selon le rôle attribué</li>
-              <li>Mises à jour & maintenance incluses</li>
-              <li>Déploiement progressif possible</li>
-            </ul>
-
-            <div class="pricing-cta">
-              <a class="btn btn-primary" href="./contact.html">Demandez une démo</a>
-              <a class="btn btn-outline" href="./a-propos.html">Nous découvrir</a>
-            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <section class="section section-lite">
+    <footer class="footer">
       <div class="container">
-        <div class="cta cta-lite">
-          <div class="cta-grid">
-            <div>
-              <h2 style="margin:0">Une démo courte, centrée sur votre école.</h2>
-              <p>En visio, orientée besoins réels.</p>
-            </div>
-            <a class="btn btn-primary" href="./contact.html">📅 Demandez une démo</a>
+        <div class="footer-grid">
+          <div>© <span id="year"></span> Ma Trousse Scolaire</div>
+          <div style="display:flex;gap:14px;flex-wrap:wrap">
+            <a href="a-propos.html">Qui sommes-nous ?</a>
+            <a href="rgpd.html">RGPD</a>
+            <a href="contact.html">Contact</a>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </footer>
 
-  <footer class="footer footer-lite" role="contentinfo">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="small">
-          <strong>Ma Trousse Scolaire</strong> — © <span id="y"></span>
-        </div>
-        <div class="small">
-          <a href="./a-propos.html">Nous</a> ·
-          <a href="./contact.html">Contact</a> ·
-          <a href="./rgpd.html">RGPD</a>
-        </div>
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Aperçu image">
+      <div class="lightbox-backdrop" data-lightbox-close></div>
+      <div class="lightbox-panel">
+        <button class="lightbox-close" type="button" aria-label="Fermer" data-lightbox-close>✕</button>
+        <img id="lightbox-img" src="" alt="Aperçu" />
       </div>
     </div>
-  </footer>
 
-  <!-- Lightbox -->
-  <div class="lightbox" id="lightbox" aria-hidden="true">
-    <div class="lightbox-backdrop" data-close="1" aria-label="Fermer"></div>
-    <div class="lightbox-panel" role="dialog" aria-modal="true" aria-label="Aperçu de la capture">
-      <button class="lightbox-close" type="button" aria-label="Fermer" data-close="1">✕</button>
-      <img id="lightboxImg" alt="Capture en grand" />
-    </div>
-  </div>
-
-  <script>
-    document.getElementById("y").textContent = new Date().getFullYear();
-
-    (function () {
-      const lb = document.getElementById("lightbox");
-      const img = document.getElementById("lightboxImg");
-      const tiles = document.querySelectorAll("[data-full]");
-
-      function open(src, alt) {
-        img.src = src;
-        img.alt = alt || "Capture en grand";
-        lb.classList.add("is-open");
-        lb.setAttribute("aria-hidden", "false");
-        document.body.classList.add("no-scroll");
-      }
-
-      function close() {
-        lb.classList.remove("is-open");
-        lb.setAttribute("aria-hidden", "true");
-        img.removeAttribute("src");
-        document.body.classList.remove("no-scroll");
-      }
-
-      tiles.forEach(t => {
-        t.addEventListener("click", () => open(t.getAttribute("data-full"), t.querySelector("img")?.alt));
-      });
-
-      lb.addEventListener("click", (e) => {
-        if (e.target && e.target.getAttribute && e.target.getAttribute("data-close") === "1") close();
-      });
-
-      document.addEventListener("keydown", (e) => {
-        if (e.key === "Escape" && lb.classList.contains("is-open")) close();
-      });
-    })();
-  </script>
-</body>
+    <script src="site.js"></script>
+  </body>
 </html>
