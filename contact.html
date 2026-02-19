@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact — Ma Trousse Scolaire</title>
-  <meta name="description" content="Contactez Ma Trousse Scolaire : email, téléphone, et réservation de démo via Calendly." />
+  <meta name="description" content="Contact Ma Trousse Scolaire : email, téléphone, et réservation de démonstration." />
   <link rel="canonical" href="https://laodhy.github.io/mts-landing/contact.html" />
   <link rel="icon" href="./assets/logo-mts.png" />
   <link rel="stylesheet" href="./site.css" />
 
-  <!-- Calendly -->
+  <!-- Calendly (optionnel : activez seulement si vous l’utilisez) -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 </head>
 <body>
@@ -20,62 +20,59 @@
           <img src="./assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
           <strong>Ma Trousse Scolaire</strong>
         </a>
+
         <div class="nav-links">
-          <a href="./presentation.html">Présentation</a>
+          <a href="./index.html#captures">Captures</a>
           <a href="./a-propos.html">À propos</a>
-          <a href="./rgpd.html">RGPD</a>
           <a href="./contact.html">Contact</a>
         </div>
+
         <div class="nav-cta">
-          <a class="btn btn-outline" href="./presentation.html">Produit</a>
-          <a class="btn btn-primary" href="#calendly">Réserver</a>
+          <a class="btn btn-outline" href="./index.html">Accueil</a>
+          <a class="btn btn-primary" href="#rdv">Réserver</a>
         </div>
       </nav>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
+    <section class="page-hero page-hero-lite">
       <div class="container">
         <h1>Contact</h1>
-        <p>Une question ? Une démo ? On répond vite. Et si tu veux, tu peux réserver un créneau directement.</p>
+        <p>Pour une question ou une démonstration, vous pouvez nous écrire, nous appeler, ou réserver un créneau.</p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-lite">
       <div class="container">
-        <div class="grid-3">
-          <div class="card">
+        <div class="grid-3 grid-3-lite">
+          <div class="card card-lite">
             <div class="icon">📩</div>
             <h3>Email</h3>
             <p><a href="mailto:troussescolaireapp@gmail.com"><strong>troussescolaireapp@gmail.com</strong></a></p>
-            <p class="small">Réponse sous 24–48h (souvent plus rapide).</p>
           </div>
 
-          <div class="card">
+          <div class="card card-lite">
             <div class="icon gold">📞</div>
             <h3>Téléphone</h3>
             <p><a href="tel:+33689668538"><strong>06 89 66 85 38</strong></a></p>
-            <p class="small">Si je ne réponds pas, laisse un SMS, je rappelle.</p>
           </div>
 
-          <div class="card">
-            <div class="icon blue">🔒</div>
-            <h3>Données / RGPD</h3>
-            <p>Tu peux consulter notre page dédiée : <a href="./rgpd.html"><strong>RGPD</strong></a>.</p>
-            <p class="small">Transparence sur la collecte, l’hébergement et la sécurité.</p>
+          <div class="card card-lite">
+            <div class="icon blue">🗓️</div>
+            <h3>Démonstration</h3>
+            <p>Réservation en visio, au créneau qui vous convient.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section" id="calendly">
+    <section class="section section-lite" id="rdv">
       <div class="container">
-        <div class="prose">
-          <h2>Réserver une démo</h2>
-          <p>Choisis un créneau : on fait une démo courte, orientée direction / secrétariat / enseignants selon vos besoins.</p>
-
-<!-- Début de widget en ligne Calendly -->
+        <div class="prose prose-lite">
+          <h2 style="margin:0 0 8px">Réserver un créneau</h2>
+          
+          <!-- Début de widget en ligne Calendly -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/troussescolaireapp/nouvelle-reunion?hide_event_type_details=1&hide_gdpr_banner=1" style="min-width:320px;height:700px;"></div>
 <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 <!-- Fin de widget en ligne Calendly -->
@@ -84,11 +81,11 @@
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer footer-lite">
     <div class="container">
       <div class="footer-grid">
-        <div class="small">© <span id="y"></span> — Ma Trousse Scolaire</div>
-        <div class="small"><a href="./index.html">Accueil</a> · <a href="./rgpd.html">RGPD</a></div>
+        <div class="small"><strong>Ma Trousse Scolaire</strong> — © <span id="y"></span></div>
+        <div class="small"><a href="./a-propos.html">À propos</a> · <a href="./rgpd.html">RGPD</a></div>
       </div>
     </div>
     <script>document.getElementById("y").textContent = new Date().getFullYear();</script>

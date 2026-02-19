@@ -270,3 +270,73 @@ hr.sep{border:0;border-top:1px solid rgba(21,87,103,.12);margin:18px 0}
   .hero-points{grid-template-columns:1fr}
   .nav-links{display:none}
 }
+
+/* ===== LITE overrides (ajoutez à la FIN de site.css) ===== */
+.hero-lite{padding:44px 0 18px}
+.hero-grid-lite{gap:22px}
+.mock-lite{box-shadow: 0 18px 46px rgba(0,0,0,.10)}
+.section-lite{padding:34px 0}
+.section-head-lite{margin-bottom:14px}
+
+.grid-3-lite{gap:18px}
+.card-lite{
+  box-shadow: none;
+  background: rgba(255,255,255,.86);
+  border: 1px solid rgba(21,87,103,.10);
+  padding:16px;
+}
+.card-lite p{margin:0;color:var(--muted)}
+
+.mini-proof{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.mini-pill{
+  display:inline-flex;align-items:center;
+  padding:8px 12px;border-radius:999px;
+  background: rgba(21,87,103,.06);
+  border: 1px solid rgba(21,87,103,.12);
+  color: var(--primary-color);
+  font-weight:800;
+  font-size:.95rem;
+}
+
+.shots-wrap{
+  border-radius: 22px;
+  background: rgba(255,255,255,.75);
+  border: 1px solid rgba(21,87,103,.10);
+  padding: 12px;
+}
+
+.shots{
+  display:flex;
+  gap: 14px;
+  overflow-x:auto;
+  overflow-y:hidden;
+  scroll-snap-type:x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 4px;
+}
+.shots:focus{outline: 2px solid rgba(184,134,11,.35); outline-offset: 6px}
+
+.shot{
+  flex: 0 0 92%;
+  max-width: 92%;
+  scroll-snap-align: start;
+  border-radius: 20px;
+  overflow:hidden;
+  border: 1px solid rgba(0,0,0,.08);
+  background: white;
+  box-shadow: 0 10px 26px rgba(0,0,0,.08);
+}
+@media (min-width: 980px){
+  .shot{flex-basis: 62%; max-width: 62%;}
+}
+
+.hint{margin-top:10px;color:var(--muted)}
+
+.cta-lite{
+  border-radius: 26px;
+  box-shadow: none;
+}
+
+.footer-lite{padding:26px 0}
+.page-hero-lite{padding:32px 0 8px}
+.prose-lite{box-shadow:none}

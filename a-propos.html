@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>À propos — Ma Trousse Scolaire</title>
-  <meta name="description" content="Qui est derrière Ma Trousse Scolaire : Laurent (développeur) et Cassandra (enseignante). Un produit construit à partir des besoins terrain." />
+  <meta name="description" content="Ma Trousse Scolaire est conçu par Laurent (développeur) et Cassandra (enseignante), avec une approche terrain et une exigence produit." />
   <link rel="canonical" href="https://laodhy.github.io/mts-landing/a-propos.html" />
   <link rel="icon" href="./assets/logo-mts.png" />
   <link rel="stylesheet" href="./site.css" />
@@ -17,14 +17,15 @@
           <img src="./assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
           <strong>Ma Trousse Scolaire</strong>
         </a>
+
         <div class="nav-links">
-          <a href="./presentation.html">Présentation</a>
+          <a href="./index.html#captures">Captures</a>
           <a href="./a-propos.html">À propos</a>
-          <a href="./rgpd.html">RGPD</a>
           <a href="./contact.html">Contact</a>
         </div>
+
         <div class="nav-cta">
-          <a class="btn btn-outline" href="./presentation.html">Produit</a>
+          <a class="btn btn-outline" href="./index.html">Accueil</a>
           <a class="btn btn-primary" href="./contact.html">Demander une démo</a>
         </div>
       </nav>
@@ -32,61 +33,50 @@
   </header>
 
   <main>
-    <section class="page-hero">
+    <section class="page-hero page-hero-lite">
       <div class="container">
         <h1>À propos</h1>
-        <p>Ma Trousse Scolaire est née d’un constat simple : le quotidien d’une école est rempli de micro-actions importantes… et trop souvent gérées avec des outils dispersés.</p>
+        <p>Un produit construit avec une idée simple : si c’est utile au quotidien d’une école, cela doit être clair, rapide et agréable à utiliser.</p>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section section-lite">
       <div class="container">
-        <div class="prose">
-          <h2>Pourquoi on l’a créé</h2>
-          <p>
-            <strong>Cassandra</strong> est enseignante : elle connaît la réalité terrain, les contraintes, les urgences,
-            ce qui doit être simple, rapide, et réellement utilisable.
-          </p>
-          <p>
-            <strong>Laurent</strong> est ingénieur logiciel .NET : il construit des applications robustes, maintenables,
-            pensées pour durer… mais surtout, pensées pour être adoptées.
-          </p>
-          <p>
-            MTS, c’est ce mélange : <strong>exigence technique</strong> + <strong>bon sens terrain</strong>.
-          </p>
+        <div class="grid-3 grid-3-lite" style="grid-template-columns:1fr 1fr;gap:16px">
+          <div class="card card-lite">
+            <div class="icon">👨‍💻</div>
+            <h3>Laurent</h3>
+            <p>Développement & produit. Une attention forte à la robustesse, la maintenabilité et la fluidité d’usage.</p>
+          </div>
 
-          <hr class="sep">
+          <div class="card card-lite">
+            <div class="icon gold">👩‍🏫</div>
+            <h3>Cassandra</h3>
+            <p>Enseignante. Elle apporte la réalité terrain, les besoins concrets et le “bon sens école”.</p>
+          </div>
+        </div>
 
-          <h2>Notre approche</h2>
-          <ul>
-            <li><strong>Concret</strong> : on part de vos processus réels, pas d’un idéal théorique.</li>
-            <li><strong>Simple</strong> : l’interface doit “couler” naturellement, même en journée chargée.</li>
-            <li><strong>Rôles & droits</strong> : chacun voit ce qui est utile (direction / secrétariat / enseignants / personnel).</li>
-            <li><strong>Évolutif</strong> : on améliore en continu avec les retours d’école.</li>
-          </ul>
-
-          <hr class="sep">
-
-          <h2>Et maintenant ?</h2>
-          <p>
-            Si tu veux, on te fait une démo orientée “problèmes réels” :
-            appel, tickets, cantine/APC, documents, organisation du jour… et on voit ensemble ce qui te ferait gagner du temps.
+        <div class="prose prose-lite" style="margin-top:16px">
+          <h2 style="margin:0 0 8px">Pourquoi Ma Trousse Scolaire ?</h2>
+          <p style="margin:0">
+            Parce que l’organisation interne est souvent gérée avec des outils dispersés.
+            MTS centralise l’essentiel (appel, tickets, plannings, évaluations, documents) dans une interface pensée pour l’usage quotidien.
           </p>
 
           <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:14px">
             <a class="btn btn-primary" href="./contact.html">📅 Planifier une démo</a>
-            <a class="btn btn-outline" href="./rgpd.html">RGPD & données</a>
+            <a class="btn btn-outline" href="./index.html#captures">Voir les captures</a>
           </div>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
+  <footer class="footer footer-lite">
     <div class="container">
       <div class="footer-grid">
-        <div class="small">© <span id="y"></span> — Laurent & Cassandra</div>
-        <div class="small"><a href="./index.html">Accueil</a> · <a href="./contact.html">Contact</a></div>
+        <div class="small"><strong>Ma Trousse Scolaire</strong> — © <span id="y"></span></div>
+        <div class="small"><a href="./contact.html">Contact</a> · <a href="./rgpd.html">RGPD</a></div>
       </div>
     </div>
     <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
