@@ -33,7 +33,7 @@
           </a>
 
           <div class="header-float-actions" aria-label="Actions">
-            <a class="btn btn-primary btn-sm" href="#presentation" data-scroll>Présentation</a>
+            <a class="btn btn-primary btn-sm" href="index.html">Présentation</a>
             <a class="btn btn-outline btn-sm" href="outils.html">Outils</a>
             <a class="btn btn-outline btn-sm" href="a-propos.html">Qui sommes-nous ?</a>
             <a class="btn btn-outline btn-sm" href="contact.html">Demandez une demo</a>
@@ -82,11 +82,14 @@
                 <div class="frame-meta">Aperçu</div>
               </div>
               <div class="frame-body">
-                <img
-                  src="assets/screenshot-home.png"
-                  alt="Capture d’écran - Tableau de bord Ma Trousse Scolaire"
-                  loading="lazy"
-                />
+                <a href="#" data-lightbox="assets/MTS - Home.png" style="display:block;">
+                  <img
+                    src="assets/MTS - Home.png"
+                    alt="Capture d’écran - Tableau de bord Ma Trousse Scolaire"
+                    loading="lazy"
+                    style="width:100%;max-width:700px;display:block;margin:auto;cursor:zoom-in;box-shadow:0 16px 40px rgba(11,92,255,0.10)"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -326,31 +329,54 @@
           <div class="pricing">
             <div class="card pricing-card reveal">
               <div class="pricing-head">
-                <div>
-                  <strong>Tarification</strong>
-                  <div class="frame-meta">Par classe / an</div>
-                </div>
-                <div class="promo">Offre de lancement</div>
+                  <div>
+                    <strong style="font-size:2.2rem;color:var(--primary);font-weight:900;letter-spacing:-1px;line-height:1.1;display:block;margin-bottom:2px;">Tarification</strong>
+                  </div>
               </div>
-
-              <div style="padding:18px">
-                <div class="price">
-                  40 € HT <span style="font-size:14px;color:var(--muted);font-weight:700">/ classe / an</span>
+              <div style="padding:18px 18px 0 18px;">
+                <div class="price">40&nbsp;€ HT <span style="font-size:14px;color:var(--muted);font-weight:700">/ classe / an</span></div>
+                <div style="color:#f2b844;font-weight:700;margin:8px 0 0 0;">Offre de lancement&nbsp;: <span style="color:#0f172a;font-weight:800">30&nbsp;€ HT</span> par classe / an la première année</div>
+                <ul style="margin:12px 0 0 0;padding:0 0 0 18px;color:var(--muted);font-size:15px;">
+                  <li>Accès à l’application selon le rôle attribué</li>
+                  <li>Mises à jour et maintenances incluses</li>
+                </ul>
+              </div>
+              <div class="grid-3" style="margin:18px 0 0 0;gap:16px;">
+                <div class="card" style="background:#f6fbff;">
+                  <div style="font-weight:700;color:#0b5cff;margin-bottom:4px;">Pilotage & administration</div>
+                  <div style="font-size:14px;color:var(--muted);margin-bottom:4px;">Direction, secrétariat, enseignants référents</div>
+                  <ul style="margin:0 0 8px 0;padding:0 0 0 16px;font-size:15px;">
+                    <li>Accès à toutes les fonctionnalités</li>
+                  </ul>
                 </div>
-                <p style="margin:10px 0 0;color:var(--muted);font-weight:600">
-                  Offre de lancement : <strong>30 € HT</strong> par classe / an la première année.
-                </p>
-
-                <div style="margin-top:14px">
-                  <div class="highlight">✔ Mises à jour incluses</div>
-                  <div class="highlight">✔ Organisation et suivi centralisés</div>
-                  <div class="highlight">✔ Un espace clair pour l’équipe</div>
+                <div class="card" style="background:#f6fbff;">
+                  <div style="font-weight:700;color:#1a7e4b;margin-bottom:4px;">Enseignement & gestion de classe</div>
+                  <div style="font-size:14px;color:var(--muted);margin-bottom:4px;">Enseignants, maître E</div>
+                  <ul style="margin:0 0 8px 0;padding:0 0 0 16px;font-size:15px;">
+                    <li>Visibilité de l’école</li>
+                    <li>Paramétrage de la classe</li>
+                  </ul>
                 </div>
-
-                <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
-                  <a class="btn btn-primary" href="contact.html">Demandez une demo</a>
-                  <a class="btn btn-outline" href="rgpd.html">RGPD</a>
+                <div class="card" style="background:#f6fbff;">
+                  <div style="font-weight:700;color:#1a7e4b;margin-bottom:4px;">Vie scolaire & organisation</div>
+                  <div style="font-size:14px;color:var(--muted);margin-bottom:4px;">Personnels de l’école</div>
+                  <ul style="margin:0 0 8px 0;padding:0 0 0 16px;font-size:15px;">
+                    <li>Visibilité de l’école</li>
+                    <li>Paramétrage (soins, cantine)</li>
+                  </ul>
                 </div>
+              </div>
+              <div style="margin:18px 0 0 0;padding:12px 0 0 0;border-top:1px solid #f2b84433;">
+                <div style="font-size:15px;color:#b48a0a;font-weight:700;margin-bottom:4px;">Comptes temporaires possibles :</div>
+                <ul style="margin:0 0 0 0;padding:0 0 0 18px;font-size:15px;">
+                  <li>Enseignant remplaçant</li>
+                  <li>Personnel remplaçant</li>
+                  <li style="color:#0f172a;font-size:14px;margin-top:2px;">Accès limité (dates de début et fin)</li>
+                </ul>
+              </div>
+              <div style="margin:18px 0 0 0;display:flex;gap:12px;flex-wrap:wrap;">
+                <a class="btn btn-primary" href="contact.html">Demandez une démo</a>
+                <a class="btn btn-outline" href="rgpd.html">RGPD</a>
               </div>
             </div>
           </div>
