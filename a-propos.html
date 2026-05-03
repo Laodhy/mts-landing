@@ -1,323 +1,332 @@
 <!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Qui sommes-nous ? — Ma Trousse Scolaire</title>
-  <meta name="description"
-    content="Ma Trousse Scolaire est née du terrain : pensée par une enseignante, et mise en forme en application claire et agréable pour toute l’équipe." />
-  <link rel="stylesheet" href="style.css" />
-</head>
+    <title>Qui sommes-nous ? — Ma Trousse Scolaire</title>
 
-<body>
-  <!-- HEADER sticky identique -->
-  <header class="header" id="site-header">
-    <div class="container">
-      <div class="topbar topbar-branding">
-        <a class="brand brand-xl" href="index.html" aria-label="Ma Trousse Scolaire">
-          <img src="assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
-          <div class="brand-text">
-            <strong>Ma Trousse Scolaire</strong>
-            <span>Communication & organisation d’école</span>
-          </div>
-        </a>
+    <meta
+      name="description"
+      content="Ma Trousse Scolaire est née du terrain : pensée par une enseignante, puis transformée en logiciel métier clair, simple et agréable pour les équipes éducatives."
+    />
 
-        <div class="header-float-actions">
-          <a class="btn btn-outline btn-sm" href="index.html">Présentation</a>
-          <a class="btn btn-outline btn-sm" href="outils.html">Outils</a>
-          <a class="btn btn-primary btn-sm" href="a-propos.html">Qui sommes-nous ?</a>
-          <a class="btn btn-outline btn-sm" href="contact.html">Demandez une démo</a>
+    <meta property="og:title" content="Qui sommes-nous ? — Ma Trousse Scolaire" />
+    <meta
+      property="og:description"
+      content="Une application née du terrain, imaginée à partir de situations réelles vécues dans les écoles."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header" id="site-header">
+      <div class="container">
+        <div class="topbar topbar-branding">
+          <a class="brand brand-xl" href="index.html" aria-label="Ma Trousse Scolaire">
+            <img src="assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
+            <div class="brand-text">
+              <strong>Ma Trousse Scolaire</strong>
+              <span>Logiciel métier pour les écoles</span>
+            </div>
+          </a>
+
+          <nav class="header-float-actions" aria-label="Navigation principale">
+            <a class="nav-link" href="index.html">Présentation</a>
+            <a class="nav-link" href="outils.html">Outils</a>
+            <a class="btn btn-primary btn-sm" href="a-propos.html">Qui sommes-nous ?</a>
+            <a class="nav-link" href="contact.html">Demandez une démo</a>
+          </nav>
         </div>
       </div>
+    </header>
+
+    <main>
+      
+<!-- HERO -->
+<section class="hero about-hero" id="top">
+  <div class="container">
+    <div class="about-hero-content reveal">
+      <div class="kicker">
+        <span class="badge">Une application née du terrain</span>
+      </div>
+
+      <h1 class="h-title">
+        Pensée par le terrain.<br /><em>Construite pour le terrain.</em>
+      </h1>
+
+      <p class="h-sub">
+        Ma Trousse Scolaire est née d’un constat simple : dans une école,
+        l’information circule vite… et se perd encore plus vite.
+      </p>
     </div>
-  </header>
+  </div>
+</section>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero">
-      <div class="container">
-        <div class="reveal">
-          <div class="kicker">
-            <span class="badge">Une application née du terrain</span>
+      <!-- HISTOIRE -->
+      <section class="section section-tinted">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <div class="section-label">Notre histoire</div>
+              <h2 class="section-title">Tout est parti d’un besoin très concret.</h2>
+              <p class="section-sub">
+                Les écoles utilisent souvent plusieurs canaux en parallèle : messages, papiers, fichiers,
+                discussions orales, tableaux, documents partagés. Le problème n’est pas le manque d’information,
+                mais le fait qu’elle soit rarement au bon endroit, au bon moment.
+              </p>
+            </div>
           </div>
 
-          <h1 class="h-title">Construite avec la réalité d’une école.</h1>
+          <div class="grid-3">
+            <article class="card feature-card reveal" data-reveal-delay="40">
+              <div class="icon">🧩</div>
+              <h3>Au départ : trop dispersé</h3>
+              <p>
+                Des messages éparpillés, des informations importantes difficiles à retrouver,
+                et des décisions parfois non tracées.
+              </p>
+            </article>
 
-          <p class="h-sub">
-            Pensée par une <strong>enseignante</strong>, puis transformée en application
-            <strong>simple, claire et agréable</strong> pour toute l’équipe.
-          </p>
+            <article class="card feature-card reveal" data-reveal-delay="80">
+              <div class="icon">👩‍🏫</div>
+              <h3>Une idée venue du terrain</h3>
+              <p>
+                Les besoins ont été observés dans la vie réelle d’une école :
+                absences, cantine, documents, soins, responsabilités, activités et imprévus.
+              </p>
+            </article>
 
-        </div>
-      </div>
-    </section>
-
-    <!-- NOTRE HISTOIRE -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <h2 style="margin:0;font-size:28px">Notre histoire</h2>
-            <p style="margin:10px 0 0;color:var(--muted);font-weight:600;">
-              Tout est parti d’un constat simple : dans une école, l’information circule vite… et se perd encore plus
-              vite.
-            </p>
+            <article class="card feature-card reveal" data-reveal-delay="120">
+              <div class="icon">✅</div>
+              <h3>Résultat : un logiciel métier</h3>
+              <p>
+                Un espace unique pour structurer la communication interne et l’organisation quotidienne,
+                sans alourdir le travail de l’équipe.
+              </p>
+            </article>
           </div>
         </div>
+      </section>
 
-        <div class="grid-3">
-          <article class="card reveal" data-reveal-delay="40">
-            <div class="icon">🧩</div>
-            <h3>Au départ : trop dispersé</h3>
-            <p>Messages éparpillés, informations importantes difficiles à retrouver, décisions non tracées.</p>
-          </article>
-
-          <article class="card reveal" data-reveal-delay="40">
-            <div class="icon">🛩️</div>
-            <h3>Au départ : trop dispersée</h3>
-            <p>Messages éparpillés, informations importantes difficiles à retrouver, décisions non tracées.</p>
-          </article>
-          </article>
-
-          <article class="card reveal" data-reveal-delay="120">
-            <div class="icon">✅</div>
-            <h3>Résultat : une application complète</h3>
-            <p>Un seul espace pour structurer la communication interne et l’organisation quotidienne de l’école.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- QUI SOMMES-NOUS (2 profils) -->
-    <section class="section" id="equipe">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <h2 style="margin:0;font-size:28px">Qui sommes-nous ?</h2>
-            <p style="margin:10px 0 0;color:var(--muted);font-weight:600;">
-              Ma Trousse Scolaire est née d’un duo : une vision “terrain” et une mise en forme pensée pour être simple à
-              utiliser, au quotidien.
-            </p>
+      <!-- ÉQUIPE -->
+      <section class="section" id="equipe">
+        <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <div class="section-label">Le duo derrière le projet</div>
+              <h2 class="section-title">Une vision terrain, une construction métier.</h2>
+              <p class="section-sub">
+                Ma Trousse Scolaire est née d’un duo complémentaire :
+                une connaissance fine du quotidien des écoles, et une mise en forme technique pensée
+                pour être claire, robuste et agréable à utiliser.
+              </p>
+            </div>
           </div>
-        </div>
 
-        <div class="about-person-foot mb-3">
-          <span class="mini-pill">📍 Basé en France</span>
-          <span class="mini-pill">🤝 Approche pragmatique</span>
-          <span class="mini-pill">🧘 Clarté d’abord</span>
-        </div>
+<div class="about-context reveal">
+  <div class="about-context-item">
+    <span>📍</span>
+    <strong>Basé en France</strong>
+  </div>
 
-        <div class="about-people">
-          <!-- Cassandra -->
-          <article class="card reveal about-person" data-reveal-delay="40">
-            <div class="about-person-head">
-              <div class="about-avatar" aria-hidden="true">CM</div>
-              <div>
-                <h3 style="margin:0">Cassandra Mons</h3>
-                <div class="frame-meta" style="margin-top:6px">Enseignante (maternelle & primaire) — depuis 2015</div>
-              </div>
-            </div>
+  <div class="about-context-separator"></div>
 
-            <p style="color:var(--muted);font-weight:600;margin-top:14px">
-              Cassandra connaît les réalités du quotidien : l’imprévu, les informations qui se perdent, les urgences,
-              les détails importants à ne pas oublier.
-              Elle a travaillé dans des structures très différentes, mais avec un point commun : les mêmes difficultés
-              reviennent partout.
-            </p>
+  <div class="about-context-item">
+    <span>🤝</span>
+    <strong>Approche pragmatique</strong>
+  </div>
 
-            <div class="about-person-points">
-              <div class="about-point">
-                <span class="about-point-ico">🏫</span>
+  <div class="about-context-separator"></div>
+
+  <div class="about-context-item">
+    <span>🧘</span>
+    <strong>Clarté d’abord</strong>
+  </div>
+</div>
+
+          <div class="about-people">
+            <!-- Cassandra -->
+            <article class="card about-person reveal" data-reveal-delay="40">
+              <div class="about-person-head">
+                <div class="about-avatar" aria-hidden="true">CM</div>
                 <div>
-                  <strong>Des contextes variés</strong>
-                  <div class="about-point-sub">Petites écoles (≈ 5 classes) comme grandes structures (jusqu’à maternelle
-                    + primaire + collège).</div>
+                  <h3>Cassandra Mons</h3>
+                  <div class="about-role">Enseignante en maternelle et primaire — depuis 2015</div>
                 </div>
               </div>
 
-              <div class="about-point">
-                <span class="about-point-ico">🌍</span>
-                <div>
-                  <strong>Campagne & ville</strong>
-                  <div class="about-point-sub">Niveaux et réalités sociales très différentes, avec des besoins
-                    d’organisation qui convergent.</div>
+              <p class="about-person-intro">
+                Cassandra connaît les réalités du quotidien : l’imprévu, les informations qui se perdent,
+                les urgences, les détails importants à ne pas oublier. Elle a travaillé dans des structures
+                différentes, avec un point commun : les mêmes difficultés d’organisation reviennent souvent.
+              </p>
+
+              <div class="about-person-points">
+                <div class="about-point">
+                  <span class="about-point-ico">🏫</span>
+                  <div>
+                    <strong>Des contextes variés</strong>
+                    <div class="about-point-sub">
+                      Petites écoles comme grandes structures, avec des fonctionnements très différents.
+                    </div>
+                  </div>
                 </div>
-              </div>
 
-              <div class="about-point">
-                <span class="about-point-ico">🧭</span>
-                <div>
-                  <strong>Observatrice des fonctionnements</strong>
-                  <div class="about-point-sub">Des méthodes différentes… mais des problèmes similaires : dispersion,
-                    manque de repères, charge mentale.</div>
+                <div class="about-point">
+                  <span class="about-point-ico">🌍</span>
+                  <div>
+                    <strong>Campagne et ville</strong>
+                    <div class="about-point-sub">
+                      Des réalités sociales et organisationnelles variées, mais des besoins qui convergent.
+                    </div>
+                  </div>
                 </div>
-              </div>
 
-              <div class="about-point">
-                <span class="about-point-ico">💡</span>
-                <div>
-                  <strong>Souvent référente numérique</strong>
-                  <div class="about-point-sub">Habituée à simplifier, rendre clair, et faire adopter des habitudes
-                    utiles à toute l’équipe.</div>
+                <div class="about-point">
+                  <span class="about-point-ico">🧭</span>
+                  <div>
+                    <strong>Observation du terrain</strong>
+                    <div class="about-point-sub">
+                      Dispersion, manque de repères, charge mentale : les mêmes irritants reviennent souvent.
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </article>
 
-          <!-- Laurent -->
-          <article class="card reveal about-person" data-reveal-delay="80">
-            <div class="about-person-head">
-              <div class="about-avatar about-avatar-primary" aria-hidden="true">LD</div>
-              <div>
-                <h3 style="margin:0">Laurent Duroussin</h3>
-                <div class="frame-meta" style="margin-top:6px">Ingénieur logiciel — applications métiers & expérience
-                  utilisateur</div>
-              </div>
-            </div>
-
-            <p style="color:var(--muted);font-weight:600;margin-top:14px">
-              Laurent conçoit des applications robustes et claires, avec une attention forte à l’ergonomie : des écrans
-              lisibles, des parcours simples,
-              et une cohérence qui donne confiance.
-            </p>
-
-            <div class="about-person-points">
-              <div class="about-point">
-                <span class="about-point-ico">🧱</span>
-                <div>
-                  <strong>Applications métiers</strong>
-                  <div class="about-point-sub">Transformer des besoins “terrain” en parcours simples et utilisables au
-                    quotidien.</div>
-                </div>
-              </div>
-
-              <div class="about-point">
-                <span class="about-point-ico">✨</span>
-                <div>
-                  <strong>Sensibilité UX/UI</strong>
-                  <div class="about-point-sub">Moins de friction, moins de complexité, plus de clarté et de confort.
+                <div class="about-point">
+                  <span class="about-point-ico">💡</span>
+                  <div>
+                    <strong>Sens du numérique utile</strong>
+                    <div class="about-point-sub">
+                      Simplifier, rendre clair, et faire adopter des habitudes utiles à toute l’équipe.
+                    </div>
                   </div>
                 </div>
               </div>
+            </article>
 
-              <div class="about-point">
-                <span class="about-point-ico">🔁</span>
+            <!-- Laurent -->
+            <article class="card about-person reveal" data-reveal-delay="80">
+              <div class="about-person-head">
+                <div class="about-avatar about-avatar-primary" aria-hidden="true">LD</div>
                 <div>
-                  <strong>Itération continue</strong>
-                  <div class="about-point-sub">Une application qui s’améliore en écoutant les retours et en restant
-                    fidèle au quotidien d’une école.</div>
+                  <h3>Laurent Duroussin</h3>
+                  <div class="about-role">Ingénieur logiciel — applications métiers et expérience utilisateur</div>
                 </div>
               </div>
 
-              <div class="about-point">
-                <span class="about-point-ico">🎯</span>
-                <div>
-                  <strong>Objectif : rendre simple</strong>
-                  <div class="about-point-sub">Structurer sans alourdir : l’équipe gagne du temps et de la sérénité.
+              <p class="about-person-intro">
+                Laurent conçoit des applications métiers robustes et lisibles, avec une attention forte à l’ergonomie :
+                des écrans clairs, des parcours simples, et une cohérence qui donne confiance aux utilisateurs.
+              </p>
+
+              <div class="about-person-points">
+                <div class="about-point">
+                  <span class="about-point-ico">🧱</span>
+                  <div>
+                    <strong>Applications métiers</strong>
+                    <div class="about-point-sub">
+                      Transformer des besoins terrain en parcours simples et utilisables au quotidien.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="about-point">
+                  <span class="about-point-ico">✨</span>
+                  <div>
+                    <strong>Sensibilité UX/UI</strong>
+                    <div class="about-point-sub">
+                      Moins de friction, moins de complexité, plus de clarté et de confort.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="about-point">
+                  <span class="about-point-ico">🔁</span>
+                  <div>
+                    <strong>Itération continue</strong>
+                    <div class="about-point-sub">
+                      Une application qui s’améliore avec les retours, sans s’éloigner du quotidien des écoles.
+                    </div>
+                  </div>
+                </div>
+
+                <div class="about-point">
+                  <span class="about-point-ico">🎯</span>
+                  <div>
+                    <strong>Objectif : rendre simple</strong>
+                    <div class="about-point-sub">
+                      Structurer sans alourdir : l’équipe gagne du temps, des repères et de la sérénité.
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- NOTRE DIFFÉRENCE -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <h2 style="margin:0;font-size:28px">Notre différence</h2>
-            <p style="margin:10px 0 0;color:var(--muted);font-weight:600;">
-              Pas “un outil de plus”. Une application complète qui structure le quotidien de l’école.
-            </p>
+            </article>
           </div>
         </div>
+      </section>
 
-        <div class="grid-3">
-          <article class="card reveal" data-reveal-delay="40">
-            <div class="icon">🏫</div>
-            <h3>Pensée pour l’équipe</h3>
-            <p>Direction, secrétariat, enseignants : chacun voit ce qui lui est utile, au bon endroit.</p>
-          </article>
+      <!-- CTA FINAL -->
+      <section class="section">
+        <div class="container">
+          <div class="cta reveal">
+            <div class="cta-grid">
+              <div>
+                <strong class="cta-title">Vous voulez voir si Ma Trousse Scolaire correspond à votre école ?</strong>
+                <p class="cta-sub">
+                  Une démonstration permet de visualiser l’application complète et d’échanger sur votre fonctionnement réel.
+                </p>
+              </div>
 
-          <article class="card reveal" data-reveal-delay="80">
-            <div class="icon">🗂️</div>
-            <h3>Infos qui restent</h3>
-            <p>On retrouve l’essentiel : moins d’oubli, moins de redites, moins de “tu l’as où déjà ?”.</p>
-          </article>
-
-          <article class="card reveal" data-reveal-delay="120">
-            <div class="icon">🧘</div>
-            <h3>Clarté au quotidien</h3>
-            <p>Moins de flou. Plus d’actions concrètes et de sérénité pour l’école.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- AVANT / APRÈS (visuel) -->
-
-
-    <!-- CTA FINAL -->
-    <section class="section">
-      <div class="container">
-        <div class="cta reveal">
-          <div class="cta-grid">
-            <div>
-              <strong style="font-size:18px">Vous voulez voir si ça colle à votre école ?</strong>
-              <div style="color:var(--muted);font-weight:600;margin-top:6px">
-                On vous présente l’application complète. En moyenne, l’échange dure 30 minutes.
+              <div class="cta-actions">
+                <a class="btn btn-ghost" href="index.html#demo">🎥 Voir la présentation</a>
+                <a class="btn btn-primary" href="contact.html">Demandez une démo</a>
               </div>
             </div>
-            <div>
-              <a class="btn btn-primary" href="contact.html">Demandez une démo</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer pro-footer">
+      <div class="container pro-footer-container">
+        <div class="pro-footer-main">
+          <a class="brand brand-xl" href="index.html" aria-label="Ma Trousse Scolaire">
+            <img src="./assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
+            <div class="brand-text">
+              <strong>Ma Trousse Scolaire</strong>
+              <span>Logiciel métier pour les écoles</span>
             </div>
+          </a>
+
+          <nav class="pro-footer-nav">
+            <a href="index.html">Présentation</a>
+            <a href="outils.html">Outils</a>
+            <a href="a-propos.html">Qui sommes-nous ?</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <div class="pro-footer-bottom">
+          <div class="pro-footer-legal">© <span id="y"></span> Ma Trousse Scolaire — Tous droits réservés.</div>
+          <div class="pro-footer-mentions">
+            <a href="rgpd.html">Mentions légales &amp; RGPD</a>
           </div>
         </div>
       </div>
-    </section>
+    </footer>
 
-    <!-- Lightbox (même pattern que index.html) -->
-    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Aperçu image">
-      <div class="lightbox-backdrop" data-lightbox-close></div>
-      <div class="lightbox-panel">
-        <button class="lightbox-close" type="button" aria-label="Fermer" data-lightbox-close>✕</button>
-        <img id="lightbox-img" src="" alt="Aperçu" />
-      </div>
-    </div>
-  </main>
-
-  <footer class="footer pro-footer">
-    <div class="container pro-footer-container">
-      <div class="pro-footer-main">
-        <a class="brand brand-xl" href="index.html" aria-label="Ma Trousse Scolaire" style="text-decoration:none;align-items:flex-start;gap:18px;">
-          <img src="assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" style="height:54px;width:auto;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.10);margin-bottom:0;" />
-          <div class="brand-text" style="line-height:1.1;">
-            <strong style="font-size:20px;letter-spacing:-0.5px;">Ma Trousse Scolaire</strong>
-            <span style="font-size:13px;color:var(--muted);font-weight:700;">Communication & organisation d’école</span>
-          </div>
-        </a>
-        <nav class="pro-footer-nav">
-          <a href="index.html">Présentation</a>
-          <a href="outils.html">Outils</a>
-          <a href="a-propos.html">Qui sommes-nous ?</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
-      <div class="pro-footer-bottom">
-        <div class="pro-footer-legal">© <span id="year"></span> Ma Trousse Scolaire &mdash; Tous droits réservés.</div>
-        <div class="pro-footer-mentions">
-          <a href="rgpd.html">Mentions légales &amp; RGPD</a>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <script src="site.js"></script>
-</body>
-
+    <script src="site.js"></script>
+  </body>
 </html>

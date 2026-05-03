@@ -1,275 +1,469 @@
 <!doctype html>
 <html lang="fr">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Outils — Ma Trousse Scolaire</title>
-  <meta name="description" content="Découvrez les outils de Ma Trousse Scolaire, chacun illustré par une courte vidéo.">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="header" id="site-header">
-    <div class="container">
-      <div class="topbar topbar-branding">
-        <a class="brand brand-xl" href="index.html" aria-label="Ma Trousse Scolaire">
-          <img src="assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
-          <div class="brand-text">
-            <strong>Ma Trousse Scolaire</strong>
-            <span>Communication & organisation d’école</span>
-          </div>
-        </a>
-        <div class="header-float-actions">
-          <a class="btn btn-outline btn-sm" href="index.html">Présentation</a>
-          <a class="btn btn-primary btn-sm" href="outils.html">Outils</a>
-          <a class="btn btn-outline btn-sm" href="a-propos.html">Qui sommes-nous ?</a>
-          <a class="btn btn-outline btn-sm" href="contact.html">Demandez une démo</a>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="hero" style="background:linear-gradient(180deg,#ffffff 0%, #fbfdff 100%); position:relative;">
-      <div class="container">
-        <div class="section-head reveal">
-          <div>
-            <h1 style="margin:0;font-size:38px">Les outils de Ma Trousse Scolaire</h1>
-            <p style="margin:10px 0 0;color:var(--muted);font-weight:600;max-width:72ch">
-              Découvrez ici quelques-uns des outils principaux, illustrés par une vidéo claire et lisible.<br>
-              <span style="color:#0b5cff;font-weight:700">Cette liste n'est pas exhaustive&nbsp;: la plateforme propose de nombreux autres modules et fonctionnalités selon les besoins de chaque école.</span>
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-    <section class="section" style="padding-top:0;">
+    <title>Outils — Ma Trousse Scolaire</title>
+
+    <meta
+      name="description"
+      content="Découvrez les outils de Ma Trousse Scolaire : organisation quotidienne, tickets, activités, cantine, documents, soins, évaluations et suivi des élèves."
+    />
+
+    <meta property="og:title" content="Outils — Ma Trousse Scolaire" />
+    <meta
+      property="og:description"
+      content="Des outils concrets pour centraliser l'organisation, la communication interne et les informations importantes de l'école."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header" id="site-header">
       <div class="container">
-        <div style="display:flex;flex-direction:column;gap:38px;">
-          <div class="card reveal" data-reveal-delay="0" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-            <div style="flex:1;min-width:320px;">
-              <h2 style="margin:0 0 10px 0">Activités</h2>
-              <p style="font-size:17px;color:var(--muted);margin:0 0 10px 0;max-width:600px;">
-                Organisez les activités du temps méridien, les ateliers périscolaires, l’APC ou tout autre temps spécifique de l’école.<br><br>
-                Créez des créneaux, affectez les élèves en quelques clics, visualisez les groupes constitués et gardez une trace claire des participations.<br><br>
-                Une application pratique pour coordonner plusieurs intervenants et mieux répartir les élèves selon les besoins du moment.
-              </p>
+        <div class="topbar topbar-branding">
+          <a class="brand brand-xl" href="index.html" aria-label="Ma Trousse Scolaire">
+            <img src="assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
+            <div class="brand-text">
+              <strong>Ma Trousse Scolaire</strong>
+              <span>Logiciel métier pour les écoles</span>
             </div>
-            <video controls poster="assets/screenshot-home.png" style="width:540px;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.08);">
-              <source src="assets/MTS - Gif - Remplir - Activités.mp4#t=1" type="video/mp4">
-              Vidéo non supportée.
-            </video>
-          </div>
-          <div class="card reveal" data-reveal-delay="40" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-            <div style="flex:1;min-width:320px;">
-              <h2 style="margin:0 0 10px 0">Binômes</h2>
-              <p style="font-size:17px;color:var(--muted);margin:0 0 10px 0;max-width:600px;">
-                Créez des associations entre classes ou entre élèves pour favoriser les échanges, les tutorats ou les projets communs.<br><br>
-                L’application permet de constituer facilement des binômes ou petits groupes entre deux classes, puis de gérer les affectations par glisser-déposer.<br><br>
-                Idéale pour les projets de lecture, entraide, ateliers multi-niveaux ou temps forts entre classes.
-              </p>
-            </div>
-            <video controls poster="assets/screenshot-home.png" style="width:540px;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.08);">
-              <source src="assets/MTS - Gif - Remplir - Binômes.mp4#t=1" type="video/mp4">
-              Vidéo non supportée.
-            </video>
-          </div>
-          <div class="card reveal" data-reveal-delay="80" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-            <div style="flex:1;min-width:320px;">
-              <h2 style="margin:0 0 10px 0">Emploi du temps</h2>
-              <p style="font-size:17px;color:var(--muted);margin:0 0 10px 0;max-width:600px;">
-                Partagez un emploi du temps commun entre les enseignants et l’équipe éducative.<br><br>
-                Visualisez l’occupation des salles, les créneaux disponibles, les interventions extérieures ou les activités particulières.<br><br>
-                Un moyen simple d’éviter les conflits de réservation et d’améliorer la coordination dans l’école.
-              </p>
-            </div>
-            <video controls poster="assets/screenshot-home.png" style="width:540px;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.08);">
-              <source src="assets/MTS - Gif - Remplir - Emploi.mp4#t=1" type="video/mp4">
-              Vidéo non supportée.
-            </video>
-          </div>
-          <div class="card reveal" data-reveal-delay="120" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-            <div style="flex:1;min-width:320px;">
-              <h2 style="margin:0 0 10px 0">Groupes</h2>
-              <p style="font-size:17px;color:var(--muted);margin:0 0 10px 0;max-width:600px;">
-                Créez et suivez des groupes d’élèves selon vos besoins pédagogiques : remédiation, ateliers, besoins spécifiques ou projets ponctuels.<br><br>
-                Les groupes sont simples à constituer, modifiables à tout moment, et accessibles par l’ensemble de l’équipe concernée.<br><br>
-                Un vrai support pour la différenciation et le travail en petits effectifs.
-              </p>
-            </div>
-            <video controls poster="assets/screenshot-home.png" style="width:540px;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.08);">
-              <source src="assets/MTS - Gif - Remplir - Groupes.mp4#t=1" type="video/mp4">
-              Vidéo non supportée.
-            </video>
-          </div>
-          <div class="card reveal" data-reveal-delay="160" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-            <div style="flex:1;min-width:320px;">
-              <h2 style="margin:0 0 10px 0">Roulement</h2>
-              <p style="font-size:17px;color:var(--muted);margin:0 0 10px 0;max-width:600px;">
-                Planifiez des rotations automatiques entre classes pour les activités régulières de l’école.<br><br>
-                Attribuez par exemple la cour, le rangement, les temps de prière, la bibliothèque ou d’autres responsabilités sur plusieurs semaines ou mois.<br><br>
-                L’application tient compte du calendrier scolaire et offre une vision claire des prochaines affectations.
-              </p>
-            </div>
-            <video controls poster="assets/screenshot-home.png" style="width:540px;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.08);">
-              <source src="assets/MTS - Gif - Remplir - Roulement.mp4#t=1" type="video/mp4">
-              Vidéo non supportée.
-            </video>
-          </div>
-          <div class="card reveal" data-reveal-delay="200" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-            <div style="flex:1;min-width:320px;">
-              <h2 style="margin:0 0 10px 0">Répartition d’urgence</h2>
-              <p style="font-size:17px;color:var(--muted);margin:0 0 10px 0;max-width:600px;">
-                En cas d’absence imprévue d’un enseignant, répartissez rapidement les élèves dans les autres classes de l’école.<br><br>
-                Visualisez les capacités d’accueil, générez une répartition équilibrée et gardez une trace des élèves déplacés.<br><br>
-                Une application conçue pour gagner du temps dans les situations sensibles du quotidien.
-              </p>
-            </div>
-            <video controls poster="assets/screenshot-home.png" style="width:540px;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.08);">
-              <source src="assets/MTS - Gif - Remplir - Répartition d_urgence.mp4#t=1" type="video/mp4">
-              Vidéo non supportée.
-            </video>
-          </div>
-          <div class="card reveal" data-reveal-delay="240" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-            <div style="flex:1;min-width:320px;">
-              <h2 style="margin:0 0 10px 0">Services de cantine</h2>
-              <p style="font-size:17px;color:var(--muted);margin:0 0 10px 0;max-width:600px;">
-                Organisez la présence des classes ou des élèves sur le temps du midi.<br><br>
-                Visualisez les services de cantine, les passages par créneau, les activités parallèles (APC, intervenants, périscolaire) et les répartitions prévues.<br><br>
-                Une application claire pour mieux coordonner enseignants, cantine et personnel encadrant.
-              </p>
-            </div>
-            <video controls poster="assets/screenshot-home.png" style="width:540px;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.08);">
-              <source src="assets/MTS - Gif - Remplir - Services de cantine.mp4#t=1" type="video/mp4">
-              Vidéo non supportée.
-            </video>
-          </div>
-          <div class="card reveal" data-reveal-delay="280" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-            <div style="flex:1;min-width:320px;">
-              <h2 style="margin:0 0 10px 0">Tickets</h2>
-              <p style="font-size:17px;color:var(--muted);margin:0 0 10px 0;max-width:600px;">
-                Centralisez les demandes et événements du quotidien dans un système simple et structuré.<br><br>
-                Absences signalées, retards, demandes particulières, autorisations de sortie, imprévus ou besoins internes : tout est regroupé au même endroit.<br><br>
-                Chaque ticket peut être suivi, traité et historisé pour éviter les oublis et fluidifier la communication interne.
-              </p>
-            </div>
-            <video controls poster="assets/screenshot-home.png" style="width:540px;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.08);">
-              <source src="assets/MTS - Gif - Remplir - Tickets.mp4#t=1" type="video/mp4">
-              Vidéo non supportée.
-            </video>
-          </div>
-            <div class="card reveal" data-reveal-delay="320" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-              <div style="flex:1;min-width:320px;">
-                <h2 style="margin:0 0 10px 0">Classes</h2>
-                <p style="font-size:17px;color:var(--muted);margin:0 0 10px 0;max-width:600px;">
-                  Gérez la liste des classes de l’école, leurs effectifs, niveaux et enseignants référents.<br><br>
-                  Ajoutez, modifiez ou archivez les classes selon l’organisation de l’établissement.<br><br>
-                  Un point d’entrée central pour toutes les affectations et la gestion des groupes.
-                </p>
-              </div>
-              <video controls poster="assets/screenshot-home.png" style="width:540px;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.08);">
-                <source src="assets/MTS - Gif - Remplir - Classes.mp4#t=1" type="video/mp4">
-                Vidéo non supportée.
-              </video>
-            </div>
-            <div class="card reveal" data-reveal-delay="360" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-              <div style="flex:1;min-width:320px;">
-                <h2 style="margin:0 0 10px 0">Documents</h2>
-                <p style="font-size:17px;color:var(--muted);margin:0 0 10px 0;max-width:600px;">
-                  Centralisez les documents importants de l’école (PAP, PPRE, autorisations, etc.) dans un espace sécurisé.<br><br>
-                  Déposez, organisez et partagez les documents avec les membres de l’équipe selon les droits d’accès.<br><br>
-                  Un outil pour garantir la disponibilité et la confidentialité des documents sensibles.
-                </p>
-              </div>
-              <video controls poster="assets/screenshot-home.png" style="width:540px;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.08);">
-                <source src="assets/MTS - Gif - Remplir - Documents.mp4#t=1" type="video/mp4">
-                Vidéo non supportée.
-              </video>
-            </div>
-            <div class="card reveal" data-reveal-delay="400" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-              <div style="flex:1;min-width:320px;">
-                <h2 style="margin:0 0 10px 0">Évaluations</h2>
-                <p style="font-size:17px;color:var(--muted);margin:0 0 10px 0;max-width:600px;">
-                  Suivez les évaluations des élèves, renseignez les résultats et visualisez les progrès sur l’année.<br><br>
-                  Un module conçu pour faciliter le suivi pédagogique et la communication avec les familles.<br><br>
-                  Exportez les bilans ou partagez les résultats avec l’équipe enseignante.
-                </p>
-              </div>
-              <video controls poster="assets/screenshot-home.png" style="width:540px;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.08);">
-                <source src="assets/MTS - Gif - Remplir - Evaluations.mp4#t=1" type="video/mp4">
-                Vidéo non supportée.
-              </video>
-            </div>
-            <div class="card reveal" data-reveal-delay="440" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-              <div style="flex:1;min-width:320px;">
-                <h2 style="margin:0 0 10px 0">Situation de midi</h2>
-                <p style="font-size:17px;color:var(--muted);margin:0 0 10px 0;max-width:600px;">
-                  Gérez les situations particulières du temps de midi : élèves externes, retours différés, autorisations spéciales.<br><br>
-                  Un outil pour assurer la sécurité et la bonne organisation du temps méridien.<br><br>
-                  Visualisez rapidement les situations à surveiller chaque jour.
-                </p>
-              </div>
-              <video controls poster="assets/screenshot-home.png" style="width:540px;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.08);">
-                <source src="assets/MTS - Gif - Remplir - Situation de midi.mp4#t=1" type="video/mp4">
-                Vidéo non supportée.
-              </video>
-            </div>
-            <div class="card reveal" data-reveal-delay="480" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-              <div style="flex:1;min-width:320px;">
-                <h2 style="margin:0 0 10px 0">Soins</h2>
-                <p style="font-size:17px;color:var(--muted);margin:0 0 10px 0;max-width:600px;">
-                  Enregistrez les soins apportés aux élèves, les incidents ou les prises de médicaments.<br><br>
-                  Gardez une trace précise pour la communication avec les familles et le suivi réglementaire.<br><br>
-                  Un module pour renforcer la sécurité et la transparence au sein de l’école.
-                </p>
-              </div>
-              <video controls poster="assets/screenshot-home.png" style="width:540px;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.08);">
-                <source src="assets/MTS - Gif - Remplir - Soins.mp4#t=1" type="video/mp4">
-                Vidéo non supportée.
-              </video>
-            </div>
-            <div class="card reveal" data-reveal-delay="520" style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;">
-              <div style="flex:1;min-width:320px;">
-                <h2 style="margin:0 0 10px 0">Suivi</h2>
-                <p style="font-size:17px;color:var(--muted);margin:0 0 10px 0;max-width:600px;">
-                  Centralisez le suivi des élèves : parcours, besoins particuliers, actions menées, observations.<br><br>
-                  Un tableau de bord pour l’équipe éducative, facilitant la coordination et la personnalisation de l’accompagnement.<br><br>
-                  Gardez l’historique et partagez les informations utiles en toute sécurité.
-                </p>
-              </div>
-              <video controls poster="assets/screenshot-home.png" style="width:540px;max-width:100%;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.08);">
-                <source src="assets/MTS - Gif - Remplir - Suivi.mp4#t=1" type="video/mp4">
-                Vidéo non supportée.
-              </video>
-            </div>
+          </a>
+
+          <nav class="header-float-actions" aria-label="Navigation principale">
+            <a class="nav-link" href="index.html">Présentation</a>
+            <a class="btn btn-primary btn-sm" href="outils.html">Outils</a>
+            <a class="nav-link" href="a-propos.html">Qui sommes-nous ?</a>
+            <a class="nav-link" href="contact.html">Demandez une démo</a>
+          </nav>
         </div>
       </div>
-    </section>
-  </main>
-  <footer class="footer pro-footer">
-    <div class="container pro-footer-container">
-      <div class="pro-footer-main">
-        <a class="brand brand-xl" href="index.html" aria-label="Ma Trousse Scolaire" style="text-decoration:none;align-items:flex-start;gap:18px;">
-          <img src="assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" style="height:54px;width:auto;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.10);margin-bottom:0;" />
-          <div class="brand-text" style="line-height:1.1;">
-            <strong style="font-size:20px;letter-spacing:-0.5px;">Ma Trousse Scolaire</strong>
-            <span style="font-size:13px;color:var(--muted);font-weight:700;">Communication & organisation d’école</span>
-          </div>
-        </a>
-        <nav class="pro-footer-nav">
-          <a href="index.html">Présentation</a>
-          <a href="outils.html">Outils</a>
-          <a href="a-propos.html">Qui sommes-nous ?</a>
-          <a href="contact.html">Contact</a>
-        </nav>
+    </header>
+
+    <main>
+
+    <!-- HERO OUTILS -->
+<section class="hero tools-hero" id="top">
+  <div class="container">
+    <div class="tools-hero-content reveal">
+      <div class="kicker">
+        <span class="badge">Des outils concrets pour la vie réelle de l’école</span>
       </div>
-      <div class="pro-footer-bottom">
-        <div class="pro-footer-legal">© <span id="year"></span> Ma Trousse Scolaire &mdash; Tous droits réservés.</div>
-        <div class="pro-footer-mentions">
-          <a href="rgpd.html">Mentions légales &amp; RGPD</a>
-        </div>
+
+      <h1 class="h-title">
+        Des modules pensés pour <br /><em>le quotidien des équipes</em>
+      </h1>
+
+    </div>
+  </div>
+</section>
+
+      <!-- LISTE DES OUTILS -->
+      <section class="section tools-section">
+        <div class="container">
+          <div class="tools-list">
+  <!-- Activités -->
+  <article class="tool-card reveal" data-reveal-delay="40">
+    <div class="tool-copy">
+      <div class="tool-kicker">Organisation du midi et des ateliers</div>
+      <h3>Activités</h3>
+      <p>
+        Organisez les activités du temps méridien, les ateliers périscolaires,
+        l’APC ou tout autre temps spécifique de l’école.
+      </p>
+      <div class="tool-tags">
+        <span>Créneaux</span>
+        <span>Élèves</span>
+        <span>Intervenants</span>
       </div>
     </div>
-  </footer>
-  <script src="site.js"></script>
-</body>
+
+    <div class="tool-media">
+      <video controls preload="metadata" poster="assets/screenshot-home.png">
+        <source src="assets/MTS - Gif - Remplir - Activités.mp4#t=1" type="video/mp4" />
+        Vidéo non supportée.
+      </video>
+    </div>
+  </article>
+
+  <!-- Binômes -->
+  <article class="tool-card reveal" data-reveal-delay="60">
+    <div class="tool-copy">
+      <div class="tool-kicker">Projets entre classes</div>
+      <h3>Binômes</h3>
+      <p>
+        Créez des associations entre classes ou élèves pour favoriser les échanges,
+        le tutorat, l’entraide ou les projets communs.
+      </p>
+      <div class="tool-tags">
+        <span>Classes associées</span>
+        <span>Groupes</span>
+        <span>Glisser-déposer</span>
+      </div>
+    </div>
+
+    <div class="tool-media">
+      <video controls preload="metadata" poster="assets/screenshot-home.png">
+        <source src="assets/MTS - Gif - Remplir - Binômes.mp4#t=1" type="video/mp4" />
+        Vidéo non supportée.
+      </video>
+    </div>
+  </article>
+
+  <!-- Classes -->
+  <article class="tool-card reveal" data-reveal-delay="80">
+    <div class="tool-copy">
+      <div class="tool-kicker">Structure de l’école</div>
+      <h3>Classes</h3>
+      <p>
+        Gérez les classes, leurs effectifs, niveaux, enseignants référents
+        et informations utiles pour les affectations.
+      </p>
+      <div class="tool-tags">
+        <span>Classes</span>
+        <span>Effectifs</span>
+        <span>Affectations</span>
+      </div>
+    </div>
+
+    <div class="tool-media">
+      <video controls preload="metadata" poster="assets/screenshot-home.png">
+        <source src="assets/MTS - Gif - Remplir - Classes.mp4#t=1" type="video/mp4" />
+        Vidéo non supportée.
+      </video>
+    </div>
+  </article>
+
+  <!-- Documents -->
+  <article class="tool-card reveal" data-reveal-delay="100">
+    <div class="tool-copy">
+      <div class="tool-kicker">Informations retrouvables</div>
+      <h3>Documents</h3>
+      <p>
+        Centralisez les documents importants de l’école : PAP, PPRE, comptes rendus,
+        autorisations, fichiers utiles et documents sensibles.
+      </p>
+      <div class="tool-tags">
+        <span>PAP / PPRE</span>
+        <span>Accès</span>
+        <span>Partage</span>
+      </div>
+    </div>
+
+    <div class="tool-media">
+      <video controls preload="metadata" poster="assets/screenshot-home.png">
+        <source src="assets/MTS - Gif - Remplir - Documents.mp4#t=1" type="video/mp4" />
+        Vidéo non supportée.
+      </video>
+    </div>
+  </article>
+
+  <!-- Emploi du temps -->
+  <article class="tool-card reveal" data-reveal-delay="120">
+    <div class="tool-copy">
+      <div class="tool-kicker">Coordination des espaces</div>
+      <h3>Emploi du temps</h3>
+      <p>
+        Partagez un emploi du temps commun pour visualiser les salles, les créneaux,
+        les interventions et les activités particulières.
+      </p>
+      <div class="tool-tags">
+        <span>Salles</span>
+        <span>Créneaux</span>
+        <span>Interventions</span>
+      </div>
+    </div>
+
+    <div class="tool-media">
+      <video controls preload="metadata" poster="assets/screenshot-home.png">
+        <source src="assets/MTS - Gif - Remplir - Emploi.mp4#t=1" type="video/mp4" />
+        Vidéo non supportée.
+      </video>
+    </div>
+  </article>
+
+  <!-- Évaluations -->
+  <article class="tool-card reveal" data-reveal-delay="140">
+    <div class="tool-copy">
+      <div class="tool-kicker">Suivi pédagogique</div>
+      <h3>Évaluations</h3>
+      <p>
+        Renseignez les résultats, suivez les progrès des élèves et conservez une vision claire
+        des acquis au fil de l’année.
+      </p>
+      <div class="tool-tags">
+        <span>Résultats</span>
+        <span>Progression</span>
+        <span>Bilan</span>
+      </div>
+    </div>
+
+    <div class="tool-media">
+      <video controls preload="metadata" poster="assets/screenshot-home.png">
+        <source src="assets/MTS - Gif - Remplir - Evaluations.mp4#t=1" type="video/mp4" />
+        Vidéo non supportée.
+      </video>
+    </div>
+  </article>
+
+  <!-- Groupes -->
+  <article class="tool-card reveal" data-reveal-delay="160">
+    <div class="tool-copy">
+      <div class="tool-kicker">Différenciation et petits groupes</div>
+      <h3>Groupes</h3>
+      <p>
+        Constituez des groupes d’élèves pour la remédiation, les ateliers,
+        les besoins spécifiques ou les projets ponctuels.
+      </p>
+      <div class="tool-tags">
+        <span>Remédiation</span>
+        <span>Ateliers</span>
+        <span>Suivi</span>
+      </div>
+    </div>
+
+    <div class="tool-media">
+      <video controls preload="metadata" poster="assets/screenshot-home.png">
+        <source src="assets/MTS - Gif - Remplir - Groupes.mp4#t=1" type="video/mp4" />
+        Vidéo non supportée.
+      </video>
+    </div>
+  </article>
+
+  <!-- Répartition d'urgence -->
+  <article class="tool-card reveal" data-reveal-delay="180">
+    <div class="tool-copy">
+      <div class="tool-kicker">Situation sensible</div>
+      <h3>Répartition d’urgence</h3>
+      <p>
+        En cas d’absence imprévue d’un enseignant, répartissez rapidement les élèves
+        dans les autres classes et gardez une trace claire.
+      </p>
+      <div class="tool-tags">
+        <span>Absence enseignant</span>
+        <span>Répartition</span>
+        <span>Traçabilité</span>
+      </div>
+    </div>
+
+    <div class="tool-media">
+      <video controls preload="metadata" poster="assets/screenshot-home.png">
+        <source src="assets/MTS - Gif - Remplir - Répartition d_urgence.mp4#t=1" type="video/mp4" />
+        Vidéo non supportée.
+      </video>
+    </div>
+  </article>
+
+  <!-- Roulement -->
+  <article class="tool-card reveal" data-reveal-delay="200">
+    <div class="tool-copy">
+      <div class="tool-kicker">Rotations et responsabilités</div>
+      <h3>Roulement</h3>
+      <p>
+        Planifiez les rotations entre classes pour les tâches régulières :
+        cour, rangement, bibliothèque, responsabilités ou activités récurrentes.
+      </p>
+      <div class="tool-tags">
+        <span>Planning</span>
+        <span>Classes</span>
+        <span>Calendrier</span>
+      </div>
+    </div>
+
+    <div class="tool-media">
+      <video controls preload="metadata" poster="assets/screenshot-home.png">
+        <source src="assets/MTS - Gif - Remplir - Roulement.mp4#t=1" type="video/mp4" />
+        Vidéo non supportée.
+      </video>
+    </div>
+  </article>
+
+  <!-- Services de cantine -->
+  <article class="tool-card reveal" data-reveal-delay="220">
+    <div class="tool-copy">
+      <div class="tool-kicker">Temps méridien</div>
+      <h3>Services de cantine</h3>
+      <p>
+        Organisez les services, les passages, les activités parallèles et les répartitions prévues
+        sur le temps du midi.
+      </p>
+      <div class="tool-tags">
+        <span>Cantine</span>
+        <span>Midi</span>
+        <span>Coordination</span>
+      </div>
+    </div>
+
+    <div class="tool-media">
+      <video controls preload="metadata" poster="assets/screenshot-home.png">
+        <source src="assets/MTS - Gif - Remplir - Services de cantine.mp4#t=1" type="video/mp4" />
+        Vidéo non supportée.
+      </video>
+    </div>
+  </article>
+
+  <!-- Situation de midi -->
+  <article class="tool-card reveal" data-reveal-delay="240">
+    <div class="tool-copy">
+      <div class="tool-kicker">Présence et sécurité</div>
+      <h3>Situation de midi</h3>
+      <p>
+        Visualisez les situations particulières du temps de midi :
+        élèves externes, retours différés, autorisations ou cas à surveiller.
+      </p>
+      <div class="tool-tags">
+        <span>Midi</span>
+        <span>Présence</span>
+        <span>Sécurité</span>
+      </div>
+    </div>
+
+    <div class="tool-media">
+      <video controls preload="metadata" poster="assets/screenshot-home.png">
+        <source src="assets/MTS - Gif - Remplir - Situation de midi.mp4#t=1" type="video/mp4" />
+        Vidéo non supportée.
+      </video>
+    </div>
+  </article>
+
+  <!-- Soins -->
+  <article class="tool-card reveal" data-reveal-delay="260">
+    <div class="tool-copy">
+      <div class="tool-kicker">Vie de l’élève</div>
+      <h3>Soins</h3>
+      <p>
+        Enregistrez les soins, incidents, commentaires et informations utiles
+        pour garder une trace claire des événements.
+      </p>
+      <div class="tool-tags">
+        <span>Soins</span>
+        <span>Incidents</span>
+        <span>Historique</span>
+      </div>
+    </div>
+
+    <div class="tool-media">
+      <video controls preload="metadata" poster="assets/screenshot-home.png">
+        <source src="assets/MTS - Gif - Remplir - Soins.mp4#t=1" type="video/mp4" />
+        Vidéo non supportée.
+      </video>
+    </div>
+  </article>
+
+  <!-- Suivi -->
+  <article class="tool-card reveal" data-reveal-delay="280">
+    <div class="tool-copy">
+      <div class="tool-kicker">Accompagnement</div>
+      <h3>Suivi</h3>
+      <p>
+        Centralisez le suivi des élèves : observations, besoins particuliers,
+        actions menées et informations utiles à l’équipe.
+      </p>
+      <div class="tool-tags">
+        <span>Élèves</span>
+        <span>Observations</span>
+        <span>Coordination</span>
+      </div>
+    </div>
+
+    <div class="tool-media">
+      <video controls preload="metadata" poster="assets/screenshot-home.png">
+        <source src="assets/MTS - Gif - Remplir - Suivi.mp4#t=1" type="video/mp4" />
+        Vidéo non supportée.
+      </video>
+    </div>
+  </article>
+
+  <!-- Tickets -->
+  <article class="tool-card reveal" data-reveal-delay="300">
+    <div class="tool-copy">
+      <div class="tool-kicker">Demandes et imprévus</div>
+      <h3>Tickets</h3>
+      <p>
+        Centralisez les absences, retards, autorisations de sortie, demandes particulières
+        et imprévus dans un système simple à suivre.
+      </p>
+      <div class="tool-tags">
+        <span>Demandes</span>
+        <span>Suivi</span>
+        <span>Historique</span>
+      </div>
+    </div>
+
+    <div class="tool-media">
+      <video controls preload="metadata" poster="assets/screenshot-home.png">
+        <source src="assets/MTS - Gif - Remplir - Tickets.mp4#t=1" type="video/mp4" />
+        Vidéo non supportée.
+      </video>
+    </div>
+  </article>
+</div>
+        </div>
+      </section>
+
+      <!-- CTA FINAL -->
+      <section class="section section-tinted">
+        <div class="container">
+          <div class="cta reveal">
+            <div class="cta-grid">
+              <div>
+                <strong class="cta-title">Vous voulez voir comment ces outils s’intègrent dans une vraie journée d’école ?</strong>
+                <p class="cta-sub">
+                  Une démonstration permet de visualiser le fonctionnement complet :
+                  rôles, informations du jour, tickets, documents, cantine, APC et suivi des élèves.
+                </p>
+              </div>
+
+              <div class="cta-actions">
+                <a class="btn btn-ghost" href="index.html#demo">🎥 Voir la présentation</a>
+                <a class="btn btn-primary" href="contact.html">Demandez une démo</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer pro-footer">
+      <div class="container pro-footer-container">
+        <div class="pro-footer-main">
+          <a class="brand brand-xl" href="index.html" aria-label="Ma Trousse Scolaire">
+            <img src="./assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
+            <div class="brand-text">
+              <strong>Ma Trousse Scolaire</strong>
+              <span>Logiciel métier pour les écoles</span>
+            </div>
+          </a>
+
+          <nav class="pro-footer-nav">
+            <a href="index.html">Présentation</a>
+            <a href="outils.html">Outils</a>
+            <a href="a-propos.html">Qui sommes-nous ?</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+
+        <div class="pro-footer-bottom">
+          <div class="pro-footer-legal">© <span id="y"></span> Ma Trousse Scolaire — Tous droits réservés.</div>
+          <div class="pro-footer-mentions">
+            <a href="rgpd.html">Mentions légales &amp; RGPD</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+  </body>
 </html>

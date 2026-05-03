@@ -3,24 +3,28 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Ma Trousse Scolaire — Communication & organisation pour les écoles</title>
+    <title>Ma Trousse Scolaire — Logiciel métier pour les écoles</title>
     <meta
       name="description"
-      content="Ma Trousse Scolaire centralise la communication interne, les informations importantes et l’organisation quotidienne d’une école. Simple, claire, pensée pour le terrain."
+      content="Ma Trousse Scolaire est un logiciel métier conçu pour les équipes éducatives. Il centralise l'organisation, la communication interne et les informations importantes de l'école."
     />
-
-    <meta property="og:title" content="Ma Trousse Scolaire — L’espace interne pensé pour les écoles" />
+    <meta property="og:title" content="Ma Trousse Scolaire — Le logiciel métier pensé pour les écoles" />
     <meta
       property="og:description"
-      content="Communication claire. Informations conservées. Organisation simplifiée."
+      content="Toute l'organisation de votre école au même endroit. Remplacez les messages dispersés, les fichiers Excel et les outils multiples."
     />
     <meta property="og:type" content="website" />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- Header sticky: brand XL + actions horizontal -->
+    <!-- Header -->
     <header class="header" id="site-header">
       <div class="container">
         <div class="topbar topbar-branding">
@@ -28,16 +32,16 @@
             <img src="assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
             <div class="brand-text">
               <strong>Ma Trousse Scolaire</strong>
-              <span>Communication & organisation d’école</span>
+              <span>Logiciel métier pour les écoles</span>
             </div>
           </a>
 
-          <div class="header-float-actions" aria-label="Actions">
+          <nav class="header-float-actions" aria-label="Navigation principale">
             <a class="btn btn-primary btn-sm" href="index.html">Présentation</a>
-            <a class="btn btn-outline btn-sm" href="outils.html">Outils</a>
-            <a class="btn btn-outline btn-sm" href="a-propos.html">Qui sommes-nous ?</a>
-            <a class="btn btn-outline btn-sm" href="contact.html">Demandez une démo</a>
-          </div>
+            <a class="nav-link" href="outils.html">Outils</a>
+            <a class="nav-link" href="a-propos.html">Qui sommes-nous ?</a>
+            <a class="nav-link" href="contact.html">Demandez une démo</a>
+          </nav>
         </div>
       </div>
     </header>
@@ -49,38 +53,45 @@
           <div class="hero-grid">
             <div class="reveal">
               <div class="kicker">
-                <span class="badge">Conçu pour la réalité d’une école</span>
+                <span class="badge">Imaginé par une enseignante, à partir de situations réelles et de besoins concrets</span>
               </div>
 
-              <h1 class="h-title">L’espace interne pensée pour les écoles.</h1>
+              <h1 class="h-title">
+                Toute l'organisation de votre école,<br /><em>au même endroit</em>
+              </h1>
 
               <p class="h-sub">
-                - Communication claire. <br /> - Informations conservées. <br /> - Organisation simplifiée. 
-              </p>
-              <p>
-                <span class="muted-strong">Fini les messages perdus, les oublis et les informations dispersées.</span>
+                Le logiciel métier conçu pour les équipes éducatives —
+                pour remplacer les messages dispersés, les fichiers Excel et les outils multiples.
               </p>
 
+              <div class="hero-bullets">
+                <span class="mini-pill">✔ Absences, messages et organisation centralisés</span>
+                <span class="mini-pill">✔ Moins de recherches, moins de redites, moins d'oublis</span>
+                <span class="mini-pill">✔ Une vision claire de ce qui est fait et à faire</span>
+              </div>
+
               <div class="hero-actions">
-                <a class="btn btn-primary" href="#demo" data-scroll>🎥 Voir la présentation</a>
+                <a class="btn btn-ghost" href="#demo" data-scroll>🎥 Découvrir l’application</a>
               </div>
             </div>
 
-            <div class="frame reveal" data-reveal-delay="80">
+            <div class="frame reveal hero-product-frame" data-reveal-delay="80">
               <div class="frame-top">
                 <div>
-                  <strong>Vue d’ensemble</strong>
-                  <div class="frame-meta">Un seul espace pour l’équipe</div>
+                  <strong>Vue d'ensemble</strong>
+                  <div class="frame-meta">Un seul espace pour l'équipe</div>
                 </div>
-                <div class="frame-meta">Aperçu</div>
+                <span class="frame-badge">Aperçu</span>
               </div>
+
               <div class="frame-body">
                 <a href="#" data-lightbox="assets/MTS - Home.png" style="display:block;">
                   <img
                     src="assets/MTS - Home.png"
-                    alt="Capture d’écran - Tableau de bord Ma Trousse Scolaire"
+                    alt="Tableau de bord Ma Trousse Scolaire"
                     loading="lazy"
-                    style="width:100%;max-width:700px;display:block;margin:auto;cursor:zoom-in;box-shadow:0 16px 40px rgba(11,92,255,0.10)"
+                    style="width:100%;max-width:700px;display:block;margin:auto;cursor:zoom-in;"
                   />
                 </a>
               </div>
@@ -89,70 +100,159 @@
         </div>
       </section>
 
-      <!-- PRESENTATION / PROBLÈME -->
-      <section class="section" id="presentation">
-        <div class="container">
-          <div class="section-head reveal">
-            <div>
-              <h2 style="margin:0;font-size:28px">Une école ne devrait pas fonctionner sur des messages dispersés.</h2>
-              <p style="margin:10px 0 0;color:var(--muted);font-weight:600;">
-                Quand l’information n’est pas structurée, la charge mentale augmente. Nous remettons de la clarté, sans
-                alourdir le quotidien.
-              </p>
-            </div>
+<!-- LA QUOTIDIENNE -->
+<section class="section daily-section" id="quotidienne">
+  <div class="container">
+    <div class="daily-layout daily-layout-simple" style="align-items: start;">
+      <div class="daily-content reveal">
+        <div class="section-label">Le cœur de l’application</div>
+
+        <h2 class="section-title">
+          La quotidienne : ce qui compte aujourd’hui, au même endroit.
+        </h2>
+
+        <p class="section-sub">
+          Chaque matin, l’équipe retrouve l’essentiel de la journée :
+          anniversaires, répartition, APC, soins, portail, sorties, cantine et garderie imprévues.
+        </p>
+
+        <div class="daily-simple-points">
+          <div class="daily-simple-point">
+            <span>🧭</span>
+            <strong>Une vue claire de la journée</strong>
           </div>
 
-          <div class="grid-3">
-            <article class="card reveal" data-reveal-delay="40">
-              <div class="icon">🧩</div>
-              <h3>Informations éparpillées</h3>
-              <p>Messages noyés, décisions non tracées, infos importantes difficiles à retrouver.</p>
-            </article>
+          <div class="daily-simple-point">
+            <span>👥</span>
+            <strong>Les infos utiles pour toute l’équipe</strong>
+          </div>
 
-            <article class="card reveal" data-reveal-delay="80">
-              <div class="icon">🧠</div>
-              <h3>Charge mentale</h3>
-              <p>On “se souvient” de tout… jusqu’au jour où l’on ne peut plus. L’organisation dépend trop des personnes.</p>
-            </article>
-
-            <article class="card reveal" data-reveal-delay="120">
-              <div class="icon">🗂️</div>
-              <h3>Documents introuvables</h3>
-              <p>Des fichiers “quelque part”. Des versions multiples. Des infos clés qui se perdent.</p>
-            </article>
+          <div class="daily-simple-point">
+            <span>✅</span>
+            <strong>Moins d’oublis dans les moments clés</strong>
           </div>
         </div>
-      </section>
+
+        <div class="daily-question-cloud" aria-label="Exemples de questions auxquelles répond La quotidienne">
+          <span>Qui fête son anniversaire aujourd’hui ?</span>
+          <span>Quelle classe nettoie la cour cette semaine ?</span>
+          <span>Quels élèves de MS/GS sont affectés à ma classe aujourd’hui ?</span>
+          <span>C'est aujourd'hui que Robin arrive plus tard ?</span>
+          <span>Qui est en APC à 11h50 ?</span>
+          <span>Qui sont mes blessés de ce midi ?</span>
+          <span>Qui est de portail à 13h20 ?</span>
+          <span>Quels sont les imprévus de la sortie de ce soir ?</span>
+        </div>
+      </div>
+
+      <div class="daily-visual reveal" data-reveal-delay="80">
+        <div class="daily-phone-frame daily-phone-frame-soft">
+          <div class="daily-phone-top">
+            <strong>La quotidienne</strong>
+            <span>Aperçu réel</span>
+          </div>
+
+          <a href="#" data-lightbox="assets/MTS - La quotidienne.png">
+            <img
+              src="assets/MTS - La quotidienne.png"
+              alt="Capture d’écran de La quotidienne dans Ma Trousse Scolaire"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROBLÈME -->
+<section class="section section-tinted" id="presentation">
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="section-label">Le problème</div>
+        <h2 class="section-title">Une école ne devrait pas fonctionner sur des informations dispersées.</h2>
+        <p class="section-sub">
+          Quand les messages, les documents et les décisions sont éparpillés, l'équipe perd du temps,
+          redemande les mêmes choses et avance avec moins de visibilité.
+        </p>
+      </div>
+    </div>
+
+    <div class="grid-3">
+      <article class="card problem-card reveal" data-reveal-delay="40">
+        <div class="problem-icon">🧩</div>
+        <h3>Informations éparpillées</h3>
+        <p class="problem-question">“C’était dans le groupe, par mail ou sur un papier ?”</p> <br />
+        <p>
+          Des infos dans WhatsApp, des mails, des papiers ou des fichiers partagés…
+          difficile de retrouver la bonne version au bon moment.
+        </p>
+      </article>
+
+      <article class="card problem-card reveal" data-reveal-delay="80">
+        <div class="problem-icon">🧠</div>
+        <h3>Charge mentale</h3>
+        <p class="problem-question">“Attends, c’est ma classe qui nettoie la cour cette semaine ?”</p> <br />
+        <p>
+          On se repose sur la mémoire : qui fait quoi, quand, pour quel élève…
+          jusqu'au moment où l'organisation devient fragile.
+        </p>
+      </article>
+
+      <article class="card problem-card reveal" data-reveal-delay="120">
+        <div class="problem-icon">🗂️</div>
+        <h3>Documents introuvables</h3>
+        <p class="problem-question">“On a reçu le compte rendu de la concertation ?”</p> <br />
+        <p>
+          Des fichiers “quelque part”, plusieurs versions, des informations clés difficiles à retrouver
+          et du temps perdu à chercher.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
 
       <!-- SOLUTION -->
       <section class="section" id="solution">
         <div class="container">
           <div class="section-head reveal">
             <div>
-              <h2 style="margin:0;font-size:28px">Un seul espace pour toute la vie de l’école.</h2>
-              <p style="margin:10px 0 0;color:var(--muted);font-weight:600;">
-                Chaque information a sa place. Chaque action laisse une trace. Tout est clair pour l’équipe.
+              <div class="section-label">La solution</div>
+              <h2 class="section-title">Un logiciel métier pour structurer la vie quotidienne de l'école.</h2>
+              <p class="section-sub">
+                Chaque information a sa place. Chaque action importante laisse une trace.
+                Toute l'équipe sait où trouver ce dont elle a besoin.
               </p>
             </div>
           </div>
 
           <div class="grid-3">
-            <article class="card reveal" data-reveal-delay="40">
+            <article class="card feature-card reveal" data-reveal-delay="40">
               <div class="icon">💬</div>
               <h3>Communication interne</h3>
-              <p>Moins de dispersion. Plus de lisibilité. Les informations arrivent au bon endroit.</p>
+              <p>
+                Tous les messages importants au même endroit.
+                Moins de canaux, moins de pertes d'information, plus de lisibilité.
+              </p>
             </article>
 
-            <article class="card reveal" data-reveal-delay="80">
+            <article class="card feature-card reveal" data-reveal-delay="80">
               <div class="icon">🧭</div>
               <h3>Organisation quotidienne</h3>
-              <p>Une vision claire pour agir : ce qui est à faire, ce qui est en cours, ce qui est réglé.</p>
+              <p>
+                Une vue claire de ce qui est à faire, en cours ou terminé :
+                absences, tickets, responsabilités, cantine, activités et informations du jour.
+              </p>
             </article>
 
-            <article class="card reveal" data-reveal-delay="120">
+            <article class="card feature-card reveal" data-reveal-delay="120">
               <div class="icon">🧾</div>
               <h3>Traçabilité simple</h3>
-              <p>On garde l’historique utile : pour éviter les oublis, les malentendus et les pertes d’infos.</p>
+              <p>
+                Chaque action est conservée au bon endroit :
+                fini les oublis, les malentendus et les “on ne savait pas”.
+              </p>
             </article>
           </div>
         </div>
@@ -163,221 +263,125 @@
         <div class="container">
           <div class="section-head reveal">
             <div>
-              <h2 style="margin:0;font-size:28px">5 minutes pour comprendre.</h2>
-              <p style="margin:10px 0 0;color:var(--muted);font-weight:600">
-                Une démonstration rapide pour voir comment une école retrouve de la clarté, simplement.
+              <div class="section-label">Découverte</div>
+              <h2 class="section-title">5 minutes pour comprendre.</h2>
+              <p class="section-sub">
+                Une présentation rapide pour voir comment l'application centralise les informations,
+                les actions et l'organisation quotidienne d'une école.
               </p>
-            </div>
-            <div class="topbar-actions">
-              <a class="btn btn-primary btn-sm" href="contact.html">Demandez une démo</a>
             </div>
           </div>
 
           <div class="frame reveal">
             <div class="frame-top">
               <div>
-                <strong>Démonstration</strong>
+                <strong>Présentation</strong>
                 <div class="frame-meta">Vidéo courte</div>
               </div>
-              <div class="frame-meta">Lecture</div>
+              <span class="frame-badge">Lecture</span>
             </div>
 
             <div class="frame-body">
-              <div
-  class="video-embed"
-  role="group"
-  aria-label="Vidéo de démonstration"
-  style="position:relative;aspect-ratio:16/9;min-height:220px;max-width:800px;margin:auto;overflow:hidden;border-radius:16px;">
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/kt1G7omVsB8?si=NveHDdGe9vuiYZgj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
+              <div class="video-embed" role="group" aria-label="Vidéo de présentation">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/kt1G7omVsB8?si=NveHDdGe9vuiYZgj"
+                  title="Vidéo de présentation Ma Trousse Scolaire"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <!-- DIFFÉRENCIATION -->
-            <!-- AVANT / APRÈS (visuel) -->
-            <section class="section">
-              <div class="container">
-                <div class="section-head reveal">
-                  <div>
-                    <h2 style="margin:0;font-size:28px">Ce que les écoles gagnent</h2>
-                    <p style="margin:10px 0 0;color:var(--muted);font-weight:600">
-                      Un même quotidien, mais une organisation qui devient plus lisible, plus stable, plus sereine.
-                    </p>
-                  </div>
-                </div>
-
-                <div class="about-ba reveal" data-reveal-delay="40">
-                  <div class="about-ba-card about-ba-before">
-                    <div class="about-ba-head">
-                      <span class="about-ba-tag">Avant</span>
-                      <span class="about-ba-mini">Ça fatigue l’équipe</span>
-                    </div>
-
-                    <div class="about-ba-items">
-                      <div class="about-ba-item">
-                        <span class="about-ba-ico">🌀</span>
-                        <div>
-                          <strong>Infos dispersées</strong>
-                          <div class="about-ba-sub">On cherche, on redemande, on revalide.</div>
-                        </div>
-                      </div>
-
-                      <div class="about-ba-item">
-                        <span class="about-ba-ico">🧩</span>
-                        <div>
-                          <strong>Perte de contexte</strong>
-                          <div class="about-ba-sub">Difficile de savoir “où on en est”.</div>
-                        </div>
-                      </div>
-
-                      <div class="about-ba-item">
-                        <span class="about-ba-ico">🧠</span>
-                        <div>
-                          <strong>Organisation fragile</strong>
-                          <div class="about-ba-sub">Ça repose trop sur la mémoire des personnes.</div>
-                        </div>
-                      </div>
-
-                      <div class="about-ba-item">
-                        <span class="about-ba-ico">💬</span>
-                        <div>
-                          <strong>Communication qui déborde</strong>
-                          <div class="about-ba-sub">Trop de canaux, pas de repère clair.</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="about-ba-card about-ba-after">
-                    <div class="about-ba-head">
-                      <span class="about-ba-tag">Après</span>
-                      <span class="about-ba-mini">Ça soulage le quotidien</span>
-                    </div>
-
-                    <div class="about-ba-items">
-                      <div class="about-ba-item">
-                        <span class="about-ba-ico">🧭</span>
-                        <div>
-                          <strong>Un espace clair</strong>
-                          <div class="about-ba-sub">Chacun retrouve l’essentiel au bon endroit.</div>
-                        </div>
-                      </div>
-
-                      <div class="about-ba-item">
-                        <span class="about-ba-ico">🗂️</span>
-                        <div>
-                          <strong>Informations retrouvables</strong>
-                          <div class="about-ba-sub">Moins de redites, moins d’oublis.</div>
-                        </div>
-                      </div>
-
-                      <div class="about-ba-item">
-                        <span class="about-ba-ico">✅</span>
-                        <div>
-                          <strong>Organisation plus stable</strong>
-                          <div class="about-ba-sub">Le fonctionnement ne dépend plus “d’une seule personne”.</div>
-                        </div>
-                      </div>
-
-                      <div class="about-ba-item">
-                        <span class="about-ba-ico">🤝</span>
-                        <div>
-                          <strong>Équipe alignée</strong>
-                          <div class="about-ba-sub">Moins de flou, plus d’action concrète.</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
-      <section class="section" id="differenciation">
-        <div class="container">
-          <div class="section-head reveal">
-            <div>
-              <h2 style="margin:0;font-size:28px">Pensée par le terrain. Construite pour le terrain.</h2>
-              <p style="margin:10px 0 0;color:var(--muted);font-weight:600;">
-                Imaginée par une enseignante, à partir de situations réelles et de besoins concrets. Mise en forme pour être
-                simple, claire et agréable à utiliser.
-              </p>
-                <div class="card reveal" style="max-width:420px;margin:32px auto 0 auto;text-align:center;padding:32px 24px;">
-                  <div class="icon" style="font-size:2.2rem;margin-bottom:10px;">🔗</div>
-                  <h3 style="margin-bottom:8px;">En savoir plus</h3>
-                  <p style="margin-bottom:0;">👉 <a class="inline-link" href="a-propos.html">Voir la page “Qui sommes-nous ?”</a></p>
-                </div>
-              </div>
-            </div>
         </div>
       </section>
 
       <!-- PRICING + CTA -->
-      <section class="section" id="tarifs">
+      <section class="section section-tinted" id="tarifs">
         <div class="container">
+          <div class="section-head reveal">
+            <div>
+              <div class="section-label">Tarifs</div>
+              <h2 class="section-title">Une tarification simple et transparente.</h2>
+            </div>
+          </div>
 
-          <div class="pricing">
-            <div class="card pricing-card reveal">
+          <div class="pricing-wrapper reveal">
+            <div class="pricing-card">
               <div class="pricing-head">
-                  <div>
-                    <strong style="font-size:2.2rem;color:var(--primary);font-weight:900;letter-spacing:-1px;line-height:1.1;display:block;margin-bottom:2px;">Tarification</strong>
+                <div>
+                  <div class="pricing-title">Tarification</div>
+                  <div class="price">
+                    40 <span class="price-unit">€ HT / classe / an</span>
                   </div>
+                  <div class="pricing-promo">
+                    Offre de lancement : <strong>30 € HT</strong> par classe / an la première année
+                  </div>
+                </div>
               </div>
-              <div style="padding:18px 18px 0 18px;">
-                <div class="price">40&nbsp;€ HT <span style="font-size:14px;color:var(--muted);font-weight:700">/ classe / an</span></div>
-                <div style="color:#f2b844;font-weight:700;margin:8px 0 0 0;">Offre de lancement&nbsp;: <span style="color:#0f172a;font-weight:800">30&nbsp;€ HT</span> par classe / an la première année</div>
-                <ul style="margin:12px 0 0 0;padding:0 0 0 18px;color:var(--muted);font-size:15px;">
-                  <li>Accès à l’application selon le rôle attribué</li>
-                  <li>Mises à jour et maintenances incluses</li>
+
+              <div class="pricing-body">
+                <ul class="pricing-list">
+                  <li>Accès à l'application selon le rôle attribué</li>
+                  <li>Mises à jour et maintenance incluses</li>
+                  <li>Accès pensé pour les équipes internes de l'école, pas pour les parents ni les élèves</li>
                 </ul>
-              </div>
-              <div class="grid-3" style="margin:18px 0 0 0;gap:16px;">
-                <div class="card" style="background:#f6fbff;">
-                  <div style="font-weight:700;color:#0b5cff;margin-bottom:4px;">Pilotage & administration</div>
-                  <div style="font-size:14px;color:var(--muted);margin-bottom:4px;">Direction, secrétariat, enseignants référents</div>
-                  <ul style="margin:0 0 8px 0;padding:0 0 0 16px;font-size:15px;">
-                    <li>Accès à toutes les fonctionnalités</li>
+
+                <div class="grid-3 pricing-role-grid">
+                  <div class="pricing-role-card">
+                    <div class="pricing-role-title">Pilotage & administration</div>
+                    <div class="pricing-role-sub">Direction, secrétariat, enseignants référents</div>
+                    <ul>
+                      <li>Vue globale de l'école</li>
+                      <li>Suivi des actions et demandes</li>
+                    </ul>
+                  </div>
+
+                  <div class="pricing-role-card">
+                    <div class="pricing-role-title">Enseignement & gestion de classe</div>
+                    <div class="pricing-role-sub">Enseignants, maître E</div>
+                    <ul>
+                      <li>Appel, élèves et informations utiles</li>
+                      <li>Actions liées à la classe</li>
+                    </ul>
+                  </div>
+
+                  <div class="pricing-role-card">
+                    <div class="pricing-role-title">Vie scolaire & organisation</div>
+                    <div class="pricing-role-sub">Personnels de l'école</div>
+                    <ul>
+                      <li>Informations du jour</li>
+                      <li>Organisation cantine, soins, activités</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="temporary-accounts">
+                  <div class="temporary-label">Comptes temporaires possibles :</div>
+                  <ul>
+                    <li>Enseignant remplaçant</li>
+                    <li>Personnel remplaçant</li>
+                    <li class="temporary-note">Accès limité selon les dates de présence</li>
                   </ul>
                 </div>
-                <div class="card" style="background:#f6fbff;">
-                  <div style="font-weight:700;color:#1a7e4b;margin-bottom:4px;">Enseignement & gestion de classe</div>
-                  <div style="font-size:14px;color:var(--muted);margin-bottom:4px;">Enseignants, maître E</div>
-                  <ul style="margin:0 0 8px 0;padding:0 0 0 16px;font-size:15px;">
-                    <li>Visibilité de l’école</li>
-                    <li>Paramétrage de la classe</li>
-                  </ul>
-                </div>
-                <div class="card" style="background:#f6fbff;">
-                  <div style="font-weight:700;color:#7c3aed;margin-bottom:4px;">Vie scolaire & organisation</div>
-                  <div style="font-size:14px;color:var(--muted);margin-bottom:4px;">Personnels de l’école</div>
-                  <ul style="margin:0 0 8px 0;padding:0 0 0 16px;font-size:15px;">
-                    <li>Visibilité de l’école</li>
-                    <li>Paramétrage (soins, cantine)</li>
-                  </ul>
-                </div>
-              </div>
-              <div style="margin:18px 0 0 0;padding:12px 0 0 0;border-top:1px solid #f2b84433;">
-                <div style="font-size:15px;color:#b48a0a;font-weight:700;margin-bottom:4px;">Comptes temporaires possibles :</div>
-                <ul style="margin:0 0 0 0;padding:0 0 0 18px;font-size:15px;">
-                  <li>Enseignant remplaçant</li>
-                  <li>Personnel remplaçant</li>
-                  <li style="color:#0f172a;font-size:14px;margin-top:2px;">Accès limité (dates de début et fin)</li>
-                </ul>
               </div>
             </div>
           </div>
 
-          <div class="cta reveal" style="margin-top:18px">
+          <div class="cta reveal" style="margin-top:28px">
             <div class="cta-grid">
               <div>
-                <strong style="font-size:18px">Et si votre école gagnait en sérénité ?</strong>
-                <div style="color:var(--muted);font-weight:600;margin-top:6px">
-                  Voyez la plateforme en action et discutons de votre fonctionnement.
-                </div>
+                <strong class="cta-title">Et si votre école fonctionnait enfin avec une organisation claire ?</strong>
+                <p class="cta-sub">
+                  Voyez concrètement comment remplacer les outils dispersés par une organisation simple,
+                  lisible et adaptée au terrain.
+                </p>
               </div>
-              <div style="display:flex;gap:10px;flex-wrap:wrap">
-                <a class="btn btn-outline" href="#demo" data-scroll>🎥 Voir la présentation </a>
+              <div class="cta-actions">
+                <a class="btn btn-ghost" href="#demo" data-scroll>🎥 Découvrir l’application</a>
                 <a class="btn btn-primary" href="contact.html">Demandez une démo</a>
               </div>
             </div>
@@ -386,32 +390,32 @@
       </section>
     </main>
 
-
-  <footer class="footer pro-footer">
-    <div class="container pro-footer-container">
-      <div class="pro-footer-main">
-        <a class="brand brand-xl" href="index.html" aria-label="Ma Trousse Scolaire" style="text-decoration:none;align-items:flex-start;gap:18px;">
-          <img src="./assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" style="height:54px;width:auto;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.10);margin-bottom:0;" />
-          <div class="brand-text" style="line-height:1.1;">
-            <strong style="font-size:20px;letter-spacing:-0.5px;">Ma Trousse Scolaire</strong>
-            <span style="font-size:13px;color:var(--muted);font-weight:700;">Communication & organisation d’école</span>
+    <!-- FOOTER -->
+    <footer class="footer pro-footer">
+      <div class="container pro-footer-container">
+        <div class="pro-footer-main">
+          <a class="brand brand-xl" href="index.html" aria-label="Ma Trousse Scolaire">
+            <img src="./assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
+            <div class="brand-text">
+              <strong>Ma Trousse Scolaire</strong>
+              <span>Logiciel métier pour les écoles</span>
+            </div>
+          </a>
+          <nav class="pro-footer-nav">
+            <a href="index.html">Présentation</a>
+            <a href="outils.html">Outils</a>
+            <a href="a-propos.html">Qui sommes-nous ?</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+        </div>
+        <div class="pro-footer-bottom">
+          <div class="pro-footer-legal">© <span id="y"></span> Ma Trousse Scolaire — Tous droits réservés.</div>
+          <div class="pro-footer-mentions">
+            <a href="rgpd.html">Mentions légales &amp; RGPD</a>
           </div>
-        </a>
-        <nav class="pro-footer-nav">
-          <a href="index.html">Présentation</a>
-          <a href="outils.html">Outils</a>
-          <a href="a-propos.html">Qui sommes-nous ?</a>
-          <a href="contact.html">Contact</a>
-        </nav>
-      </div>
-      <div class="pro-footer-bottom">
-        <div class="pro-footer-legal">© <span id="y"></span> Ma Trousse Scolaire &mdash; Tous droits réservés.</div>
-        <div class="pro-footer-mentions">
-          <a href="rgpd.html">Mentions légales &amp; RGPD</a>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
 
     <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Aperçu image">
       <div class="lightbox-backdrop" data-lightbox-close></div>

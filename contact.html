@@ -3,16 +3,35 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+
     <title>Demandez une démo — Ma Trousse Scolaire</title>
+
     <meta
       name="description"
       content="Planifiez une démonstration de Ma Trousse Scolaire et découvrez comment votre école peut gagner en clarté, en organisation et en sérénité."
     />
+
+    <meta property="og:title" content="Demandez une démo — Ma Trousse Scolaire" />
+    <meta
+      property="og:description"
+      content="Découvrez Ma Trousse Scolaire en situation réelle : organisation quotidienne, communication interne, tickets, documents, cantine, APC et suivi des élèves."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" href="./assets/logo-mts.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;1,9..40,400&family=DM+Serif+Display:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="style.css" />
   </head>
 
   <body>
-    <!-- HEADER identique -->
+    <!-- Header -->
     <header class="header" id="site-header">
       <div class="container">
         <div class="topbar topbar-branding">
@@ -20,80 +39,108 @@
             <img src="assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
             <div class="brand-text">
               <strong>Ma Trousse Scolaire</strong>
-              <span>Communication & organisation d’école</span>
+              <span>Logiciel métier pour les écoles</span>
             </div>
           </a>
 
-          <div class="header-float-actions">
-            <a class="btn btn-outline btn-sm" href="index.html">Présentation</a>
-            <a class="btn btn-outline btn-sm" href="outils.html">Outils</a>
-            <a class="btn btn-outline btn-sm" href="a-propos.html">Qui sommes-nous ?</a>
+          <nav class="header-float-actions" aria-label="Navigation principale">
+            <a class="nav-link" href="index.html">Présentation</a>
+            <a class="nav-link" href="outils.html">Outils</a>
+            <a class="nav-link" href="a-propos.html">Qui sommes-nous ?</a>
             <a class="btn btn-primary btn-sm" href="contact.html">Demandez une démo</a>
-          </div>
+          </nav>
         </div>
       </div>
     </header>
 
     <main>
       <!-- HERO CONTACT -->
-      <section class="hero">
+      <section class="hero contact-hero" id="top">
         <div class="container">
-          <div class="hero-grid">
-            <div class="reveal">
+          <div class="contact-hero-grid">
+            <div class="contact-hero-content reveal">
               <div class="kicker">
                 <span class="badge">Présentation personnalisée</span>
               </div>
 
-              <h1 class="h-title">Découvrez l’application en situation réelle.</h1>
+              <h1 class="h-title">
+                Découvrez l’application<br /><em>en situation réelle</em>
+              </h1>
 
               <p class="h-sub">
-                Une démonstration claire, adaptée à votre école.
-                <br />
-                En moyenne, l’échange dure <strong>30 minutes</strong>.
+                Une démonstration claire, adaptée au fonctionnement de votre école.
+                En moyenne, l’échange dure 30 minutes.
               </p>
-
             </div>
 
-            <div class="card reveal" data-reveal-delay="80">
-              <h3 style="margin-top:0">Ce que vous allez voir</h3>
-              <p style="color:var(--muted);font-weight:600">
-                Nous vous présentons l’application complète :
+            <aside class="contact-preview-card reveal" data-reveal-delay="80">
+              <div class="contact-preview-icon">🧭</div>
+
+              <h2>Ce que vous allez voir</h2>
+
+              <p>
+                Une présentation concrète de l’application complète, avec les usages du quotidien d’une école.
               </p>
-              <ul style="color:var(--muted);font-weight:500;line-height:1.6;padding-left:18px">
-                <li>Communication interne structurée</li>
-                <li>Suivi et organisation quotidienne</li>
-                <li>Centralisation des informations importantes</li>
-                <li>Vision adaptée à la direction et à l’équipe</li>
-              </ul>
-            </div>
+
+              <div class="contact-preview-list">
+                <div>
+                  <span>💬</span>
+                  <strong>Communication interne structurée</strong>
+                </div>
+
+                <div>
+                  <span>📋</span>
+                  <strong>Tickets, absences et imprévus</strong>
+                </div>
+
+                <div>
+                  <span>🗂️</span>
+                  <strong>Documents et informations importantes</strong>
+                </div>
+
+                <div>
+                  <span>🍽️</span>
+                  <strong>Cantine, APC, activités et suivi</strong>
+                </div>
+              </div>
+            </aside>
           </div>
         </div>
       </section>
 
-      <!-- SECTION CALENDLY -->
-      <section class="section">
+      <!-- CALENDLY -->
+      <section class="section section-tinted contact-booking-section">
         <div class="container">
           <div class="section-head reveal">
             <div>
-              <h2 style="margin:0;font-size:28px">Choisissez votre créneau.</h2>
-              <p style="margin:10px 0 0;color:var(--muted);font-weight:600;">
-                Sélectionnez un horaire disponible ci-dessous.  
-                La présentation dure en moyenne <strong>30 minutes</strong>.
+              <div class="section-label">Réserver un créneau</div>
+              <h2 class="section-title">Choisissez l’horaire qui vous convient.</h2>
+              <p class="section-sub">
+                Sélectionnez un créneau disponible ci-dessous. La présentation dure en moyenne 30 minutes.
               </p>
             </div>
           </div>
 
-          <div class="frame reveal">
-            <div class="frame-body">
-              <!-- Début widget Calendly -->
-              <div class="calendly-inline-widget"
-                   data-url="https://calendly.com/troussescolaireapp/nouvelle-reunion?hide_event_type_details=1&hide_gdpr_banner=1"
-                   style="min-width:320px;height:700px;">
+          <div class="contact-booking-card reveal" data-reveal-delay="80">
+            <div class="contact-booking-head">
+              <div>
+                <strong>Calendrier de démonstration</strong>
+                <div class="frame-meta">Créneaux disponibles</div>
               </div>
-              <script type="text/javascript"
-                      src="https://assets.calendly.com/assets/external/widget.js"
-                      async>
-              </script>
+              <span class="frame-badge">Calendly</span>
+            </div>
+
+            <div class="contact-booking-body">
+              <!-- Début widget Calendly -->
+              <div
+                class="calendly-inline-widget contact-calendly-widget"
+                data-url="https://calendly.com/troussescolaireapp/nouvelle-reunion?hide_event_type_details=1&hide_gdpr_banner=1"
+              ></div>
+              <script
+                type="text/javascript"
+                src="https://assets.calendly.com/assets/external/widget.js"
+                async
+              ></script>
               <!-- Fin widget Calendly -->
             </div>
           </div>
@@ -105,44 +152,64 @@
         <div class="container">
           <div class="section-head reveal">
             <div>
-              <h2 style="margin:0;font-size:28px">Comment se déroule la démo ?</h2>
+              <div class="section-label">Déroulé</div>
+              <h2 class="section-title">Comment se déroule la démonstration ?</h2>
+              <p class="section-sub">
+                L’objectif est simple : comprendre votre organisation, vous montrer l’application,
+                et voir si elle correspond à votre école.
+              </p>
             </div>
           </div>
 
           <div class="grid-3">
-            <article class="card reveal" data-reveal-delay="40">
+            <article class="card feature-card reveal" data-reveal-delay="40">
               <div class="icon">💬</div>
               <h3>1. Échange rapide</h3>
-              <p>Vous nous expliquez brièvement votre organisation actuelle et vos enjeux.</p>
+              <p>
+                Vous nous expliquez votre organisation actuelle, vos outils, vos irritants
+                et les situations qui prennent du temps.
+              </p>
             </article>
 
-            <article class="card reveal" data-reveal-delay="80">
+            <article class="card feature-card reveal" data-reveal-delay="80">
               <div class="icon">🖥️</div>
-              <h3>2. Présentation complète</h3>
-              <p>Nous vous montrons l’application dans son ensemble, adaptée à votre contexte.</p>
+              <h3>2. Présentation concrète</h3>
+              <p>
+                Nous vous montrons Ma Trousse Scolaire en situation réelle :
+                la quotidienne, les tickets, les documents, la cantine, les APC et le suivi.
+              </p>
             </article>
 
-            <article class="card reveal" data-reveal-delay="120">
+            <article class="card feature-card reveal" data-reveal-delay="120">
               <div class="icon">🤝</div>
-              <h3>3. Questions & mise en place</h3>
-              <p>Nous répondons à vos questions et voyons ensemble si cela correspond à votre école.</p>
+              <h3>3. Questions et suite</h3>
+              <p>
+                Nous répondons à vos questions et voyons ensemble si l’application peut s’intégrer
+                naturellement dans votre fonctionnement.
+              </p>
             </article>
           </div>
         </div>
       </section>
 
       <!-- RASSURANCE -->
-      <section class="section">
+      <section class="section section-tinted">
         <div class="container">
           <div class="cta reveal">
             <div class="cta-grid">
               <div>
-                <strong style="font-size:18px">
-                  Ma Trousse Scolaire n’est pas une application isolée.
+                <strong class="cta-title">
+                  Une démonstration pour voir l’application dans son ensemble.
                 </strong>
-                <div style="color:var(--muted);font-weight:600;margin-top:6px">
-                  C’est l’application complète, pensée pour structurer la communication et l’organisation interne d’une école.
-                </div>
+                <p class="cta-sub">
+                  Ma Trousse Scolaire n’est pas un outil isolé : c’est un logiciel métier pensé pour structurer
+                  la communication interne, l’organisation quotidienne et les informations importantes d’une école.
+                </p>
+              </div>
+
+              <div class="cta-actions">
+                <a class="btn btn-ghost" href="index.html#demo">🎥 Voir la présentation</a>
+                <a class="btn btn-primary" href="#top" data-scroll>Réserver un créneau</a>
               </div>
             </div>
           </div>
@@ -150,16 +217,18 @@
       </section>
     </main>
 
+    <!-- FOOTER -->
     <footer class="footer pro-footer">
       <div class="container pro-footer-container">
         <div class="pro-footer-main">
-          <a class="brand brand-xl" href="index.html" aria-label="Ma Trousse Scolaire" style="text-decoration:none;align-items:flex-start;gap:18px;">
-            <img src="assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" style="height:54px;width:auto;border-radius:14px;box-shadow:0 8px 32px rgba(11,92,255,0.10);margin-bottom:0;" />
-            <div class="brand-text" style="line-height:1.1;">
-              <strong style="font-size:20px;letter-spacing:-0.5px;">Ma Trousse Scolaire</strong>
-              <span style="font-size:13px;color:var(--muted);font-weight:700;">Communication & organisation d’école</span>
+          <a class="brand brand-xl" href="index.html" aria-label="Ma Trousse Scolaire">
+            <img src="./assets/logo-mts.png" alt="Logo Ma Trousse Scolaire" />
+            <div class="brand-text">
+              <strong>Ma Trousse Scolaire</strong>
+              <span>Logiciel métier pour les écoles</span>
             </div>
           </a>
+
           <nav class="pro-footer-nav">
             <a href="index.html">Présentation</a>
             <a href="outils.html">Outils</a>
@@ -167,8 +236,9 @@
             <a href="contact.html">Contact</a>
           </nav>
         </div>
+
         <div class="pro-footer-bottom">
-          <div class="pro-footer-legal">© <span id="year"></span> Ma Trousse Scolaire &mdash; Tous droits réservés.</div>
+          <div class="pro-footer-legal">© <span id="y"></span> Ma Trousse Scolaire — Tous droits réservés.</div>
           <div class="pro-footer-mentions">
             <a href="rgpd.html">Mentions légales &amp; RGPD</a>
           </div>
