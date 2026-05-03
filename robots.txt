@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://laodhy.github.io/mts-landing/sitemap.xml
+Sitemap: sitemap.xml
