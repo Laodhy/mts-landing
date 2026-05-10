@@ -101,4 +101,25 @@
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeLightbox()
   })
+
+  // Mobile nav toggle
+  const navToggle = document.querySelector('.nav-toggle')
+  const mainNav = document.getElementById('main-nav')
+
+  if (navToggle && mainNav) {
+    navToggle.addEventListener('click', () => {
+      const isOpen = mainNav.classList.toggle('is-open')
+      navToggle.setAttribute('aria-expanded', String(isOpen))
+      navToggle.setAttribute('aria-label', isOpen ? 'Fermer le menu' : 'Ouvrir le menu')
+    })
+
+    // Ferme le menu au clic sur un lien
+    mainNav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('is-open')
+        navToggle.setAttribute('aria-expanded', 'false')
+        navToggle.setAttribute('aria-label', 'Ouvrir le menu')
+      })
+    })
+  }
 })()
