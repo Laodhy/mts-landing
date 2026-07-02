@@ -550,6 +550,38 @@ em {
   z-index: 1;
 }
 
+.h-coverage {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.h-coverage em {
+  font-style: italic;
+  color: var(--muted-strong);
+  font-weight: 500;
+}
+
+/* Hero tagline — bande pleine largeur */
+.hero-tagline {
+  background: var(--primary-deeper);
+  padding: 64px 40px;
+  text-align: center;
+}
+
+.hero-tagline-text {
+  margin: 0 auto;
+  max-width: 1150px;
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: clamp(20px, 2.5vw, 33px);
+  font-style: italic;
+  color: #ffffff;
+  line-height: 1.5;
+  letter-spacing: -0.2px;
+}
+
 @media (max-width: 1050px) {
   .hero {
     padding-top: 72px;
@@ -575,6 +607,10 @@ em {
     font-size: 15.5px;
   }
 
+  .h-coverage {
+    font-size: 14px;
+  }
+
   .badge {
     font-size: 12px;
     white-space: normal;
@@ -588,6 +624,10 @@ em {
 
   .hero-actions .btn {
     width: 100%;
+  }
+
+  .hero-tagline {
+    padding: 48px 24px;
   }
 }
 
