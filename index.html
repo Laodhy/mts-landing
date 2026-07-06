@@ -29,6 +29,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="f9fc4aa9-21e2-4f20-b95a-0adba23d4ae8"></script>
   </head>
 
   <body>
@@ -89,7 +90,7 @@
               </div>
 
               <div class="hero-actions">
-                <a class="btn btn-ghost" href="#demo" data-scroll>🎥 Découvrir l’application</a>
+                <a class="btn btn-ghost" href="#demo" data-scroll data-umami-event="clic-decouvrir-video">🎥 Découvrir l’application</a>
               </div>
             </div>
 
@@ -306,9 +307,10 @@
             <div class="frame-body">
               <div class="video-embed" role="group" aria-label="Vidéo de présentation">
                 <iframe
+                  id="yt-player"
                   width="560"
                   height="315"
-                  src="https://www.youtube.com/embed/kt1G7omVsB8?si=NveHDdGe9vuiYZgj"
+                  src="https://www.youtube.com/embed/kt1G7omVsB8?si=NveHDdGe9vuiYZgj&enablejsapi=1"
                   title="Vidéo de présentation Ma Trousse Scolaire"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -449,8 +451,8 @@
                 </p>
               </div>
               <div class="cta-actions">
-                <a class="btn btn-ghost" href="#demo" data-scroll>🎥 Découvrir l'application</a>
-                <a class="btn btn-primary" href="contact.html">Demandez une démo</a>
+                <a class="btn btn-ghost" href="#demo" data-scroll data-umami-event="clic-decouvrir-video">🎥 Découvrir l'application</a>
+                <a class="btn btn-primary" href="contact.html" data-umami-event="clic-demo-cta">Demandez une démo</a>
               </div>
             </div>
           </div>

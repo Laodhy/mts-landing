@@ -72,6 +72,7 @@
     lightbox.classList.add('is-open')
     lightbox.setAttribute('aria-hidden', 'false')
     document.body.style.overflow = 'hidden'
+    if (typeof umami !== 'undefined') umami.track('apercu-screenshot')
   }
 
   function closeLightbox() {
@@ -102,6 +103,16 @@
     if (e.key === 'Escape') closeLightbox()
   })
 
+  // Calendly event tracking
+  window.addEventListener('message', (e) => {
+    const ev = e.data && e.data.event
+    if (!ev || !ev.startsWith('calendly')) return
+    if (typeof umami === 'undefined') return
+    if (ev === 'calendly.event_type_viewed') umami.track('calendly-vue')
+    if (ev === 'calendly.date_and_time_selected') umami.track('calendly-creneau-choisi')
+    if (ev === 'calendly.event_scheduled') umami.track('demo-reservee')
+  })
+
   // Mobile nav toggle
   const navToggle = document.querySelector('.nav-toggle')
   const mainNav = document.getElementById('main-nav')
@@ -121,5 +132,56 @@
         navToggle.setAttribute('aria-label', 'Ouvrir le menu')
       })
     })
+  }
+
+  // YouTube video tracking
+  if (document.getElementById('yt-player')) {
+    let ytTracked = false
+    window.onYouTubeIframeAPIReady = function () {
+      new YT.Player('yt-player', {
+        events: {
+          onStateChange(e) {
+            if (e.data === YT.PlayerState.PLAYING && !ytTracked) {
+              ytTracked = true
+              if (typeof umami !== 'undefined') umami.track('video-lecture')
+            }
+          }
+        }
+      })
+    }
+    const ytScript = document.createElement('script')
+    ytScript.src = 'https://www.youtube.com/iframe_api'
+    document.head.appendChild(ytScript)
+  }
+
+  // Scroll depth — sections clés
+  if ('IntersectionObserver' in window) {
+    const scrollSections = [
+      ['#quotidienne', 'section-quotidienne'],
+      ['#presentation', 'section-probleme'],
+      ['#solution', 'section-solution'],
+      ['#demo', 'section-demo'],
+      ['.testimonials-section', 'section-temoignage'],
+      ['#tarifs', 'section-tarifs'],
+      ['.pro-footer', 'section-footer'],
+    ]
+    const sectionMap = new Map()
+    const scrollIo = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue
+          const name = sectionMap.get(entry.target)
+          if (name && typeof umami !== 'undefined') umami.track(name)
+          scrollIo.unobserve(entry.target)
+        }
+      },
+      { threshold: 0.3 }
+    )
+    for (const [selector, name] of scrollSections) {
+      const el = document.querySelector(selector)
+      if (!el) continue
+      sectionMap.set(el, name)
+      scrollIo.observe(el)
+    }
   }
 })()
